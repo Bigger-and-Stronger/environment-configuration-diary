@@ -3,14 +3,16 @@ Shi Chen
 29/11/2024 17:08
 
 论文：
-ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds
-Gopal Sharma, Difan Liu, Evangelos Kalogerakis, Subhransu Maji, Siddhartha Chaudhuri, Radomír Měch
-ECCV 2020
+ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds,
+Gopal Sharma, Difan Liu, Evangelos Kalogerakis, Subhransu Maji, Siddhartha Chaudhuri, Radomír Měch,
+ECCV 2020.
+
 [Paper](https://arxiv.org/pdf/2003.12181.pdf) | [Project Page](https://hippogriff.github.io/parsenet/) |[Code](https://github.com/Hippogriff/parsenet-codebase)
 
-Surface and Edge Detection for Primitive Fitting of Point Clouds
-Yuanqi Li, Shun Liu, Xinran Yang, Jianwei Guo, Jie Guo, Yanwen Guo
-SIGGRAPH 2023 Conference Proceedings
+Surface and Edge Detection for Primitive Fitting of Point Clouds,
+Yuanqi Li, Shun Liu, Xinran Yang, Jianwei Guo, Jie Guo, Yanwen Guo,
+SIGGRAPH 2023 Conference Proceedings.
+
 [Paper](https://dl.acm.org/doi/10.1145/3588432.3591522) | [Code](https://github.com/yuanqili78/SED-Net)
 
 第二篇的方法简称SED-Net，环境是参照ParSeNet的环境配置，所以按理说配置了一个相当于能用于跑两篇论文的代码。ParSeNet仓库似乎没有预训练模型，而SED-Net提供了(不过只有带法向的版本)。不过我又在另一个工作 [Point2CAD](https://www.obukhov.ai/point2cad) [Li et al, 2024]的仓库中找到了[预训练好的ParSeNet模型](https://github.com/prs-eth/point2cad/tree/main/point2cad/logs/pretrained_models)。
