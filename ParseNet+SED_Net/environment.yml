@@ -1,0 +1,32 @@
+name: parsenet
+channels:
+  - loopbio
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+  - anaconda
+  - orbingol
+dependencies:
+  - python=3.7
+  - numpy=1.21.0
+  - pip
+  - pip:
+    - positional-encodings==6.0.1
+    - lap==0.4.0
+    - lapsolver==1.0.2
+    - geomdl==5.2.9
+    - h5py
+    - open3d==0.16.0
+    - scikit-image
+    - scikit-learn
+    - scipy
+    - six==1.13.0
+    - tensorboard-logger==0.1.0
+    - torch==1.8.0
+    - torchvision==0.9.0
+    - transforms3d==0.3.1
+    - trimesh==2.31.38
+    - pykdtree
+    - configobj
+    - matplotlib==3.5
