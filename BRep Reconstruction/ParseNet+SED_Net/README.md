@@ -155,7 +155,7 @@ dependencies:
 	... ... 
 ```
 
-在 *SED-Net*或*parsenet-codebase* 文件夹下创建 *xyz_file* 文件夹，存放自己的`xyz`文件。我把作者的代码简单改了一下，写了个`generate_seg_from_xyz.py`。将其放在*SED-Net*或*parsenet-codebase*文件夹下，开始运行：
+在 *SED-Net*或*parsenet-codebase* 文件夹下创建 *xyz_file* 文件夹，存放自己的`xyz`文件。我把作者的代码简单改了一下，分别写了两个`generate_seg_from_xyz.py`文件。将其放在*SED-Net*和*parsenet-codebase*文件夹下。以SED-Net为例子，运行：
 
 ``` bash
 	python generate_seg_from_xyz.py configs/config_SEDNet_normal.yml NoSave no_multi_vote no_fold5drop
