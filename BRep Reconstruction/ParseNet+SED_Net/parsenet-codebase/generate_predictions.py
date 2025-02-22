@@ -36,28 +36,8 @@ from src.residual_utils import Evaluation
 import time
 from src.primitives import SaveParameters
 
-def guard_mean_shift(embedding, quantile, iterations, kernel_type="gaussian"):
-    """
-    Sometimes if bandwidth is small, number of cluster can be larger than 50,
-    but we would like to keep max clusters 50 as it is the max number in our dataset.
-    In that case you increase the quantile to increase the bandwidth to decrease
-    the number of clusters.
-    """
-    ms = MeanShift()
-    while True:
-        _, center, bandwidth, cluster_ids = ms.mean_shift(
-            embedding, 10000, quantile, iterations, kernel_type=kernel_type
-        )
-        if torch.unique(cluster_ids).shape[0] > 49:
-            quantile *= 1.2
-        else:
-            break
-    return center, bandwidth, cluster_ids
-
 # Use only one gpu.
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 config = Config(sys.argv[1])
 if_normals = config.normals
 
@@ -97,19 +77,43 @@ model.cuda()
 split_dict = {"train": config.num_train, "val": config.num_val, "test": config.num_test}
 ms = MeanShift()
 
+dataset = Dataset(
+    config.batch_size,
+    config.num_train,
+    config.num_val,
+    config.num_test,
+    normals=True,
+    primitives=True,
+    if_train_data=False,
+    prefix=userspace
+)
+
+get_test_data = dataset.get_test(align_canonical=True, anisotropic=False, if_normal_noise=True)
+
+loader = generator_iter(get_test_data, int(1e10))
+get_test_data = iter(
+    DataLoader(
+        loader,
+        batch_size=1,
+        shuffle=False,
+        collate_fn=lambda x: x,
+        num_workers=0,
+        pin_memory=False,
+    )
+)
+
 os.makedirs(userspace + "logs/results/{}/results/".format(config.pretrain_model_path), exist_ok=True)
 
-# evaluation = Evaluation()
+evaluation = Evaluation()
 alt_gpu = 0
 model.eval()
 
 iterations = 50
 quantile = 0.015
+
 model.load_state_dict(
     torch.load(userspace + "logs/pretrained_models/" + config.pretrain_model_path)
-    )
-
-
+)
 test_res = []
 test_s_iou = []
 test_p_iou = []
@@ -118,65 +122,44 @@ test_s_res = []
 PredictedLabels = []
 PredictedPrims = []
 
-# 定义文件夹路径
-folder_path = "xyz_file"  
-output_folder_path = folder_path
-
-# 获取文件夹中的所有 xyz 文件
-xyz_files = [f for f in os.listdir(folder_path) if f.endswith('.xyz')]
-
-print(if_normals)
-
-# 循环读取每个 xyz 文件
-for file_name in xyz_files:
-    file_path = os.path.join(folder_path, file_name)
-
-    # 读取 xyz 文件，每行有六个值（坐标和法向量）
-    data = np.loadtxt(file_path).astype(np.float32)
-
-    # 提取坐标和法向量
-    points = data[:, :3]  # 前三列是坐标
-    normals = data[:, 3:]  # 后三列是法向量
-
-    # 对坐标进行归一化
-    # points = normalize_points(points)
-
-    # 转换为 PyTorch 张量并移动到目标设备
-    points = torch.from_numpy(points)[None, :].to(device)
-    normals = torch.from_numpy(normals)[None, :].to(device)
+for val_b_id in range(config.num_test // config.batch_size - 1):
+    points_, labels, normals, primitives_ = next(get_test_data)[0]
+    points = Variable(torch.from_numpy(points_.astype(np.float32))).cuda()
+    normals = torch.from_numpy(normals).cuda()
 
     # with torch.autograd.detect_anomaly():
     with torch.no_grad():
         if if_normals:
             input = torch.cat([points, normals], 2)
             embedding, primitives_log_prob, embed_loss = model(
-                input.permute(0, 2, 1), torch.zeros_like(points)[:, 0], False
+                input.permute(0, 2, 1), torch.from_numpy(labels).cuda(), True
             )
         else:
             embedding, primitives_log_prob, embed_loss = model(
-                points.permute(0, 2, 1), torch.zeros_like(points)[:, 0], False
+                points.permute(0, 2, 1), torch.from_numpy(labels).cuda(), True
             )
     pred_primitives = torch.max(primitives_log_prob[0], 0)[1].data.cpu().numpy()
     embedding = torch.nn.functional.normalize(embedding[0].T, p=2, dim=1)
-    _, _, cluster_ids = guard_mean_shift(
+    _, _, cluster_ids = evaluation.guard_mean_shift(
         embedding, quantile, iterations, kernel_type="gaussian"
     )
     weights = to_one_hot(cluster_ids, np.unique(cluster_ids.data.data.cpu().numpy()).shape[
         0])
     cluster_ids = cluster_ids.data.cpu().numpy()
-    # 将数据准备好保存
-    output_data = np.hstack([points[0].cpu().numpy(),  # 坐标
-                            normals[0].cpu().numpy(),  # 法向量
-                            cluster_ids[:, None],      # 聚类ID
-                            pred_primitives[:, None]]) # 类别ID
 
-    # 保存结果,修改文件名后缀为 .seg
-    if if_normals:
-        output_file_path = os.path.join(output_folder_path, f"segmented_{file_name.replace('.xyz', '.seg')}")
-    else:
-        output_file_path = os.path.join(output_folder_path, f"segmented_no_nor_{file_name.replace('.xyz', '.seg')}")
-    np.savetxt(output_file_path, output_data, fmt='%.6f')
+    s_iou, p_iou, _, _ = SIOU_matched_segments(
+        labels[0],
+        cluster_ids,
+        pred_primitives,
+        primitives_[0],
+        weights,
+    )
+    # print(s_iou, p_iou)
+    PredictedLabels.append(cluster_ids)
+    PredictedPrims.append(pred_primitives)
+    if val_b_id == 3:
+        break
 
-
-print("nice !!")
-
+with h5py.File(userspace + "logs/results/{}/results/".format(config.pretrain_model_path) + "predictions.h5", "w") as hf:
+    hf.create_dataset(name="seg_id", data=np.stack(PredictedLabels, 0))
+    hf.create_dataset(name="pred_primitives", data=np.stack(PredictedPrims, 0))

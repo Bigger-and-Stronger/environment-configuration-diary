@@ -1,5 +1,5 @@
 # BRep Reconstruction
-@Bigger and Stronger Group.
+@Bigger and Stronger Group
 
 ## 2025.02.21 update ParseNet+SED_Net
 ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds,

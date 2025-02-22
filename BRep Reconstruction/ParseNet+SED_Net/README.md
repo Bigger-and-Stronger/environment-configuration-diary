@@ -92,6 +92,7 @@ dependencies:
     - matplotlib==3.5
 
 ```
+该`.yml`可在本目录下找到，替换原始的`environment.yml`文件即可。
 
 显示以下结果则说明成功！
 ```
@@ -147,14 +148,14 @@ dependencies:
 ```
 
 ## 测试自己的点云模型
-由于SED-Net和ParseNet的默认代码都是出来点云数据集`h5`文件格式，而我们常见的点云都是`xyz`格式，即每行6个数值，前三个数值为点坐标，后三个为法向。
+由于SED-Net和ParseNet的默认代码都是处理点云数据集`h5`文件格式，而我们常见的点云都是`xyz`格式，即每行6个数值，前三个数值为点坐标，后三个为法向。
 ``` bash
 	x0 y0 z0 nx0 ny0 nz0
 	x1 y1 z1 nx1 ny1 nz1
 	... ... 
 ```
 
-在 *SED-Net* 文件夹下创建 *xyz_file* 文件夹，存放自己的`xyz`文件。我把作者的代码简单改了一下，写了个`generate_seg_from_xyz.py`。开始运行：
+在 *SED-Net*或*parsenet-codebase* 文件夹下创建 *xyz_file* 文件夹，存放自己的`xyz`文件。我把作者的代码简单改了一下，写了个`generate_seg_from_xyz.py`。将其放在*SED-Net*或*parsenet-codebase*文件夹下，开始运行：
 
 ``` bash
 	python generate_seg_from_xyz.py configs/config_SEDNet_normal.yml NoSave no_multi_vote no_fold5drop
