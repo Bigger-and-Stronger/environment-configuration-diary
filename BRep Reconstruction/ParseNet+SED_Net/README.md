@@ -3,11 +3,12 @@ Shi Chen
 29/11/2024 17:08
 
 论文：
+
 ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds,
 Gopal Sharma, Difan Liu, Evangelos Kalogerakis, Subhransu Maji, Siddhartha Chaudhuri, Radomír Měch,
 ECCV 2020.
 
-[Paper](https://arxiv.org/pdf/2003.12181.pdf) | [Project Page](https://hippogriff.github.io/parsenet/) |[Code](https://github.com/Hippogriff/parsenet-codebase)
+[Paper](https://arxiv.org/pdf/2003.12181.pdf) | [Project Page](https://hippogriff.github.io/parsenet/) | [Code](https://github.com/Hippogriff/parsenet-codebase)
 
 Surface and Edge Detection for Primitive Fitting of Point Clouds,
 Yuanqi Li, Shun Liu, Xinran Yang, Jianwei Guo, Jie Guo, Yanwen Guo,
