@@ -11,5 +11,5 @@ An environment configuration record concerning academic papers, third-party libr
 # Content
 - [BRep Reconstruction](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction)
   - [ParseNet & SED-Net](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/ParseNet%2BSED_Net)
-- [Computational Fluid Dynamics (CFD)]([./Computational Fluid Dynamics (CFD)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD)))
-  - [OpenFOAM]([./Computational Fluid Dynamics (CFD)/OpenFOAM](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD)/OpenFOAM))
+- [Computational Fluid Dynamics (CFD)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD))
+  - [OpenFOAM](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD)/OpenFOAM)
