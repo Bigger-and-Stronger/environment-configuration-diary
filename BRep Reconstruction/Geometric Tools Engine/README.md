@@ -63,7 +63,7 @@ std::vector<gte::Vector3<double>> gte_data;
 /* 填充gte_data */
 gte::Sphere3<double> gte_sphere;
 gte::ApprSphere3<double> fitter;
-/ * 获得拟合结果, 球半径, 球心 */
+/* 获得拟合结果, 球半径, 球心 */
 auto result = fitter.FitUsingSquaredLengths(gte_data.size(), gte_data.data(), gte_sphere);
 gp_Pnt center = gp_Pnt(gte_sphere.center[0], gte_sphere.center[1], gte_sphere.center[2]);
 double radius = gte_sphere.radius;
