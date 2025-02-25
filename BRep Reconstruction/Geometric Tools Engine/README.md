@@ -57,7 +57,7 @@ git clone或直接下载到本地：
 ## 曲面拟合例子
 这里介绍一些例子，曲面拟合结果存储为[OCCT](https://dev.opencascade.org/)中的数据结构(如`gp_Pnt`为点, `gp_Dir`为方向)，如果不习惯或有其他需求也可使用Eigen中的向量或自定义数据结构存储。
 ### 球面拟合
-```bash
+```cpp
 	
 	std::vector<gte::Vector3<double>> gte_data;
     /* 填充gte_data */
@@ -69,7 +69,7 @@ git clone或直接下载到本地：
     double radius = gte_sphere.radius;
 ```
 ### 柱面拟合
-```bash
+```cpp
 	
 	std::vector<gte::Vector3<double>> gte_data;
 	/* 填充gte_data */
