@@ -13,3 +13,7 @@ Yuanqi Li, Shun Liu, Xinran Yang, Jianwei Guo, Jie Guo, Yanwen Guo,
 SIGGRAPH 2023 Conference Proceedings.
 
 [Paper](https://dl.acm.org/doi/10.1145/3588432.3591522) | [Code](https://github.com/yuanqili78/SED-Net)
+
+## 2025.02.25 update Geometric Tools Engine(GTE) for surface fitting：
+- [Website](https://www.geometrictools.com/)
+- [Geometric Tools on GitHub](https://github.com/davideberly/GeometricTools)
