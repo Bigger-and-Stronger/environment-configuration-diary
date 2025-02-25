@@ -59,27 +59,27 @@ git clone或直接下载到本地：
 ### 球面拟合
 ```cpp
 	
-	std::vector<gte::Vector3<double>> gte_data;
-    /* 填充gte_data */
-    gte::Sphere3<double> gte_sphere;
-    gte::ApprSphere3<double> fitter;
-	/ * 获得拟合结果, 球半径, 球心 */
-    auto result = fitter.FitUsingSquaredLengths(gte_data.size(), gte_data.data(), gte_sphere);
-    gp_Pnt center = gp_Pnt(gte_sphere.center[0], gte_sphere.center[1], gte_sphere.center[2]);
-    double radius = gte_sphere.radius;
+std::vector<gte::Vector3<double>> gte_data;
+/* 填充gte_data */
+gte::Sphere3<double> gte_sphere;
+gte::ApprSphere3<double> fitter;
+/ * 获得拟合结果, 球半径, 球心 */
+auto result = fitter.FitUsingSquaredLengths(gte_data.size(), gte_data.data(), gte_sphere);
+gp_Pnt center = gp_Pnt(gte_sphere.center[0], gte_sphere.center[1], gte_sphere.center[2]);
+double radius = gte_sphere.radius;
 ```
 ### 柱面拟合
 ```cpp
 	
-	std::vector<gte::Vector3<double>> gte_data;
-	/* 填充gte_data */
-    gte::Cylinder3<double> gte_cylinder;
-    gte::ApprCylinder3<double> cylinderFitter(20, 2048, 1024);
-    cylinderFitter(gte_data.size(), gte_data.data(), gte_cylinder);
-	/ * 获得拟合结果, 圆柱半径, 圆心，旋转轴方向 */
-    double radius = gte_cylinder.radius;
-    gp_Pnt center_cyl(gte_cylinder.axis.origin[0], gte_cylinder.axis.origin[1], gte_cylinder.axis.origin[2]);
-    gp_Dir axis_cyl(gte_cylinder.axis.direction[0], gte_cylinder.axis.direction[1], gte_cylinder.axis.direction[2]);
+std::vector<gte::Vector3<double>> gte_data;
+/* 填充gte_data */
+gte::Cylinder3<double> gte_cylinder;
+gte::ApprCylinder3<double> cylinderFitter(20, 2048, 1024);
+cylinderFitter(gte_data.size(), gte_data.data(), gte_cylinder);
+/* 获得拟合结果, 圆柱半径, 圆心，旋转轴方向 */
+double radius = gte_cylinder.radius;
+gp_Pnt center_cyl(gte_cylinder.axis.origin[0], gte_cylinder.axis.origin[1], gte_cylinder.axis.origin[2]);
+gp_Dir axis_cyl(gte_cylinder.axis.direction[0], gte_cylinder.axis.direction[1], gte_cylinder.axis.direction[2]);
 ```
 
 
