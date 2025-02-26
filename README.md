@@ -12,6 +12,12 @@ An environment configuration record concerning academic papers, third-party libr
 - [BRep Reconstruction](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction)
   - [Geometric Tools Engine](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/Geometric%20Tools%20Engine)
   - [ParseNet & SED-Net](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/ParseNet%2BSED_Net)
-- [Computational Fluid Dynamics (CFD)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD))
-  - [CGNS](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD)/CGNS)
-  - [OpenFOAM](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Computational%20Fluid%20Dynamics%20(CFD)/OpenFOAM)
+- [Computational Fluid Dynamics (CFD)](Computational-Fluid-Dynamics)
+  - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3)
+  - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3)
+
+ # Contributors
+
+<a href="https://contributors-img.web.app/image?repo=Bigger-and-Stronger/environment-configuration-diary">
+  <img src="https://contributors-img.web.app/image?repo=Bigger-and-Stronger/environment-configuration-diary"/>
+</a>
