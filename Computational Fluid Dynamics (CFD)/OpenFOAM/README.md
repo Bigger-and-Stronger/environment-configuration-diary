@@ -29,6 +29,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 25/2/2025
 
 1. 安装 [**pixi**](https://pixi.sh/latest/)，推荐用 **Homebrew** 安装（需先安装 **Homebrew**），在终端中输入：
    `brew install pixi`
+   
    同时可能还需要安装 **Xcode Command Line Tools**，但我可能之前安装过所以并不需要
 2. 将 **openfoam-app** 仓库git clone到本地，在终端输入：
     `git clone https://github.com/gerlero/openfoam-app.git`
