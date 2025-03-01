@@ -16,7 +16,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3)
   - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3)
 - [Other-Projects](Other-Projects)
-  - [LpCVT-win-10](Other-Projects/LpCVT-win-10)
+  - [LpCVT - win 10](Other-Projects/LpCVT-win-10)
 
  # Contributors
 
