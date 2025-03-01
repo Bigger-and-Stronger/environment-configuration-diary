@@ -46,7 +46,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
    git clone https://github.com/secantalpha/LpCVT.git
    ```
 
-2. 在路径 `***\LpCVT\sources\LpCVT` 下新建文件夹 **build**，打开 **cmake-gui**，其中的 "Where is the source code" 和 "Where to build the binaries" 分别填写路径 `***\LpCVT\sources\LpCVT` 和 `***\LpCVT\sources\LpCVT\build`（:warning: 此处的星号需要根据实际情况进行替换），如下：
+2. 在路径 `***\LpCVT\sources\LpCVT` 下新建文件夹 **build**，打开 **cmake-gui**，其中的 "Where is the source code" 和 "Where to build the binaries" 分别填写路径 `***\LpCVT\sources\LpCVT` 和 `***\LpCVT\sources\LpCVT\build`（ :warning: 此处的星号需要根据实际情况进行替换），如下：
 
     ![image](.pic/image1.png)
 
@@ -95,7 +95,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
     D:\Software\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe -E copy_if_different /lib/libgmp-10.dll D:/LpCVT/sources/LpCVT/build/Release
     ```
 
-    其中 `copy_if_different` 后的路径 `/lib/libgmp-10.dll` 不完整，需要修改，可以在 **CGAL** 库所在文件夹的 **gmp** 相关文件夹中寻找该 **dll** 文件，我此处将修改为 `D:/C_Library/CGAL-5.6/auxiliary/gmp/lib/libgmp-10.dll`，修改后命令行第二行为：
+    其中 `copy_if_different` 后的路径 `/lib/libgmp-10.dll` 不完整，需要修改，可以在 **CGAL** 库所在文件夹的 **gmp** 相关文件夹中寻找该 **dll** 文件，我此处将修改为 `D:/C_Library/CGAL-5.6/auxiliary/gmp/lib/libgmp-10.dll`（具体路径因人而异），修改后命令行第二行为：
 
     ```
     D:\Software\cmake-3.31.5-windows-x86_64\cmake-3.31.5-windows-x86_64\bin\cmake.exe -E copy_if_different D:/C_Library/CGAL-5.6/auxiliary/gmp/lib/libgmp-10.dll D:/LpCVT/sources/LpCVT/build/Release
@@ -116,7 +116,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 2. 输入：
 
     ```
-    ./LPCVT ../../data/three_holes.obj ../../data/three_holes.pts
+    ./LpCVT ../../data/three_holes.obj ../../data/three_holes.pts
     ```
 
 3. 运行成功后，会在 `***\LpCVT\sources\LpCVT\build\Release` 目录下生成结果文件 **cvd.obj**、**rdt.obj**、**rvd.obj**，结果分别如下：
