@@ -15,8 +15,8 @@ An environment configuration record concerning academic papers, third-party libr
 - [Computational Fluid Dynamics (CFD)](Computational-Fluid-Dynamics)
   - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3)
   - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3)
-- [Open CASCADE Technology](Open CASCADE Technology)
-  - [OCCT-Windows-10(11)](OCCT-Windows-10(11))
+- [Open CASCADE Technology](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology)
+  - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - [Other-Projects](Other-Projects)
   - [LpCVT - win 10](Other-Projects/LpCVT-win-10)
 
