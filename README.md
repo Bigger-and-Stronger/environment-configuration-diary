@@ -12,12 +12,12 @@ An environment configuration record concerning academic papers, third-party libr
 - [BRep Reconstruction](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction)
   - [Geometric Tools Engine](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/Geometric%20Tools%20Engine)
   - [ParseNet & SED-Net](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/ParseNet%2BSED_Net)
-- [Computational Fluid Dynamics (CFD)](Computational-Fluid-Dynamics)
+- Computational Fluid Dynamics (CFD)
   - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3)
   - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3)
 - [Open CASCADE Technology](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology)
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
-- [Other-Projects](Other-Projects)
+- Other Projects
   - [LpCVT - win 10](Other-Projects/LpCVT-win-10)
 
  # Contributors
