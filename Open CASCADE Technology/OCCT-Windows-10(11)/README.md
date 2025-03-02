@@ -38,7 +38,7 @@
 这些是编译OCC依赖库的路径：
 ![occ-env2](assets/occ-env2.png)
 
-配置好环境变量后，打开`E:\Library\OpenCASCADE-7.5.0-vc14-64`文件夹，双击打开批处理文件`msvc.bat`。
+配置好环境变量后，建议**重启电脑**，保证环境变量生成有效。打开`E:\Library\OpenCASCADE-7.5.0-vc14-64`文件夹，双击打开批处理文件`msvc.bat`。
 
 ![msvc-bat](assets/msvc-bat.png)
 
