@@ -56,9 +56,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
 
 ### Error 1: Preprocessing - 路径错误
 
-执行 Preprocessing 时，`pre_processing/pre_data.py` 文件的 Line:34 和 Line: 37 中的路径为作者的本地路径，需要进行调整，可以调整为如下图：
-
-![image2](.pic/image2.png)
+执行 Preprocessing 时，`pre_processing/pre_data.py` 文件的 Line:34 和 Line: 37 中的路径为作者的本地路径，需要进行调整
 
 ### Error 2: 缺少 package
 
