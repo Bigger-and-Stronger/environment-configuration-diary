@@ -1,5 +1,13 @@
 # LpCVT 项目配置记录
 
+Canjia Huang <<canjia7@gmail.com>> last update 4/3/2025
+
+:star: 我对 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本进行了重构，重构版本为 [Bigger-and-Stronger/LpCVT](https://github.com/Bigger-and-Stronger/LpCVT)，该版本配置更加方便，并添加了许多可以直接使用的操作（包括 LpCVT 的迭代优化）
+
+该版本适用于所有平台，配置步骤可以参考 [Bigger-and-Stronger/LpCVT/README.md](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/README.md)，具体的：Windows 上的配置步骤与本文档类似；macOS 上的配置步骤可以参考 [macos-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/macos-build.yml)
+
+---
+
 Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 
 本文档为配置文章 "**Lp Centroidal Voronoi Tessellation and its applications**" 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.1145/1778765.1778856) [[Code]](https://app.box.com/s/vh9mz9eody9xuxj7xtp2f19d8d7gya97)
@@ -26,7 +34,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 }
 ```
 
-:skull: 由于源码较为久远，其中部分代码可能与最新的 CGAL 库并不兼容，所以推荐构建 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT)，该版本作了些许修改以使得代码适应于 CGAL 5.0 以上，不过仅按照其 README 中的步骤可能还是会出现一些错误，具体配置步骤可以参考如下：
+:skull: 由于原文的源码较为久远，其中部分代码可能与最新的 CGAL 库并不兼容，可以构建 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本，该版本作了些许修改以使得代码适应于 CGAL 5.0 以上，不过仅按照其 README 中的步骤可能还是会出现一些错误，具体配置步骤可以参考如下：
 
 # :computer: Windows
 

@@ -35,10 +35,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
 ## 预备步骤
 
 1. 安装 Anaconda
-2. 安装 CUDA 环境
+2. 安装 CUDA 环境（本文档使用的版本是 12.2）
 3. :star: 直接导入配好的虚拟环境
    
-   下载该目录下的 [environment.yml](environment.yml) 文件（create by [Xiaoyang Yu](https://github.com/Xiaoyanglib)），并在 conda 环境下的终端中执行：
+   下载该目录下的 [environment.yml](environment.yml) 文件（created by [Xiaoyang Yu](https://github.com/Xiaoyanglib)），并在 conda 环境下的终端中执行：
    
    ```
    conda env create -f environment.yml
