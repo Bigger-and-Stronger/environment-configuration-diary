@@ -16,8 +16,10 @@ An environment configuration record concerning academic papers, third-party libr
   - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3) :apple:
   - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3) :apple:
 - NeurField
+  - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/
+  - [IGR - Ubuntu 20.04.6](NeurField/IGR-Ubuntu20.04.6/) :penguin:
   - [NeurCADRecon - Ubuntu 20.04.6](NeurField/NeurCADRecon-Ubuntu20.04.6) :penguin:
-  - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
+environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Projects
