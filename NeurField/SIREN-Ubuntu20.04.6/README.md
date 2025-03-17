@@ -1,4 +1,4 @@
-# SIREN 配置记录
+# siren 配置记录
 
 Canjia Huang <<canjia7@gmail.com>> last update 17/3/2025
 
@@ -196,7 +196,7 @@ conda env create -f environment_siren.yml
         matplotlib.use('Agg')
         ```
 
-        如果希望查看该图像到话，可以通过保存图像到本地-
+        如果希望查看该图像到话，可以通过保存图像到本地
 
 3. 训练完成后，训练结果存放在 “siren/logs/experiment_1” 目录下（具体目录根据参数 `--experiment_name` 而定）
 
