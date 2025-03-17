@@ -19,7 +19,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
   - [IGR - Ubuntu 20.04.6](NeurField/IGR-Ubuntu20.04.6/) :penguin:
   - [NeurCADRecon - Ubuntu 20.04.6](NeurField/NeurCADRecon-Ubuntu20.04.6) :penguin:
-  - [siren - Ubuntu 20.04.6](NeurField/siren-Ubuntu20.04.6) :penguin:
+  - [siren - Ubuntu 20.04.6](NeurField/SIREN-Ubuntu20.04.6) :penguin:
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Projects
