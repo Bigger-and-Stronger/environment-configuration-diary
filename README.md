@@ -22,7 +22,7 @@ An environment configuration record concerning academic papers, third-party libr
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Projects
-  - [LpCVT - all platforms](Other-Projects/LpCVT) :apple::computer::penguin:
+  - [LpCVT - macOS 15.3 / Windows 10](Other-Projects/LpCVT) :apple::computer:
 
  # Contributors
 

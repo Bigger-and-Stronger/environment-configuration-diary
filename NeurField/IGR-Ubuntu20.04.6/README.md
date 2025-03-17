@@ -137,7 +137,7 @@ conda env create -f environment.yml
 
     - :warning: 可能出现错误 `RuntimeError: cuda runtime error (38) : no CUDA-capable device is detected at ***`
 
-        解决方法参考 [[2]](https://blog.csdn.net/qq_41115379/article/details/109996463)，在 “IGR/code/reconstruction/run.py” 文件中，设置了使用的 GPU 编号为 2（见下下图红框处），而使用指令 `nvidia-smi` 指令可以查询使用的 GPU 编号只有 0 和 1（见下图，以具体情况为准），所以需要进行修改
+        解决方法参考 [[2]](https://blog.csdn.net/qq_41115379/article/details/109996463)，在 “IGR/code/reconstruction/run.py” 文件中，设置了使用的 GPU 编号为 2（见下下图红框处），而使用指令 `nvidia-smi` 指令可以查询能使用的 GPU 编号只有 0 和 1（见下图，以具体情况为准），所以需要进行修改
 
         ![image](.pic/image1.png)
 

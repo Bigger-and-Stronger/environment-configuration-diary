@@ -28,9 +28,11 @@
 
 Canjia Huang <<canjia7@gmail.com>> last update 4/3/2025
 
-:star: 我对 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本进行了重构，重构版本为 [Bigger-and-Stronger/LpCVT](https://github.com/Bigger-and-Stronger/LpCVT)，该版本配置更加方便，并添加了许多可以直接使用的操作（包括 LpCVT 的迭代优化）
+:star: 我对 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本进行了重构，重构版本为 [Bigger-and-Stronger/LpCVT](https://github.com/Bigger-and-Stronger/LpCVT)，该版本配置更加方便，并添加了许多可以直接使用的操作（包括 LpCVT 的 LBFGS 优化）
 
-该版本适用于所有平台，配置步骤可以参考 [Bigger-and-Stronger/LpCVT/README.md](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/README.md)，具体的：Windows 上的配置步骤与本文档类似；macOS 上的配置步骤可以参考 [macos-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/macos-build.yml)
+该版本目前适用于 Windows 和 macOS 平台，配置步骤可以参考 [Bigger-and-Stronger/LpCVT/README.md](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/README.md)
+    
+- 具体的：Windows 上的配置步骤与本文档类似；macOS 上的配置步骤可以参考 [macos-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/macos-build.yml)
 
 ---
 
@@ -71,11 +73,11 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 8. 可以进行简单的运行测试，具体可以参考 `***\LpCVT\sources\LpCVT\readme.txt` 文件中的使用说明，或参考下面的 [简单测试](#简单测试) 章节
 
 ## 可能出现的问题
-- 与 **mpfr** 相关的错误
+- :warning: 与 **mpfr** 相关的错误
 
     例如出现 `语法错误: 标识符"mpfr_srcptr"`、`语法错误: 缺少“；”(在标识符"__mpft_struct"的前面)`等
 
-    - :warning: 之所以出现该原因可能是 **CGAL** 的库的目录包含特殊符号（例如“.”），导致 CMake 无法链接 **CGAL** 附带的 **gmp** 库（也即CMake添加 `${GMP_INCLUDE_DIR}` 失败）
+    - 之所以出现该原因可能是 **CGAL** 的库的目录包含特殊符号（例如“.”），导致 CMake 无法链接 **CGAL** 附带的 **gmp** 库（也即CMake添加 `${GMP_INCLUDE_DIR}` 失败）
 
     需要在附加包含目录中添加 **CGAL** 中与 **gmp** 相关的 include 目录：`***\CGAL-5.6\auxiliary\gmp\include` （此处的星号需要根据实际情况进行替换），如下图（红框处）：
 
@@ -83,7 +85,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 
     添加后应用，并重新生成 **ALL_BUILD**
 
-- 与 **CMakeCXXCompilerId.obj** 相关的错误
+- :warning: 与 **CMakeCXXCompilerId.obj** 相关的错误
   
     出现错误 `LNK2005 main 已经在 CMakeCXXCompilerId.obj 中定义`
 
@@ -93,7 +95,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 1/3/2025
 
     移除后重新生成 **ALL_BUILD**
 
-- 与命令 `setlocal` 相关的错误
+- :warning: 与命令 `setlocal` 相关的错误
 
     出现错误 'MSB3073 命令"setlocal'
 
