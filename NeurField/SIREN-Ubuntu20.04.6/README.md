@@ -24,7 +24,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 17/3/2025
 - 显卡：NVIDIA GeForce RTX 3090
 - CUDA Version：12.2
 
-## 操作步骤
+## 配置步骤
 
 ---
 
