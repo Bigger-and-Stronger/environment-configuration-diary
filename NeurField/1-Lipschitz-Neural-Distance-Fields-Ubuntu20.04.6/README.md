@@ -19,18 +19,18 @@
 
 配置：依次输入以下命令
 
-```
-git clone https://github.com/GCoiffier/1-Lipschitz-Neural-Distance-Fields.git
 
-cd 1-Lipschitz-Neural-Distance-Fields/
+    $ git clone https://github.com/GCoiffier/1-Lipschitz-Neural-Distance-Fields.git
 
-conda create --name 1-lip-sdf python=3.12
+    $ cd 1-Lipschitz-Neural-Distance-Fields/
 
-conda activate 1-lip-sdf
+    $ conda create --name 1-lip-sdf python=3.12
 
-pip3 install -r requirements.txt
+    $ conda activate 1-lip-sdf
 
-```
+    $ pip3 install -r requirements.txt
+
+
 
 ---
 
@@ -44,12 +44,10 @@ pip3 install -r requirements.txt
 
 等值面重建：输入命令 `python reconstruct_surface.py output/your_test_mesh/model_final.pt -iso 0.0` 提取0等值面。输出结果默认在 `output` 中，也可以通过 `-o path/to/output` 设置输出路径。
 
-```
 
-python extract_dataset_surface_mesh.py mesh_gt/your_test_mesh.obj 
 
-python train_lip.py your_test_mesh
+    $ python extract_dataset_surface_mesh.py mesh_gt/your_test_mesh.obj 
 
-python reconstruct_surface.py output/your_test_mesh/model_final.pt -iso 0.0
+    $ python train_lip.py your_test_mesh
 
-```
+    $ python reconstruct_surface.py output/your_test_mesh/model_final.pt -iso 0.0
