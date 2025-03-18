@@ -43,9 +43,15 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 
 2. 使用 CLion SSH 连接，`重新加载 CMake 项目`，会自动使用 CMake 进行 configure 和 Generate，依赖库也会自动下载
 
-    - :warning: 因会自动下载依赖库，所以可能遇到网络问题 `Failed to connect to github.com port 443: Connection timed out`
+    - :warning: 因会自动下载依赖库，所以可能遇到网络问题 `Failed to connect to github.com port 443: Connection timed out` 或其他问题
 
-        解决方法：如果没有 root 权限的话，就在不同时间段多试几次 :sob:
+        - 解决方法1：在不同时间段多试几次 :sob:
+
+        - 解决方法2：手动下载依赖库，并更改 “PCO/cmake/external/” 目录下对应库的 ".cmake" 文件
+
+            例如，较常见的是下载 **Boost** 库失败，可以更改该目录下的 "boost.cmake" 文件，具体修改如下图（添加绿色框的内容：具体路径视实际情况而定，并注释红色框的内容）：
+
+            ![image](.pic/image.png)
 
 3. 在 `运行/调试配置` 中选择 `PCO_MAIN` ，并选择 `Release` 模式，进行生成
 
@@ -73,7 +79,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 4. 编译成功后，会在 “PCO/cmake-build-release/app“ 目录（具体目录视实际 IDE 情况而定，本文档以此为例）下生成可执行文件 `PCO_MAIN`，进入该目录：
 
     ```
-    cd PCO/cmake-build-release/app
+    cd cmake-build-release/app
     ```
 
 ## 测试
@@ -83,8 +89,16 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 2. 参考 [PCO/README.md](https://github.com/Alan-Leo-Wong/PCO/blob/master/README.md)，在终端中执行：
 
     ```
+    ./PCO_MAIN -f 104559.stl -F output.obj -o 2 -d 8 --pmp
+    ```
+
+    或
+
+    ```
     ./PCO_MAIN -f 104559.stl -F output.obj -o 2 -d 8 -m -c 170 --pmp
     ```
+
+    操作成功后会在该目录下生成 “output.obj” 文件
 
 # :computer: Windows
 
@@ -96,3 +110,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 1. 将该项目 clone 至本地，并在该项目根目录新建文件夹 `build`（其目录为 "PCO/build"）
 
 2. 使用 CMake-gui（Version: 3.31.5），设置 source code 目录为 "xxx/PCO"，build the binaries 目录为 "xxx/PCO/build"（此处的 xxx 根据实际情况改变），platform for generator 设置为 `x64`，设置完毕后进行 **Configuration**，成功后进行 **Generate**
+
+3. 使用 Visual Studio 2022 打开 “build/PCO.sln” 文件，将 `PCO_MAIN` 设置为启动项目，设置 `Release` 模式，进行编译生成
+
+4. 在 “PCO\build\app\Release” 目录下会生成可执行文件 `PCO_MAIN`，可以使用 powershell 按如上方式进行测试

@@ -64,3 +64,15 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
     - :warning: 可能出现错误 `Could NOT find OpenMesh (missing: OPENMESH_CORE_LIBRARY`
 
         需要安装 **OpenMesh** 库，具体可以参考 [Bigger-and-Stronger/environment-configuration-diary/OpenMesh](../../Other-Libraries/OpenMesh)
+
+        :bangbang: 需要注意！！！该项目的部分代码可能无法在最新（11.0 版本以上）的 **OpenMesh** 库上编译，经过测试 **OpenMesh 3.0** 是可以成功编译的，该版本可以在 [openmesh官网](https://www.graphics.rwth-aachen.de/software/openmesh/download/) 找到
+
+4. 进行编译：
+
+    ```
+    make
+    ```
+
+    - :warning: 可能出现很多关于 **OpenMesh** 的错误
+
+        安装的 **OpenMesh** 库不能是最新版本的，经测试，**OpenMesh 3.0** 是可以成功编译的
