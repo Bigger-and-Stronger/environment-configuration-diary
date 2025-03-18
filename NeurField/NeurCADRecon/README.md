@@ -1,7 +1,5 @@
 # NeurCADRecon 配置记录
 
-Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
-
 本文档为配置文章 “**NeurCADRecon: Neural Representation for Reconstructing CAD Surfaces by Enforcing Zero Gaussian Curvature**” 的代码的记录 [[Paper]](https://dl.acm.org/doi/10.1145/3658171) [[PDF]](https://arxiv.org/pdf/2404.13420) [[Project Page]](https://qiujiedong.github.io/publications/NeurCADRecon/) [[Code-SIREN]](https://github.com/QiujieDong/NeurCADRecon) [[Code-IGR]](https://github.com/QiujieDong/NeurCADRecon_IGR)
 
 ```
@@ -25,6 +23,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
     keywords = {CAD model, unoriented point cloud, surface reconstruction, signed distance function, gaussian curvature}
 }
 ```
+
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
 
 本文档配置的代码为基于 SIREN 的版本
 

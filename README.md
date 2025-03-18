@@ -13,17 +13,20 @@ An environment configuration record concerning academic papers, third-party libr
   - [Geometric Tools Engine](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/Geometric%20Tools%20Engine)
   - [ParseNet & SED-Net](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/ParseNet%2BSED_Net)
 - Computational Fluid Dynamics (CFD)
-  - [CGNS - macOS 15.3](Computational-Fluid-Dynamics/CGNS-macOS-15.3) :apple:
-  - [OpenFOAM - macOS 15.3](Computational-Fluid-Dynamics/OpenFOAM-macOS-15.3) :apple:
+  - [CGNS](Computational-Fluid-Dynamics/CGNS/) :apple: [macOS 15.3]
+  - [OpenFOAM](Computational-Fluid-Dynamics/OpenFOAM/) :apple: [macOS 15.3]
 - NeurField
   - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
-  - [IGR - Ubuntu 20.04.6](NeurField/IGR-Ubuntu20.04.6/) :penguin:
-  - [NeurCADRecon - Ubuntu 20.04.6](NeurField/NeurCADRecon-Ubuntu20.04.6) :penguin:
-  - [siren - Ubuntu 20.04.6](NeurField/SIREN-Ubuntu20.04.6) :penguin:
+  - [IGR](NeurField/IGR/) - :penguin: [Ubuntu 20.04.6]
+  - [NeurCADRecon](NeurField/NeurCADRecon/) - :penguin: [Ubuntu 20.04.6]
+  - [siren](NeurField/siren/) - :penguin: [Ubuntu 20.04.6]
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
+- Other Libraries
+  - [OpenMesh](Other-Libraries/OpenMesh/) - :penguin: [Ubuntu 20.04.6]
 - Other Projects
-  - [LpCVT - macOS 15.3 / Windows 10](Other-Projects/LpCVT) :apple::computer:
+  - [LpCVT](Other-Projects/LpCVT/) - :apple: [macOS 15.3] :computer: [Windows 10]
+  - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6]
 
  # Contributors
 

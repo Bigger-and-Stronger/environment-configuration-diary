@@ -1,6 +1,6 @@
 # LpCVT 项目配置记录
 
-本文档为配置文章 "**Lp Centroidal Voronoi Tessellation and its applications**" 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.1145/1778765.1778856) [[Code]](https://app.box.com/s/vh9mz9eody9xuxj7xtp2f19d8d7gya97)
+本文档为配置文章 **"Lp Centroidal Voronoi Tessellation and its applications"** 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.1145/1778765.1778856) [[Code]](https://app.box.com/s/vh9mz9eody9xuxj7xtp2f19d8d7gya97)
 
 ```
 @article{10.1145/1778765.1778856,

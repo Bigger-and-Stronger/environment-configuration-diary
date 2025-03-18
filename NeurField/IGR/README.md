@@ -1,7 +1,5 @@
 # IGR 配置记录
 
-Canjia Huang <<canjia7@gmail.com>> last update 05/3/2025
-
 本文档为配置 paper：“**Implicit Geometric Regualrization for Learning Shapes**” 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.5555/3524938.3525293) [[Code]](https://github.com/amosgropp/IGR)
 
 ```
@@ -13,6 +11,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 05/3/2025
  year = {2020}
 }
 ```
+
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 05/3/2025
 
 # :penguin: Ubuntu
 

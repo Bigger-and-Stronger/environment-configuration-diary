@@ -1,7 +1,5 @@
 # siren 配置记录
 
-Canjia Huang <<canjia7@gmail.com>> last update 17/3/2025
-
 本文档为配置 paper：“**Implicit Neural Representations with Periodic Activation Functions**” 的代码的记录 [[Paper]](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) [[Project Page]](https://www.vincentsitzmann.com/siren/) [[Code]](https://github.com/vsitzmann/siren)
 
 ```
@@ -17,6 +15,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 17/3/2025
     year={2020}
 }
 ```
+
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 17/3/2025
 
 # :penguin: Ubuntu
 

@@ -1,10 +1,12 @@
 # CGNS 库配置记录
 
-# :apple: macOS
+[CFD General Notation System (CGNS) 官网](https://cgns.github.io/index.html)
+
+---
 
 Canjia Huang <<canjia7@gmail.com>> last update 26/2/2025
 
-[CFD General Notation System (CGNS) 官网](https://cgns.github.io/index.html)
+# :apple: macOS
 
 - 操作平台：MacBook Air (Apple M3) - macOS 15.3
 
