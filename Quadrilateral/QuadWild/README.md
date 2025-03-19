@@ -38,7 +38,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 1. 将项目下载到本地，在终端中输入：
 
     ```
-    git clone https://github.com/nicopietroni/quadwild.git
+    git clone --recursive https://github.com/nicopietroni/quadwild
     ```
 
     并进入该项目目录：
