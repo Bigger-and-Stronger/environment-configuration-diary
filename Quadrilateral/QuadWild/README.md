@@ -33,6 +33,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 - 操作系统：Ubuntu 20.04.5 LTS
 - SSH IDE：CLion 2024.3.4
 
+## 预备步骤
+
+- 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../../Other-Libraries/Gurobi/)
+
 ## 配置步骤
 
 1. 将项目下载到本地，在终端中输入：
