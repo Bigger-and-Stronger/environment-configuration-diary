@@ -57,4 +57,4 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 
     - :warning: 可能出现错误 `fatal error: span: No such file or directory`
 
-        `span` 是一个 C++20 的标准头文件，可能是 gcc 的版本太低导致的
+        `span` 是一个 C++20 的标准头文件，可能是 gcc 的版本太低导致的，可以参考 [[1]](https://blog.csdn.net/qq_38308388/article/details/127574517) 进行安装

@@ -37,7 +37,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [siren](NeurField/siren/) - :penguin: [Ubuntu 20.04.6 LTS]
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
-- Other Projects
+- Other Libraries
   - [Gurobi](Other-Libraries/Gurobi/) - configuring...
 
  # Contributors
