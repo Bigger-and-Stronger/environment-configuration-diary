@@ -28,7 +28,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [LpCVT](Other-Projects/LpCVT/) - :apple: [macOS 15.3] :computer: [Windows 10]
   - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - Quadrilateral
-  - [libQEx](Other-Projects/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
+  - [libQEx](Quadrilateral/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
 
  # Contributors
 
