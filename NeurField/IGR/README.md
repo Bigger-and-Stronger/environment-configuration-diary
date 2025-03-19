@@ -18,7 +18,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 05/3/2025
 
 # :penguin: Ubuntu
 
-- 操作系统：Ubuntu 20.04.6
+- 操作系统：Ubuntu 20.04.6 LTS
 - 显卡：NVIDIA GeForce RTX 3090
 - CUDA Version：12.2
 

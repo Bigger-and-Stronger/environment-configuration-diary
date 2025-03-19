@@ -17,17 +17,17 @@ An environment configuration record concerning academic papers, third-party libr
   - [OpenFOAM](Computational-Fluid-Dynamics/OpenFOAM/) :apple: [macOS 15.3]
 - NeurField
   - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
-  - [IGR](NeurField/IGR/) - :penguin: [Ubuntu 20.04.6]
-  - [NeurCADRecon](NeurField/NeurCADRecon/) - :penguin: [Ubuntu 20.04.6]
-  - [siren](NeurField/siren/) - :penguin: [Ubuntu 20.04.6]
+  - [IGR](NeurField/IGR/) - :penguin: [Ubuntu 20.04.6 LTS]
+  - [NeurCADRecon](NeurField/NeurCADRecon/) - :penguin: [Ubuntu 20.04.6 LTS]
+  - [siren](NeurField/siren/) - :penguin: [Ubuntu 20.04.6 LTS]
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Libraries
-  - [OpenMesh](Other-Libraries/OpenMesh/) - :penguin: [Ubuntu 20.04.6]
+  - [OpenMesh](Other-Libraries/OpenMesh/) - :penguin: [Ubuntu 20.04.5 LTS]
 - Other Projects
-  - [libQEx](Other-Projects/libQEx/) - :penguin: [Ubuntu 20.04.6]
+  - [libQEx](Other-Projects/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
   - [LpCVT](Other-Projects/LpCVT/) - :apple: [macOS 15.3] :computer: [Windows 10]
-  - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6] :computer: [Windows 10]
+  - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
  # Contributors
 

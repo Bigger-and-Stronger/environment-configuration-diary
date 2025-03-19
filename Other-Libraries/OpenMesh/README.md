@@ -8,7 +8,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 
 # :penguin: Ubuntu
 
-- 操作系统：Ubuntu 20.04.6
+- 操作系统：Ubuntu 20.04.5 LTS
 - OpenMesh 版本：11.0（不同版本的各个文件目录可能略有不同，需进行确认）
 
 ## 配置步骤（源码编译）

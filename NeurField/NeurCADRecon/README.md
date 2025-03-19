@@ -32,7 +32,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 04/3/2025
 
 # :penguin: Ubuntu
 
-- 操作系统：Ubuntu 20.04.6
+- 操作系统：Ubuntu 20.04.6 LTS
 
 ## 预备步骤
 
