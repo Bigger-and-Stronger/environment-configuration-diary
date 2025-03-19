@@ -76,3 +76,19 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
     - :warning: 可能出现很多关于 **OpenMesh** 的错误
 
         安装的 **OpenMesh** 库不能是最新版本的，经测试，**OpenMesh 3.0** 是可以成功编译的
+
+# 测试
+
+1. 在 CLion（也可以是其他可以使用 SSH 连接的 IDE）使用 SSH 连接该项目，选择 Release 配置编译 **cmdline_tool**，编译成功后会在目录 “/libQEx/cmake-build-release/demo/cmdline_tool”（具体情况视 IDE 的配置而定） 下出现 **cmdline_tool** 文件，在终端中进入该路径：
+
+    ```
+    cd cmake-build-release/demo/cmdline_tool
+    ```
+
+2. 在项目中目录 “/libQEx/tests/meshes” 下有许多可供测试的模型，测试模型最好是包含 UV 坐标的 “.obj” 的三角网格文件，可以在终端中输入：
+
+    ```
+    ./cmdline_tool ../../../tests/meshes/armadillo_param.obj output.obj
+    ```
+
+    执行成功后，会在 **cmdline_tool** 文件目录下生成 **output.obj** 的四边形网格文件
