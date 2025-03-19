@@ -13,8 +13,8 @@ An environment configuration record concerning academic papers, third-party libr
   - [Geometric Tools Engine](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/Geometric%20Tools%20Engine)
   - [ParseNet & SED-Net](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/BRep%20Reconstruction/ParseNet%2BSED_Net)
 - Computational Fluid Dynamics (CFD)
-  - [CGNS](Computational-Fluid-Dynamics/CGNS/) :apple: [macOS 15.3]
-  - [OpenFOAM](Computational-Fluid-Dynamics/OpenFOAM/) :apple: [macOS 15.3]
+  - [CGNS](Computational-Fluid-Dynamics/CGNS/) - :apple: [macOS 15.3]
+  - [OpenFOAM](Computational-Fluid-Dynamics/OpenFOAM/) - :apple: [macOS 15.3]
 - NeurField
   - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
   - [IGR](NeurField/IGR/) - :penguin: [Ubuntu 20.04.6 LTS]
@@ -25,9 +25,10 @@ An environment configuration record concerning academic papers, third-party libr
 - Other Libraries
   - [OpenMesh](Other-Libraries/OpenMesh/) - :penguin: [Ubuntu 20.04.5 LTS]
 - Other Projects
-  - [libQEx](Other-Projects/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
   - [LpCVT](Other-Projects/LpCVT/) - :apple: [macOS 15.3] :computer: [Windows 10]
   - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- Quadrilateral
+  - [libQEx](Other-Projects/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
 
  # Contributors
 
