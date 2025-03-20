@@ -30,12 +30,12 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 
 # :penguin: Ubuntu
 
-- 操作系统：Ubuntu 20.04.5 LTS
-- SSH IDE：CLion 2024.3.4
+- 操作系统：Ubuntu 20.04.6 LTS
 
 ## 预备步骤
 
 - 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../../Other-Libraries/Gurobi/)
+- （可选）安装 CoMISo
 
 ## 配置步骤
 
@@ -50,3 +50,62 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
     ```
     cd quadwild
     ```
+
+2. 编辑 “quadwild/libs/” 目录下的 **libs.pri** 文件：
+
+    ```
+    vim libs/libs.pri
+    ```
+
+    并设置其中 **External libraries** 的库的目录，如我这里设置为（具体路径和版本依据实际情况而定）：
+
+    ```
+    #External libraries
+    BOOST_PATH          = /usr/include/boost/
+    GUROBI_PATH         = /home/huangcanjia/gurobi1201/linux64/
+    GUROBI_COMPILER     = gurobi_g++8.5
+    GUROBI_LIB          = gurobi120
+    ```
+
+    其中 `GUROBI_COMPILER` 和 `GUROBI_LIB` 的设置可以参考 “gurobi1201/linux64/lib/” 目录下的文件，如我在该目录下存在文件 “libgurobi_g++8.5.a” 和 “libgurobi120.so”，以此来确定我这里填写的参数
+
+    - （可选）如果希望不使用 CoMISo，则可以注释掉该文件开头 **CONFIGURATION** 中的 `DEFINES += COMISO_FIELD`:
+
+        ```
+        #DEFINES += COMISO_FIELD
+        ```
+
+3. 新建 "build" 文件夹并进入：
+
+    ```
+    mkdir build
+    cd build
+    ```
+
+4. 使用 **qmake** 进行配置，在终端中输入：
+
+    ```
+    qmake ../quadwild/quadwild.pro
+    ```
+
+    配置成功后会在当前目录下生成 Makefile 文件
+
+5. 编译，在终端中输入：
+
+    ```
+    make -j8
+    ```
+
+    编译成功后会在该目录下生成可执行文件 “quadwild”
+
+## 测试
+
+1. 将测试模型放置在该文件夹内，如我这里使用的测试模型是 [jaw.obj](../QuadWild-Bi-MDF-solver/jaw.obj)
+
+2. 在终端执行（具体模型名称根据实际情况而定）：
+
+    ```
+    ./quadwild jaw.obj
+    ```
+
+3. 运行结束后会在该目录下生成许多过程文件，其中 “jaw_quadrangulation.obj” 和 “jaw_quadrangulation_smooth.obj” （具体名称根据实际情况而定）为最终结果

@@ -28,8 +28,8 @@ An environment configuration record concerning academic papers, third-party libr
   - Quadrilateral
     - [libQEx](Quadrilateral/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
     - [QuadMixer](Quadrilateral/QuadMixer/) - configuring...
-    - [QuadWild](Quadrilateral/QuadWild/) - configuring...
-    - [QuadWild with Bi-MDF solver](Quadrilateral/QuadWild-Bi-MDF-solver/) - configuring...
+    - [QuadWild](Quadrilateral/QuadWild/) - :penguin: [Ubuntu 20.04.6 LTS]
+    - [QuadWild with Bi-MDF solver](Quadrilateral/QuadWild-Bi-MDF-solver/) - :penguin: [Ubuntu 20.04.5 LTS]
 - NeurField
   - [1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6)
   - [IGR](NeurField/IGR/) - :penguin: [Ubuntu 20.04.6 LTS]
@@ -38,7 +38,7 @@ An environment configuration record concerning academic papers, third-party libr
 - Open CASCADE Technology
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Libraries
-  - [Gurobi](Other-Libraries/Gurobi/) - configuring...
+  - [Gurobi](Other-Libraries/Gurobi/) - :penguin: [Ubuntu 20.04.6 LTS]
 
  # Contributors
 
