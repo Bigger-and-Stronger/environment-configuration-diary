@@ -30,7 +30,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 20/3/2025
 
 :star: 该项目有发布预先编译好的可执行文件，可直接在 [quadwild-bimdf/releases](https://github.com/cgg-bern/quadwild-bimdf/releases) 下载使用，不需要进行以下配置步骤
 
-但使用该可执行文件似乎需要 root 权限 :open_mouth:，没有权限的话可能还是得进行编译
+但使用该可执行文件似乎需要 root 权限 :open_mouth:，没有权限的话可能还是得自己进行编译
 
 ---
 
@@ -82,17 +82,11 @@ Canjia Huang <<canjia7@gmail.com>> last update 20/3/2025
 
 这里参考的是 [quadwild-bimdf/READMD](https://github.com/cgg-bern/quadwild-bimdf/blob/main/README.md)
 
-1. 编译完成后得到的可执行文件位于 “quadwild-bimdf/build/Build/bin/”，进入该目录：
-
-    ```
-    cd xxx/quadwild-bimdf/build/Build/bin/
-    ```
-
-2. 将测试模型放置在该目录下，例如本文档目录下的 [jaw.obj](jaw.obj)
+1. 编译完成后得到的可执行文件位于 “quadwild-bimdf/build/Build/bin/”，本测试中将测试模型放置在该目录下（也可放置于其他位置），例如本文档目录下的 [jaw.obj](jaw.obj)
    
-3. :bangbang: 然后需要回到 “quadwild” 根目录下（即需要 “config” 文件夹在该当前目录下），再执行后续的操作指令，不然后续操作中可能会找不到一些配置文件！（源于该方法中查找路径代码的缺陷）
+2. :bangbang: 此时需要回到 “quadwild” 根目录下（即需要 “config” 文件夹在该当前目录下），再执行后续的操作指令，不然后续操作中可能会找不到一些配置文件！（因为该项目中查找路径的代码有缺陷）
 
-4. 执行（具体输入模型的路径和名称根据实际情况而定）：
+3. 执行（具体输入模型的路径和名称根据实际情况而定）：
 
     ```
     ./build/Build/bin/quadwild build/Build/bin/jaw.obj 2 config/prep_config/basic_setup.txt
@@ -100,12 +94,12 @@ Canjia Huang <<canjia7@gmail.com>> last update 20/3/2025
 
     执行完毕后，会生成一些过程结果
 
-5. 再执行（具体输入过程模型的路径和名称根据实际情况而定）：
+4. 再执行（具体输入过程模型的路径和名称根据实际情况而定）：
 
     ```
     ./build/Build/bin/quad_from_patches build/Build/bin/jaw_rem_p0.obj 123 config/main_config/flow_noalign_lemon.txt
     ```
 
-6. 执行结束后会生成许多结果文件，其中 “jaw_rem_p0_123_quadrangulation.obj” 和 “jaw_rem_p0_123_quadrangulation_smooth.obj” （具体文件名称根据实际情况而定） 为最终结果
+5. 执行结束后会生成许多结果文件，其中 “jaw_rem_p0_123_quadrangulation.obj” 和 “jaw_rem_p0_123_quadrangulation_smooth.obj” （具体文件名称根据实际情况而定） 为最终结果
 
 [1]: https://blog.csdn.net/qq_38308388/article/details/127574517

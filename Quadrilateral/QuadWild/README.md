@@ -35,7 +35,6 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 ## 预备步骤
 
 - 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../../Other-Libraries/Gurobi/)
-- （可选）安装 CoMISo
 
 ## 配置步骤
 
@@ -69,7 +68,35 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
 
     其中 `GUROBI_COMPILER` 和 `GUROBI_LIB` 的设置可以参考 “gurobi1201/linux64/lib/” 目录下的文件，如我在该目录下存在文件 “libgurobi_g++8.5.a” 和 “libgurobi120.so”，以此来确定我这里填写的参数
 
-    - （可选）如果希望不使用 CoMISo，则可以注释掉该文件开头 **CONFIGURATION** 中的 `DEFINES += COMISO_FIELD`:
+    - （可选）如果希望使用 CoMISo（作者推荐），需要进行安装：
+
+        1. 安装 **blas** 库，如果有 root 权限，可以按照 [quadwild/README-build](https://github.com/nicopietroni/quadwild?tab=readme-ov-file#build) 中执行：
+
+            ```
+            apt install libblas-dev
+            ```
+
+            如果没有 root 权限，可以参考 [lapack, blas, cblas, lapacke 库配置记录](../../Other-Libraries/LAPACK/) 进行安装
+
+        2. 执行以下命令：
+
+            ```
+            cd libs/CoMISo
+            mkdir build
+            cd build
+            cmake ..
+            make
+            ```
+        
+        3. 返回根目录：
+
+            ```
+            cd ../../../
+            ```
+        
+        4. 最后该项目生成的可执行文件需要链接 `libCoMISo.so` 文件，经过编译后该文件位于 “xxx/quadwild/libs/CoMISo/build/Build/lib/CoMISo/”（具体路径依据实际情况而定）
+
+        :bangbang: 如果希望不使用 CoMISo，则需要注释掉该文件开头 **CONFIGURATION** 中的 `DEFINES += COMISO_FIELD`:
 
         ```
         #DEFINES += COMISO_FIELD
@@ -97,6 +124,12 @@ Canjia Huang <<canjia7@gmail.com>> last update 19/3/2025
     ```
 
     编译成功后会在该目录下生成可执行文件 “quadwild”
+
+6. （可选）如果先前配置时选择使用 **CoMISo** 库，则还需要将链接库 “xxx/quadwild/libs/CoMISo/build/Build/lib/CoMISo/libCoMISo.so” 复制到该文件夹中（具体路径依据实际情况而定），执行：
+
+    ```
+    cp ../libs/CoMISo/build/Build/lib/CoMISo/libCoMISo.so .
+    ```
 
 ## 测试
 

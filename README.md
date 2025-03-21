@@ -17,9 +17,9 @@ An environment configuration record concerning academic papers, third-party libr
   - [OpenFOAM](Computational-Fluid-Dynamics/OpenFOAM/) - :apple: [macOS 15.3]
 - Mesh
   - Hexahedral
-    - [QGP3D](Hexahedral/QGP3D/) - configuring...
+    - [QGP3D](Hexahedral/QGP3D/) - :no_entry_sign: [configuring...]
   - High-order Meshing
-    - [HOMQMesh](High-Order-Meshing/HOHQMesh/) - configuring...
+    - [HOMQMesh](High-Order-Meshing/HOHQMesh/) - :penguin: [Ubuntu 20.04.5 LTS]
   - Other Libraries
     - [OpenMesh](Other-Libraries/OpenMesh/) - :penguin: [Ubuntu 20.04.5 LTS]
   - Other Projects
@@ -27,7 +27,7 @@ An environment configuration record concerning academic papers, third-party libr
     - [PCO](Other-Projects/PCO/) - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
   - Quadrilateral
     - [libQEx](Quadrilateral/libQEx/) - :penguin: [Ubuntu 20.04.5 LTS]
-    - [QuadMixer](Quadrilateral/QuadMixer/) - configuring...
+    - [QuadMixer](Quadrilateral/QuadMixer/) - :no_entry_sign: [configuring...]
     - [QuadWild](Quadrilateral/QuadWild/) - :penguin: [Ubuntu 20.04.6 LTS]
     - [QuadWild with Bi-MDF solver](Quadrilateral/QuadWild-Bi-MDF-solver/) - :penguin: [Ubuntu 20.04.5 LTS]
 - NeurField
@@ -39,6 +39,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [OCCT-Windows-10(11)](https://github.com/Bigger-and-Stronger/environment-configuration-diary/tree/main/Open%20CASCADE%20Technology/OCCT-Windows-10(11))
 - Other Libraries
   - [Gurobi](Other-Libraries/Gurobi/) - :penguin: [Ubuntu 20.04.6 LTS]
+  - [lapack, blas, cblas, lapacke](Other-Libraries/LAPACK/) - :penguin: [Ubuntu 20.04.6 LTS]
 
  # Contributors
 
