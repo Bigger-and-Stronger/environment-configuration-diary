@@ -1,4 +1,4 @@
-# QuadWild 项目配置记录
+# QuadMixer 项目配置记录
 
 本文档为配置文章 **"QuadMixer: Layout Preserving Blending of Quadrilateral Meshes"** 的代码的记录 [[Paper]](https://dl.acm.org/doi/10.1145/3355089.3356542) [[Code]](https://github.com/stefanonuvoli/quadmixer)
 
@@ -23,3 +23,24 @@
     keywords = {mesh modelling, retopology, quadrangulation}
 }
 ```
+
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
+
+# :penguin: Ubuntu
+
+- 操作系统：Ubuntu 20.04.5 LTS
+
+## 预备步骤
+
+- 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../../Other-Libraries/Gurobi/)
+- 该项目还依赖于 eigen, boost, cgal 库
+
+## 配置步骤
+
+1. 将项目下载到本地：
+
+    ```
+    git clone --recursive https://github.com/stefanonuvoli/quadmixer
+    ```
