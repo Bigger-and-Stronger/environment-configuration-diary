@@ -22,13 +22,14 @@ An environment configuration record concerning academic papers, third-party libr
     - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - Quadrilateral
     - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
+    - [Instant Meshes] - :apple: [macOS 15.3.1]
     - [QuadMixer] - :no_entry_sign: [configuring...]
     - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
     - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
   - Other Libraries
     - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - Other Projects
-    - [LpCVT] - :apple: [macOS 15.3] :computer: [Windows 10]
+    - [LpCVT] - :apple: [macOS 15.3.1] :computer: [Windows 10]
     - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - NeurField
   - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -40,6 +41,9 @@ An environment configuration record concerning academic papers, third-party libr
 - Other Libraries
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [TBB] - :no_entry_sign: [configuring...]
+- Other Projects
+  - [Instant Meshes] - :apple: [macOS 15.3.1]
 
  # Contributors
 
@@ -47,24 +51,26 @@ An environment configuration record concerning academic papers, third-party libr
   <img src="https://contributors-img.web.app/image?repo=Bigger-and-Stronger/environment-configuration-diary"/>
 </a>
 
-[1-Lipschitz Neural Distance Fields]: NeurField/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
+[1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
 [BRep Reconstruction]: BRep-Reconstruction/
-[CGNS]: Computational-Fluid-Dynamics/CGNS/
+[CGNS]:CGNS/
 [Geometric Tools Engine]: BRep-Reconstruction/Geometric-Tools-Engine/
-[Gurobi]: Other-Libraries/Gurobi/
-[HOMQMesh]: High-Order-Meshing/HOHQMesh/
-[IGR]: NeurField/IGR/
-[lapack, blas, cblas, lapacke]: Other-Libraries/LAPACK/
-[libQEx]: Quadrilateral/libQEx/
-[LpCVT]: Other-Projects/LpCVT/
-[NeurCADRecon]: NeurField/NeurCADRecon/
-[OCCT]: Open-CASCADE-Technology/OCCT-Windows-10(11)/
-[OpenFOAM]: Computational-Fluid-Dynamics/OpenFOAM/
-[OpenMesh]: Other-Libraries/OpenMesh/
+[Gurobi]: Gurobi/
+[HOMQMesh]: HOHQMesh/
+[IGR]: IGR/
+[Instant Meshes]: Instant-Meshes/
+[lapack, blas, cblas, lapacke]: LAPACK/
+[libQEx]: libQEx/
+[LpCVT]: LpCVT/
+[NeurCADRecon]: NeurCADRecon/
+[OCCT]: OCCT/
+[OpenFOAM]: OpenFOAM/
+[OpenMesh]: OpenMesh/
 [ParseNet & SED-Net]: BRep-Reconstruction/ParseNet+SED_Net/
-[PCO]: Other-Projects/PCO/
-[QGP3D]: Hexahedral/QGP3D/
-[QuadMixer]: Quadrilateral/QuadMixer/
-[QuadWild]: Quadrilateral/QuadWild/
-[QuadWild with Bi-MDF solver]: Quadrilateral/QuadWild-Bi-MDF-solver/
-[siren]: NeurField/siren/
+[PCO]: PCO/
+[QGP3D]: QGP3D/
+[QuadMixer]: QuadMixer/
+[QuadWild]: QuadWild/
+[QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/
+[siren]: siren/
+[TBB]: TBB/

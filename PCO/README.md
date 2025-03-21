@@ -35,7 +35,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 
 ## 配置步骤
 
-1. 于服务器中，按照 [Alan-Leo-Wong/PCO/README.md](https://github.com/Alan-Leo-Wong/PCO/blob/master/README.md)中步骤，执行：
+1. 于服务器中，按照 [Alan-Leo-Wong/PCO/README.md](https://github.com/Alan-Leo-Wong/PCO/blob/master/README.md) 中步骤，执行：
 
     ```
     git clone --recursive https://github.com/alan-leo-wong/PCO.git

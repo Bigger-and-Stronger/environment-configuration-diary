@@ -169,7 +169,7 @@ conda env create -f environment_siren.yml
 
 ### SDF Experiments
 
-1. 首先需要有一个带法向信息的 `.xyz` 格式的点云测试数据，本文档目录下有一个测试点云文件 [test_pts.xyz](NeurField/SIREN-Ubuntu20.04.6/test_pts.xyz)（来自 [Xrvitd/RFEPS](https://github.com/Xrvitd/RFEPS) ），先下载至某位置，我这里下载的位置为 “siren/test_pts.xyz”
+1. 首先需要有一个带法向信息的 `.xyz` 格式的点云测试数据，本文档目录下有一个测试点云文件 [test_pts.xyz](test_pts.xyz)（来自 [Xrvitd/RFEPS](https://github.com/Xrvitd/RFEPS) ），先下载至某位置，我这里下载的位置为 “siren/test_pts.xyz”
 
 2. 参考 [vsitzmann/siren/README.md-sdf-experiments](https://github.com/vsitzmann/siren#sdf-experiments) （原指令有误，需要进行改正如下）中执行：
 
@@ -224,7 +224,7 @@ conda env create -f environment_siren.yml
 
     - :warning: 可能出现错误 `ModuleNotFoundError: No module named 'plyfile'`
 
-        需要安装 **plyfile** 库，参考 https://anaconda.org/conda-forge/plyfile，在激活的 conda 环境的终端中执行：
+        需要安装 **plyfile** 库，参考 [conda-forge/plyfile](https://anaconda.org/conda-forge/plyfile)，在激活的 conda 环境的终端中执行：
 
         ```
         conda install conda-forge::plyfile

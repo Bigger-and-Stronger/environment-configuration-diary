@@ -68,13 +68,13 @@ OpenFOAM 可以通过 paraFoam 脚本来启动可视化软件 [paraview](https:/
 
 ![image1](.pic/image1.png)
 
-接下来可以通过具体案例测试一下，可以参考[官网相关文档-Examples](https://doc.openfoam.com/2312/examples/)
+接下来可以通过具体案例测试一下，可以参考 [官网相关文档-Examples](https://doc.openfoam.com/2312/examples/)
 
 打开 **OpenFOAM-v2412.app** 后会挂载一个磁盘 **OpenFOAM-v2412**，该磁盘中 tutorials 目录下存放有一些测试案例
 
 这里测试 /Volumes/OpenFOAM-v2412/tutorials/incompressible/pisoFoam/RAS/cavity 下的例子
 
- - OpenFOAM是将<u>要进行求解的问题</u>以及<u>求解器的参数</u>都存储在文件夹中的各个文件中，具体可以参考[官网相关文档-Quickstart](https://doc.openfoam.com/2312/quickstart/)，这里简要列出该案例的文件结构：
+ - OpenFOAM是将<u>要进行求解的问题</u>以及<u>求解器的参数</u>都存储在文件夹中的各个文件中，具体可以参考 [官网相关文档-Quickstart](https://doc.openfoam.com/2312/quickstart/)，这里简要列出该案例的文件结构：
     ```
     cavity
         - 0.orig/ （包含在0时刻的初始/边界条件）

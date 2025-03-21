@@ -15,7 +15,6 @@
     issn = {0730-0301},
     url = {https://doi.org/10.1145/3450626.3459941},
     doi = {10.1145/3450626.3459941},
-    abstract = {We present a new algorithm for the semi-regular quadrangulation of an input surface, driven by its line features, such as sharp creases. We define a perfectly feature-aligned cross-field and a coarse layout of polygonal-shaped patches where we strictly ensure that all the feature-lines are represented as patch boundaries. To be able to consistently do so, we allow non-quadrilateral patches and T-junctions in the layout; the key is the ability to constrain the layout so that it still admits a globally consistent, T-junction-free, and pure-quad internal tessellation of its patches. This requires the insertion of additional irregular-vertices inside patches, but the regularity of the final-mesh is safeguarded by optimizing for both their number and for their reciprocal alignment. In total, our method guarantees the reproduction of feature-lines by construction, while still producing good quality, isometric, pure-quad, conforming meshes, making it an ideal candidate for CAD models. Moreover, the method is fully automatic, requiring no user intervention, and remarkably reliable, requiring little assumptions on the input mesh, as we demonstrate by batch processing the entire Thingi10K repository, with less than 0.5% of the attempted cases failing to produce a usable mesh.},
     journal = {ACM Trans. Graph.},
     month = {jul},
     articleno = {155},
@@ -34,7 +33,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
 
 ## 预备步骤
 
-- 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../../Other-Libraries/Gurobi/)
+- 该项目依赖于 Gurobi 库，安装步骤可参考 [Gurobi 库配置记录](../Gurobi/)
 
 ## 配置步骤
 
@@ -66,7 +65,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
     GUROBI_LIB          = gurobi120
     ```
 
-    其中 `GUROBI_COMPILER` 和 `GUROBI_LIB` 的设置可以参考 “gurobi1201/linux64/lib/” 目录下的文件，如我在该目录下存在文件 “libgurobi_g++8.5.a” 和 “libgurobi120.so”，以此来确定我这里填写的参数
+    其中 `GUROBI_COMPILER` 和 `GUROBI_LIB` 的设置可以参考 **Gurobi** 库的安装目录 “gurobi1201/linux64/lib/” 下的文件，如我在该目录下存在文件 `libgurobi_g++8.5.a` 和 `libgurobi120.so`，以此来确定我这里填写的参数
 
     - （可选）如果希望使用 CoMISo（作者推荐），需要进行安装：
 
@@ -76,7 +75,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
             apt install libblas-dev
             ```
 
-            如果没有 root 权限，可以参考 [lapack, blas, cblas, lapacke 库配置记录](../../Other-Libraries/LAPACK/) 进行安装
+            如果没有 root 权限，可以参考 [lapack, blas, cblas, lapacke 库配置记录](../LAPACK/) 进行安装
 
         2. 执行以下命令：
 
@@ -102,14 +101,14 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
         #DEFINES += COMISO_FIELD
         ```
 
-3. 新建 "build" 文件夹并进入：
+1. 新建 "build" 文件夹并进入：
 
     ```
     mkdir build
     cd build
     ```
 
-4. 使用 **qmake** 进行配置，在终端中输入：
+2. 使用 **qmake** 进行配置，在终端中输入：
 
     ```
     qmake ../quadwild/quadwild.pro
@@ -117,7 +116,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
 
     配置成功后会在当前目录下生成 Makefile 文件
 
-5. 编译，在终端中输入：
+3. 编译，在终端中输入：
 
     ```
     make -j8
@@ -125,7 +124,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
 
     编译成功后会在该目录下生成可执行文件 “quadwild”
 
-6. （可选）如果先前配置时选择使用 **CoMISo** 库，则还需要将链接库 “xxx/quadwild/libs/CoMISo/build/Build/lib/CoMISo/libCoMISo.so” 复制到该文件夹中（具体路径依据实际情况而定），执行：
+4. （可选）如果先前配置时选择使用 **CoMISo** 库，则还需要将链接库 “xxx/quadwild/libs/CoMISo/build/Build/lib/CoMISo/libCoMISo.so” 复制到该文件夹中（具体路径依据实际情况而定），执行：
 
     ```
     cp ../libs/CoMISo/build/Build/lib/CoMISo/libCoMISo.so .
