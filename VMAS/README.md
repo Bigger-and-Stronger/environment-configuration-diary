@@ -42,4 +42,4 @@ Glfw3在Windows 11中可以用[vcpkg](https://github.com/microsoft/vcpkg)直接�
 
 此时会出现UI界面，会可视化中轴球的迭代过程，非常炫酷 :heart_eyes:！
 
-但似乎在打开某些off文件时会卡死:dizzy_face:。
+但似乎在打开某些off文件时会卡死 :dizzy_face:。
