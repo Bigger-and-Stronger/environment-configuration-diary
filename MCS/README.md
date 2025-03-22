@@ -2,25 +2,26 @@
 Shi Chen 
 22/03/2025 12:16
 
-本文配置以下论文的代码环境。
+本文涉及的论文如下：
 - Andrea Tagliasacchi, Ibraheem Alhashim, Matt Olson, Hao Zhang. *"Mean Curvature Skeletons"*. 
   - SGP 2012 
   - [[Paper](https://projet.liris.cnrs.fr/imagine/pub/proceedings/SGP-2012/pdf/v31i5pp1735-1744.pdf)][[Code](https://github.com/taiya/starlab-mcfskel)][[CGAL Document](https://doc.cgal.org/latest/Surface_mesh_skeletonization/index.html)]
 
-该论文是骨架抽取的经典工作 :star2:。
+该论文是骨架抽取的经典工作 :star2:。由于作者提供的可执行文件非常用户友好，且代码已集成到[CGAL](https://www.cgal.org/)。我们不再配置原始代码环境，而是介绍这两种使用方式。
+
 ## 可执行文件
 [代码仓库](https://github.com/taiya/starlab-mcfskel) 中有可执行文件 :dizzy:，可直接下载。
 
 启动`starlab.exe`后，导入网格。
 
-先生成中轴点：
+先生成中轴点:
 Filters - Voronoi based MAT - Apply
 
 骨架化:
 Filters - MCF Skeletonization - Apply
 
 ## CGAL代码示例
-目前已集成到[CGAL](https://www.cgal.org/)中 :sparkles:，这里介绍在CGAL中的使用方式。
+目前已集成到CGAL中 :sparkles:，这里介绍在CGAL中的使用方式。
 
 CGAL在Windows 11中的配置教程很多，这里不多介绍，一种比较便捷的方式是用[vcpkg](https://github.com/microsoft/vcpkg)直接安装。
 
