@@ -25,7 +25,7 @@ Filters - MCF Skeletonization - Apply
 
 CGAL在Windows 11中的配置教程很多，这里不多介绍，一种比较便捷的方式是用[vcpkg](https://github.com/microsoft/vcpkg)直接安装。
 
-以下是一个实例，对将`inputObj`中读取的网格骨架化，导出到`outpuObj`。
+以下是一个实例，将`inputObj`中读取的网格骨架化，导出到`outpuObj`。
 ```cpp
 #include <iostream>
 #include <fstream>
