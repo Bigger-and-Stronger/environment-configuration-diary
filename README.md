@@ -47,6 +47,8 @@ An environment configuration record concerning academic papers, third-party libr
   - [TBB] - :no_entry_sign: [configuring...]
 - Other Projects
   - [Instant Meshes] - :apple: [macOS 15.3.1]
+- 远程服务器代理设置
+  - [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
 
  # Contributors
 
@@ -78,3 +80,4 @@ An environment configuration record concerning academic papers, third-party libr
 [siren]: siren/
 [TBB]: TBB/
 [VMAS]: VMAS/
+[proxyForTheServer]: proxyForTheServer/
