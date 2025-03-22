@@ -1,45 +1,99 @@
-# VMAS Windows11 环境配置
+# MCS Windows11 环境配置
 Shi Chen 
-18/03/2025 20:29
+22/03/2025 12:16
 
 本文配置以下论文的代码环境。
-- Qijia Huang, Pierre Kraemer, Sylvain Thery, Dominique Bechmann. *"Dynamic Skeletonization Via Variational Medial Axis Sampling"*. 
-  - SIGGRAPH Asia 2024 Conference Proceedings
-  - [[Paper](https://huang46u.github.io/VMAS/static/pdfs/Dynamic_Skeletonization_via_Variational_Medial_Axis_Sampling.pdf)][[Project Page](https://huang46u.github.io/VMAS/)][[Code](https://github.com/huang46u/VMAS-code)]
-  
-:sunny: 该工作是讨论如何生成简化的中轴(或线面骨架)。
-## 依赖
-- Eigen
-- Glfw3
+- Andrea Tagliasacchi, Ibraheem Alhashim, Matt Olson, Hao Zhang. *"Mean Curvature Skeletons"*. 
+  - SGP 2012 
+  - [[Paper](https://projet.liris.cnrs.fr/imagine/pub/proceedings/SGP-2012/pdf/v31i5pp1735-1744.pdf)][[Code](https://github.com/taiya/starlab-mcfskel)][[CGAL Document](https://doc.cgal.org/latest/Surface_mesh_skeletonization/index.html)]
 
-Glfw3在Windows 11中可以用[vcpkg](https://github.com/microsoft/vcpkg)直接安装。这个项目还需要[CGOGN_3](https://github.com/cgogn/CGoGN_3)，但是作者已经将其需要的文件直接包含在仓库中。
+该论文是骨架抽取的经典工作:star2:。
+## 可执行文件
+[代码仓库](https://github.com/taiya/starlab-mcfskel) 中有可执行文件:dizzy:，可直接下载。
 
-## 配置
-1. 克隆仓库:
-   ```sh
-   git clone git@github.com:huang46u/VMAS-code.git
-   cd VMAS-code
-   ```
+启动`starlab.exe`后，导入网格。
 
-2. CMake
-   ```sh
-   mkdir build
-   cd build
-   cmake ..
-   ```
+先生成中轴点：
+Filters - Voronoi based MAT - Apply
 
-3. 生成
+骨架化:
+Filters - MCF Skeletonization - Apply
 
-   打开Visual Studio，Release下右键vmas项目点击生成。
+## CGAL代码示例
+目前已集成到[CGAL](https://www.cgal.org/)中:sparkles:，这里介绍在CGAL中的使用方式。
 
-## 运行
-在`data`中放置测试网格的`off`文件。
+CGAL在Windows 11中的配置教程很多，这里不多介绍，一种比较便捷的方式是用[vcpkg](https://github.com/microsoft/vcpkg)直接安装。
 
-在`build`中运行代码，例如：
-   ```sh
-   ./stage/bin/Release/vmas.exe ../data/chair.off
-   ```
+以下是一个实例，对将`inputObj`中读取的网格骨架化，导出到`outpuObj`。
+```cpp
+#include <iostream>
+#include <fstream>
+#include <filesystem>
 
-此时会出现UI界面，会可视化中轴球的迭代过程，非常炫酷 :heart_eyes:！
+#include <map>
+#include <vector>
+#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+#include <CGAL/Surface_mesh.h>
+#include <CGAL/Mean_curvature_flow_skeletonization.h>
+#include <Eigen/Core>
+#include <boost/graph/graph_traits.hpp>  
 
-但似乎在打开某些off文件时会卡死。
+typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel;
+typedef Kernel::Point_3 Point;
+typedef CGAL::Surface_mesh<Point> SurfaceMesh;
+typedef CGAL::Mean_curvature_flow_skeletonization<SurfaceMesh> Skeletonization;
+typedef Skeletonization::Skeleton Skeleton;
+typedef boost::graph_traits<Skeleton>::vertex_descriptor SkeletonVertex;
+typedef boost::graph_traits<Skeleton>::edge_descriptor SkeletonEdge;
+
+void readMeshObjAndWriteSkeletonObj(const std::string& inputObj, const std::string& outputObj) 
+{
+    // 读取 OBJ 文件
+    SurfaceMesh mesh;
+    if (!CGAL::IO::read_OBJ(inputObj, mesh) || mesh.is_empty()) {
+        throw std::runtime_error("Failed to read OBJ file or the file is empty.");
+    }
+
+    // 执行骨架化
+    Skeleton skeleton;
+    Skeletonization skeletonizer(mesh);
+    skeletonizer.contract_until_convergence();
+    skeletonizer.convert_to_skeleton(skeleton);
+
+    // 映射骨架顶点到索引
+    std::map<SkeletonVertex, int> vertexIndex;
+    std::vector<Eigen::Vector3d> nodes;
+    std::vector<std::pair<int, int>> edges;
+    int index = 0;
+
+    // 遍历骨架顶点
+    for (auto v : boost::make_iterator_range(boost::vertices(skeleton))) {
+        Point p = skeleton[v].point;
+        nodes.emplace_back(p.x(), p.y(), p.z());
+        vertexIndex[v] = index++;
+    }
+
+    // 遍历骨架边
+    for (auto e : boost::make_iterator_range(boost::edges(skeleton))) {
+        SkeletonVertex src = source(e, skeleton);
+        SkeletonVertex tgt = target(e, skeleton);
+        edges.emplace_back(vertexIndex[src], vertexIndex[tgt]);
+    }
+
+    // 写入骨架到 OBJ 文件
+    std::ofstream outFile(outputObj);
+    if (!outFile.is_open()) {
+        throw std::runtime_error("Failed to open output OBJ file: " + outputObj);
+    }
+    
+    for (const auto& node : nodes) {
+        outFile << "v " << node.x() << " " << node.y() << " " << node.z() << "\n";
+    }
+
+    for (const auto& edge : edges) {
+        outFile << "l " << edge.first + 1 << " " << edge.second + 1 << "\n"; // OBJ 索引从 1 开始
+    }
+
+    outFile.close();
+    std::cout << "Skeleton written to " << outputObj << " successfully!" << std::endl;
+}
