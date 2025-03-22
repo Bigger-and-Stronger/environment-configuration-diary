@@ -9,12 +9,15 @@ An environment configuration record concerning academic papers, third-party libr
 @做大做强小组
 
 # Content
-- [BRep Reconstruction]
-  - [Geometric Tools Engine]
-  - [ParseNet & SED-Net]
+- BRep Reconstruction
+  - [Geometric Tools Engine] - :computer: [Windows 10/11]
+  - [ParseNet & SED-Net] - :computer: [Windows 10/11]
 - Computational Fluid Dynamics (CFD)
   - [CGNS] - :apple: [macOS 15.3]
   - [OpenFOAM] - :apple: [macOS 15.3]
+- Medial Axis
+  - [MCS] - :computer: [Windows 10/11]
+  - [VMAS] - :computer: [Windows 10/11]
 - Mesh
   - Hexahedral
     - [QGP3D] - :no_entry_sign: [configuring...]
@@ -52,9 +55,8 @@ An environment configuration record concerning academic papers, third-party libr
 </a>
 
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
-[BRep Reconstruction]: BRep-Reconstruction/
 [CGNS]:CGNS/
-[Geometric Tools Engine]: BRep-Reconstruction/Geometric-Tools-Engine/
+[Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/
 [IGR]: IGR/
@@ -62,11 +64,12 @@ An environment configuration record concerning academic papers, third-party libr
 [lapack, blas, cblas, lapacke]: LAPACK/
 [libQEx]: libQEx/
 [LpCVT]: LpCVT/
+[MCS]: MCS/
 [NeurCADRecon]: NeurCADRecon/
 [OCCT]: OCCT/
 [OpenFOAM]: OpenFOAM/
 [OpenMesh]: OpenMesh/
-[ParseNet & SED-Net]: BRep-Reconstruction/ParseNet+SED_Net/
+[ParseNet & SED-Net]: ParseNet+SED_Net/
 [PCO]: PCO/
 [QGP3D]: QGP3D/
 [QuadMixer]: QuadMixer/
@@ -74,3 +77,4 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/
 [siren]: siren/
 [TBB]: TBB/
+[VMAS]: VMAS/
