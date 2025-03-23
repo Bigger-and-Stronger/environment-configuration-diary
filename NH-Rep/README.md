@@ -16,7 +16,7 @@
 
 :warning: 使用docker安装可能需要自己解决一系列bug。
 
-安装时可能遇到的问题请参看**文档末尾**。
+:warning: 安装时可能遇到的问题请参看**文档末尾**。
 
 需要提前安装：
 - conda (用于管理不同项目的环境)
@@ -72,7 +72,7 @@ ResolvePackageNotFound:
 ### Iso-Surfacing 配置
 这是这篇文章用到的保尖锐等值面提取工作。以下仅给出我个人的安装流程，具体安装、使用可以参考：[代码仓库](https://github.com/xueyuhanlang/IsoSurfacing)
 
-安装时可能遇到的问题请参看**文档末尾**。
+:warning: 安装时可能遇到的问题请参看**文档末尾**。
 
 首先把 IsoSurfacing 仓库克隆到 `NH-Rep/code/IsoSurfacing` 文件夹下
 
