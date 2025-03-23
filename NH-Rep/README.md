@@ -13,7 +13,9 @@
 
 
 我这里使用conda安装，使用docker安装请参考：[代码仓库](https://github.com/guohaoxiang/NH-Rep)
+
 :warning: 使用docker安装可能需要自己解决一系列bug。
+
 安装时可能遇到的问题请参看**文档末尾**。
 
 需要提前安装：
