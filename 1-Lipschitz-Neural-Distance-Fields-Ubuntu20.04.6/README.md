@@ -9,7 +9,7 @@
 
 ### 配置
 
-这是一篇有关配置文章 "**1-Lipschitz Neural Distance Fields**" 的记录。[文章主页](https://gcoiffier.github.io/publications/onelipsdf/) | [代码仓库](https://github.com/GCoiffier/1-Lipschitz-Neural-Distance-Fields)
+这是一篇有关配置文章 "*1-Lipschitz Neural Distance Fields*" 的记录。[文章主页](https://gcoiffier.github.io/publications/onelipsdf/) | [代码仓库](https://github.com/GCoiffier/1-Lipschitz-Neural-Distance-Fields)
 
 尽管文章作者给出了依赖库列表，但作者没有说明代码使用的 python 版本。考虑到代码中使用了 python 3.10 引入的 `match` 语句，所以 python 版本要大于等于3.10，我这里选择 python 3.12。
 
