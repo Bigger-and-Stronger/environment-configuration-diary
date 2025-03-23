@@ -38,6 +38,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
   - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [NH-Rep] - :penguin: [Ubuntu 20.04.6 LTS]
   - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 - Open CASCADE Technology
   - [OCCT] - :computer: [Windows 10/11]
@@ -68,6 +69,7 @@ An environment configuration record concerning academic papers, third-party libr
 [LpCVT]: LpCVT/
 [MCS]: MCS/
 [NeurCADRecon]: NeurCADRecon/
+[NH-Rep]: NH-Rep/
 [OCCT]: OCCT/
 [OpenFOAM]: OpenFOAM/
 [OpenMesh]: OpenMesh/
