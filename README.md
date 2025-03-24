@@ -15,25 +15,13 @@ An environment configuration record concerning academic papers, third-party libr
 - Computational Fluid Dynamics (CFD)
   - [CGNS] - :apple: [macOS 15.3]
   - [OpenFOAM] - :apple: [macOS 15.3]
+- Hexahedral
+  - [QGP3D] - :no_entry_sign: [configuring...]
+- High-order Meshing
+  - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
 - Medial Axis
   - [MCS] - :computer: [Windows 10/11]
   - [VMAS] - :computer: [Windows 10/11]
-- Mesh
-  - Hexahedral
-    - [QGP3D] - :no_entry_sign: [configuring...]
-  - High-order Meshing
-    - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
-  - Quadrilateral
-    - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
-    - [Instant Meshes] - :apple: [macOS 15.3.1]
-    - [QuadMixer] - :no_entry_sign: [configuring...]
-    - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
-    - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
-  - Other Libraries
-    - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
-  - Other Projects
-    - [LpCVT] - :apple: [macOS 15.3.1] :computer: [Windows 10]
-    - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - NeurField
   - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
   - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -42,12 +30,20 @@ An environment configuration record concerning academic papers, third-party libr
   - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 - Open CASCADE Technology
   - [OCCT] - :computer: [Windows 10/11]
+- Quadrilateral
+  - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [Instant Meshes] - :apple: [macOS 15.3.1]
+  - [QuadMixer] - :no_entry_sign: [configuring...]
+  - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS] 
 - Other Libraries
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [TBB] - :no_entry_sign: [configuring...]
 - Other Projects
-  - [Instant Meshes] - :apple: [macOS 15.3.1]
+  - [LpCVT] - :apple: [macOS 15.3.1] :computer: [Windows 10]
+  - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - 远程服务器代理设置
   - [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
 

@@ -1,10 +1,19 @@
+# TBB 库配置记录
+
+本文档为配置 TBB 库的记录，[官网安装步骤](https://www.intel.com/content/www/us/en/docs/onetbb/get-started-guide/2021-9/install-onetbb-on-linux-os.html)
+
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
+
 # :penguin: Ubuntu
 
 - 操作系统：Ubuntu 20.04.6 LTS
+- 安装版本：[oneTBB](https://github.com/uxlfoundation/oneTBB)
 
 ## 配置步骤
 
-参考 [ [1] ]
+参考 [oneTBB/INSTALL](https://github.com/uxlfoundation/oneTBB/blob/master/INSTALL.md)
 
 1. 将项目下载到本地：
 
@@ -26,36 +35,37 @@
     ```
 
     ```
-    cmake ..
+    cmake -DCMAKE_INSTALL_PREFIX=/home/huangcanjia/oneTBB/my_installed_onetbb -DTBB_TEST=OFF ..
     ```
+
+    这里的 `CMAKE_INSTALL_PREFIX` 参数设置了编译后文件生成的位置，可以自定义
 
 3. 编译：
 
     ```
-    make -j8
+    cmake --build .
     ```
 
 4. 安装
 
-    - 如果有 root 权限的话，执行：
+    ```
+    cmake --install .
+    ```
 
-        ```
-        sudo make install
-        ```
+5. 安装完毕后在先前指定的 `CMAKE_INSTALL_PREFIX` 路径下会得到所有需要的文件，然后将该目录的下的 “lib” 目录添加到系统变量 `LD_LIBRARY_PATH` 中：
 
-    - 如果没有 root 权限，需要在环境变量中链接相应的目录，参考 [ [2] ]
+    ```
+    vim ~/.bashrc
+    ```
 
-        编辑环境变量：
+    在文件的最后添加（具体路径根据实际情况而定）：
 
-        ```
-        vim ~/.bashrc
-        ```
+    ```
+    export LD_LIBRARY_PATH=/home/huangcanjia/oneTBB/my_installed_onetbb/lib:$LD_LIBRARY_PATH
+    ```
 
-        编译结束后的许多生成文件在 “xxx/oneTBB/build/gnu_10.5_cxx11_64_relwithdebinfo/” 目录下（具体路径根据实际情况而定），将该路径添加到 “~/.bashrc” 文件最后（具体路径根据实际情况而定）：
+    保存并退出后，重新加载环境变量：
 
-        ```
-        export LD_LIBRARY_PATH=/home/huangcanjia/oneTBB/build/gnu_10.5_cxx11_64_relwithdebinfo:$LD_LIBRARY_PATH
-        ```
-
-[1]: https://blog.csdn.net/weixin_42973508/article/details/111681426
-[2]: https://blog.csdn.net/qq_39779233/article/details/126284595
+    ```
+    source ~/.bashrc
+    ```

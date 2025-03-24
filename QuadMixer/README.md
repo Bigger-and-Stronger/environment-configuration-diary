@@ -100,7 +100,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
 
     - :warning: 可能出现错误 `/usr/bin/ld: cannot find -ltbb` 和 `/usr/bin/ld: cannot find -lHalf`
 
-        需要安装 **tbb** 库
+        需要安装 **tbb** 库，并且确保环境变量中 `$LD_LIBRARY_PATH` 能够找到链接库 `libtbb.so`
 
 
 
