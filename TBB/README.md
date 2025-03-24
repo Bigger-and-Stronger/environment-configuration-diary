@@ -4,7 +4,7 @@
 
 ---
 
-Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
+Canjia Huang <<canjia7@gmail.com>> last update 24/3/2025
 
 # :penguin: Ubuntu
 
@@ -38,7 +38,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
     cmake -DCMAKE_INSTALL_PREFIX=/home/huangcanjia/oneTBB/my_installed_onetbb -DTBB_TEST=OFF ..
     ```
 
-    这里的 `CMAKE_INSTALL_PREFIX` 参数设置了编译后文件生成的位置，可以自定义
+    这里的 `CMAKE_INSTALL_PREFIX` 参数设置了编译后文件生成的位置，可以根据实际情况自定义
 
 3. 编译：
 
@@ -58,10 +58,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
     vim ~/.bashrc
     ```
 
-    在文件的最后添加（具体路径根据实际情况而定）：
+    在文件的最后添加（具体路径根据实际情况而定）以新增 `LD_LIBRARY_PATH` 的查找路径：
 
     ```
-    export LD_LIBRARY_PATH=/home/huangcanjia/oneTBB/my_installed_onetbb/lib:$LD_LIBRARY_PATH
+    export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/home/huangcanjia/oneTBB/my_installed_onetbb/lib"
     ```
 
     保存并退出后，重新加载环境变量：

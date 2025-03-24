@@ -25,7 +25,7 @@
 
 ---
 
-Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
+Canjia Huang <<canjia7@gmail.com>> last update 24/3/2025
 
 # :penguin: Ubuntu
 
@@ -47,7 +47,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
     进入项目目录：
 
     ```
-    cd quadmixer/
+    cd quadmixer
     ```
 
 2. 编辑配置文件：
@@ -98,11 +98,50 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
 
         ![image](.pic/image1.png)
 
-    - :warning: 可能出现错误 `/usr/bin/ld: cannot find -ltbb` 和 `/usr/bin/ld: cannot find -lHalf`
+    - :warning: 可能出现错误 `/usr/bin/ld: cannot find -ltbb`
 
-        需要安装 **tbb** 库，并且确保环境变量中 `$LD_LIBRARY_PATH` 能够找到链接库 `libtbb.so`
+        需要安装 **tbb** 库，具体可以参考 [TBB 库配置记录](../TBB/)，并且确保环境变量中 `$LD_LIBRARY_PATH` 能够找到链接库 `libtbb.so`
 
+        - 如果安装后仍然无法链接到库，请参考下面 :warning::warning: 问题的解决方案
 
+    - :warning: 可能出现错误 `/usr/bin/ld: cannot find -lHalf`
+
+        需要安装 **OpenEXR** 库，具体可以参考 [OpenEXR 库配置记录](../OpenEXR/)
+
+        需要注意的是，较新版本的 **OpenEXR** 库将 `libHalf` 合并到了 `libOpenEXR` 中，这意味着可能安装完较新版本的 **OpenEXR** 库后仍然无法得到 `libHalf` 文件，此时需要修改 "quadmixer/build/Makefile" 文件，将该文件中的 `-lHalf` 改为 `-lOpenEXR`
+
+        - 如果安装后仍然无法链接到库，请参考下面 :warning::warning: 问题的解决方案
+
+    - :warning::warning: 如果已经安装了以上两个库的情况下仍然出现无法链接到库的情况
+
+        可以修改 "quadmixer/build/Makefile" 文件，找到 `-ltbb` 和 `-lHalf`（或 `-lOpenEXR`）所在的位置，并在该选项最后添加上 `-L/xxx` 来指定这两个库的链接库位置（具体路径根据实际情况而定），如下绿框处：
+
+        ![image](.pic/image2.png)
+
+6. 编译完成后，会在 "quadmixer/build" 目录下生成出可执行文件 "quadmixer"
+
+## 测试
+
+打开可执行文件 “quadmixer/build/quadmixer” 会有一个图形界面，但目前还未发现如何成功读入模型... :disappointed:
+
+- :warning: 可能出现错误 `freeglut (./quadmixer): failed to open display ''`
+
+    需要设置 SSH 连接服务器时的 `$DISPLAY` 变量，具体设置参数根据实际情况而定
+
+    - 如果是在 macOS 上通过 SSH 连接服务器的话，需要安装 **XQuartz**，在 [xquartz.org](https://www.xquartz.org) 上下载并安装
+
+        安装完毕使用系统终端 SSH 连接到该服务器，然后再直接打开 “quadmixer” 可执行文件即可
+
+- :warning: 可能出现错误 `libGL error: No matching fbConfigs or visuals found`
+
+    参考 [ [3] ]，在终端中输入：
+
+    ```
+    export LIBGL_ALWAYS_INDIRECT=1
+    ```
+
+    再重新打开该可执行文件
 
 [1]: https://blog.csdn.net/Kami_Jiang/article/details/123073899
 [2]: https://www.jianshu.com/p/94faa8d32519
+[3]: https://cloud.tencent.com/developer/ask/sof/116441942

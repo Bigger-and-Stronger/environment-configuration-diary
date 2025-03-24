@@ -50,17 +50,3 @@ make -j 4
 ```
 
 编译完成后在项目目录下会生成应用程序 “Instant Meshes.app”
-
-# :penguin: Ubuntu
-
-- 操作系统：Ubuntu 20.04.6 LTS
-
-## 配置步骤
-
-参考 [instant-meshes/README](https://github.com/wjakob/instant-meshes/blob/master/README.md)
-
-1. 将项目下载到本地，在终端中输入：
-
-    ```
-    git clone --recursive https://github.com/wjakob/instant-meshes
-    ```
