@@ -30,6 +30,8 @@ Canjia Huang <<canjia7@gmail.com>> last update 24/3/2025
 
 ## 配置步骤
 
+参考 [QuadriFlow/README](https://github.com/hjwdzh/QuadriFlow/blob/master/README.md)
+
 1. 将项目下载到本地：
 
     ```
@@ -40,4 +42,37 @@ Canjia Huang <<canjia7@gmail.com>> last update 24/3/2025
 
     ```
     cd QuadriFlow
+    ```
+
+2. 新建构建结果文件夹并进入：
+
+    ```
+    mkdir build
+    cd build
+    ```
+
+3. 使用 CMake 进行 configure：
+
+    ```
+    cmake .. -DCMAKE_BUILD_TYPE=release
+    ```
+
+4. 编译：
+
+    ```
+    make -j
+    ```
+
+5. 编译完成后会在 "QuadriFlow/build" 目录下生成可执行文件 “quadriflow”
+
+## 测试
+
+参考 [QuadriFlow/README](https://github.com/hjwdzh/QuadriFlow/blob/master/README.md)
+
+1. 将测试模型放置在该目录下，这里使用 [jaw.obj](../QuadWild-Bi-MDF-solver/jaw.obj)
+
+2. 在该目录下输入：
+
+    ```
+    ./quadriflow -i jaw.obj -o output.obj -f 10000
     ```
