@@ -28,11 +28,11 @@
 
 Canjia Huang <<canjia7@gmail.com>> last update 4/3/2025
 
-:star: 我对 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本进行了重构，重构版本为 [Bigger-and-Stronger/LpCVT](https://github.com/Bigger-and-Stronger/LpCVT)，该版本配置更加方便，并添加了许多可以直接使用的操作（包括 LpCVT 的 LBFGS 优化）
+:star: 我对 [secantalpha/LpCVT](https://github.com/secantalpha/LpCVT) 的版本进行了重构，重构版本为 [Bigger-and-Stronger/LpCVT](https://github.com/Bigger-and-Stronger/LpCVT)，该版本配置更加方便，并添加了许多可以直接使用的操作（包括 LpCVT 中基于 LBFGS 的优化过程）
 
-该版本目前适用于 Windows 和 macOS 平台，配置步骤可以参考 [Bigger-and-Stronger/LpCVT/README.md](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/README.md)
+该版本目前适用于所有平台，配置步骤可以参考 [Bigger-and-Stronger/LpCVT/README.md](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/README.md)
     
-- 具体的：Windows 上的配置步骤与本文档类似；macOS 上的配置步骤可以参考 [macos-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/macos-build.yml)
+- 具体来说：Windows 上的配置步骤与本文档类似；macOS 上的配置步骤可以参考 [macos-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/macos-build.yml)；Linux 上的配置步骤可以参考 [linux-build.yml](https://github.com/Bigger-and-Stronger/LpCVT/blob/main/.github/workflows/linux-build.yml)
 
 ---
 
