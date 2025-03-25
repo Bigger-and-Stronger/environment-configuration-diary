@@ -49,6 +49,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Other Libraries
+  - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -69,6 +70,7 @@ An environment configuration record concerning academic papers, third-party libr
 </a>
 
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
+[AntTweakBar]: AntTweakBar/
 [CGNS]:CGNS/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
