@@ -68,6 +68,7 @@ ResolvePackageNotFound:
         $ python run.py --conf setup.conf --pt ../data/output_data
 
 
+---
 
 ### Iso-Surfacing 配置
 这是这篇文章用到的保尖锐等值面提取工作。以下仅给出我个人的安装流程，具体安装、使用可以参考：[代码仓库](https://github.com/xueyuhanlang/IsoSurfacing)
@@ -117,7 +118,7 @@ NH-Rep
         $ bash ./build.sh
 安装成功。
 
-
+---
 
 ### 可能出现的一系列问题与解决方法
 
@@ -187,5 +188,15 @@ Q6：
 Segmentation fault (core dumped)     
 ```
 A6：pytorch 版本不兼容。测试模型是 1.2.0 版本导出的结果，使用自己训练出的结果可以解决问题。
+
+---
+
+Q7：对其他模型进行等值面提取，pytorch 报错
+```
+terminate called after throwing an instance of 'torch::jit::ErrorReport'
+terminate called recursively
+Aborted (core dumped)
+```
+A7：可能是因为 pytorch 的版本不匹配。我的解决方法是下载匹配的版本：[LibTorch 1.13.1+cu116](https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.13.1%2Bcu116.zip)，下载完成后重新编译即可解决问题。
 
 
