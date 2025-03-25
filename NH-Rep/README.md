@@ -68,6 +68,7 @@ ResolvePackageNotFound:
         $ python run.py --conf setup.conf --pt ../data/output_data
 
 
+---
 
 ### Iso-Surfacing 配置
 这是这篇文章用到的保尖锐等值面提取工作。以下仅给出我个人的安装流程，具体安装、使用可以参考：[代码仓库](https://github.com/xueyuhanlang/IsoSurfacing)
@@ -117,7 +118,7 @@ NH-Rep
         $ bash ./build.sh
 安装成功。
 
-
+---
 
 ### 可能出现的一系列问题与解决方法
 
