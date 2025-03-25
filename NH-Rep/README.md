@@ -188,4 +188,14 @@ Segmentation fault (core dumped)
 ```
 A6：pytorch 版本不兼容。测试模型是 1.2.0 版本导出的结果，使用自己训练出的结果可以解决问题。
 
+---
+
+Q7：对其他模型进行等值面提取，pytorch 报错
+```
+terminate called after throwing an instance of 'torch::jit::ErrorReport'
+terminate called recursively
+Aborted (core dumped)
+```
+A7：可能是因为 pytorch 的版本不匹配。我的解决方法是下载匹配的版本：[LibTorch 1.13.1+cu116]https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.13.1%2Bcu116.zip，下载完成后重新编译即可解决问题。
+
 
