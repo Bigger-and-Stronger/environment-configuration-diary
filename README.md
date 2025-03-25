@@ -18,7 +18,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [OpenFOAM] - :apple: [macOS 15.3]
 
 - Hexahedral
-  - [QGP3D] - :no_entry_sign: [configuring...]
+  - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - High-order Meshing
   - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
