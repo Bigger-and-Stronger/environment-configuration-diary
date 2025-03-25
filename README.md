@@ -41,11 +41,12 @@ An environment configuration record concerning academic papers, third-party libr
   - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Instant Meshes] - :apple: [macOS 15.3.1]
   - [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
-  - [QuadriFlow] - :no_entry_sign: [configuring...]
+  - [QuadriFlow] - :penguin: [Ubuntu 20.04.5 LTS]
   - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
   - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Tetrahedral
+  - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Other Libraries
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -93,5 +94,6 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/
 [siren]: siren/
 [TBB]: TBB/
+[TetWild]: TetWild/
 [VMAS]: VMAS/
 [proxyForTheServer]: proxyForTheServer/
