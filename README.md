@@ -50,6 +50,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Other Libraries
   - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -58,6 +59,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Other Projects
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
+  - [nPV] - :no_entry_sign: [configuring]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
 - 远程服务器代理设置
@@ -72,6 +74,7 @@ An environment configuration record concerning academic papers, third-party libr
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
 [AntTweakBar]: AntTweakBar/
 [CGNS]:CGNS/
+[Eigen]: Eigen/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/

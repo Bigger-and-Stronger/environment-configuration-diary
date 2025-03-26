@@ -97,3 +97,19 @@ Canjia Huang <<canjia7@gmail.com>> last update 25/3/2025
     ```
     make
     ```
+
+    - :warning: 可能出现与 **eigen** 库相关的错误 `no match for ‘operator*’ (operand types are ‘double’ and ‘const ConstantReturnType’ {aka ‘const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<int>, Eigen::Matrix<int, -1, 1> >’})` 
+
+        修改 “nPV/libigl/include/igl/angle_bound_frame_field.cpp” 文件的 Line 157 `indFullToInterior = -1.*Eigen::VectorXi::Ones(numE,1);` 为：
+        
+        ```
+        indFullToInterior = -1*Eigen::VectorXi::Ones(numE,1);
+        ```
+
+        修改 “nPV/libigl/include/igl/n_polyvector.cpp” 文件的 Line Line 100 `indFullToInterior = -1.*Eigen::VectorXi::Ones(numE,1);` 为：
+        
+        ```
+        indFullToInterior = -1*Eigen::VectorXi::Ones(numE,1);
+        ```
+    
+    - :warning:  可能出现与 **eigen** 库相关的错误 `‘Eigen::PlainObjectBase<Derived>::PlainObjectBase() [with Derived = Eigen::Matrix<double, -1, -1>]’ is protected within this context`
