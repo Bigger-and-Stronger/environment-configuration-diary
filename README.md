@@ -17,6 +17,10 @@ An environment configuration record concerning academic papers, third-party libr
   - [CGNS] - :apple: [macOS 15.3]
   - [OpenFOAM] - :apple: [macOS 15.3]
 
+- Field
+  - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [nPV] - :no_entry_sign: [configuring]
+
 - Hexahedral
   - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
@@ -59,7 +63,6 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Other Projects
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
-  - [nPV] - :no_entry_sign: [configuring]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
 - 远程服务器代理设置
@@ -72,6 +75,7 @@ An environment configuration record concerning academic papers, third-party libr
 </a>
 
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
+[4-Rosy-Complex-Poly]: 4-Rosy-Complex-Poly/
 [AntTweakBar]: AntTweakBar/
 [CGNS]:CGNS/
 [Eigen]: Eigen/
@@ -86,6 +90,7 @@ An environment configuration record concerning academic papers, third-party libr
 [MCS]: MCS/
 [NeurCADRecon]: NeurCADRecon/
 [NH-Rep]: NH-Rep/
+[nPV]: nPV/
 [OCCT]: OCCT/
 [OpenEXR]: OpenEXR/
 [OpenFOAM]: OpenFOAM/
