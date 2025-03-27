@@ -141,3 +141,13 @@ Canjia Huang <<canjia7@gmail.com>> last update 21/3/2025
     ```
 
 3. 运行结束后会在该目录下生成许多过程文件，其中 “jaw_quadrangulation.obj” 和 “jaw_quadrangulation_smooth.obj” （具体名称根据实际情况而定）为最终结果
+
+ - :star: 如果希望导出四边形化过程的中间结果的话，可以在 “quadwild/libs/quadretopology/quadretopology/quadretopology.cpp” 文件的 Line 35 处添加：
+
+    ```
+    #define QUADRETOPOLOGY_DEBUG_SAVE_MESHES
+    ```
+
+    并在可执行文件 “quadwild” 所在目录下（即 “quadwild/build”）新建目录 “results”
+
+    修改完后重新编译再使用即可，中间结果会存储在新建的目录 “quadwild/build/results” 中

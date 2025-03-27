@@ -11,7 +11,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 - 操作系统：Ubuntu 20.04.6 LTS
 - Eigen 版本：3.4.90，其他不同版本可在 [gitlab/libeigen](https://gitlab.com/libeigen/eigen/-/releases/?before=eyJyZWxlYXNlZF9hdCI6IjIwMTYtMTItMDYgMTE6NDM6MDAuMDAwMDAwMDAwICswMDAwIiwiaWQiOiIxMTE0MzE2In0) 找到
 
-## 配置步骤
+## 配置步骤（无 root）
 
 该配置步骤为无 root 权限下的配置方案，参考 [ [1] ]
 

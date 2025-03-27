@@ -66,3 +66,5 @@ Canjia Huang <<canjia7@gmail.com>> last update 26/3/2025
     ```
 
 2. 该可执行文件会直接将 “../data/woody.obj” 文件为参考网格，生成该网格的 4-RoSy field，存储在 “../data/cf.obj” 文件中，可以用 **MeshLab** 进行可视化
+
+    如果希望修改输入网格以及导出的可视化结果的线段长度，可以对 “4-Rosy-Complex-Poly/main.cpp” 文件进行修改
