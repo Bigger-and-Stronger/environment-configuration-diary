@@ -12,7 +12,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 27/3/2025
 
 ## 配置记录（from Pytorch）
 
-该步骤是在已经安装了 pytorch 的前提下进行的，参考 [ [1] ]
+该步骤是在已经安装了 **Pytorch** 的前提下进行的， **Libtorch** 会在 **Pytorch** 安装的同时被安装，以下步骤参考 [ [1] ]
 
 1. 如果 pytorch 是安装在某个 conda 环境中的，需要先进入该环境（本文档例子的虚拟环境变量名称为 “igr”），然后可以进入 python 环境中使用 **torch** 库的指令来查看配套安装的 **Libtorch** 的 configure 路径：
 
@@ -98,6 +98,8 @@ Canjia Huang <<canjia7@gmail.com>> last update 27/3/2025
 ## 测试
 
 在 C++ 程序中添加头文件 `#include "torch/torch.h"` 使用
+
+- :warning: 如果在使用 `forward()` 等函数时出现内存溢出的直接跳出错误，可能是 **Libtorch** 版本错误导致的，需要更换版本
 
 [1]: https://zhuanlan.zhihu.com/p/609288586
 [2]: https://zhuanlan.zhihu.com/p/437301459
