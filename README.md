@@ -57,11 +57,13 @@ An environment configuration record concerning academic papers, third-party libr
   - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - Other Projects
+  - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
@@ -77,7 +79,8 @@ An environment configuration record concerning academic papers, third-party libr
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
 [4-Rosy-Complex-Poly]: 4-Rosy-Complex-Poly/
 [AntTweakBar]: AntTweakBar/
-[CGNS]:CGNS/
+[CGNS]: CGNS/
+[CMake]: CMake/
 [Eigen]: Eigen/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
@@ -86,6 +89,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Instant Meshes]: Instant-Meshes/
 [lapack, blas, cblas, lapacke]: LAPACK/
 [libQEx]: libQEx/
+[Libtorch]: Libtorch/
 [LpCVT]: LpCVT/
 [MCS]: MCS/
 [NeurCADRecon]: NeurCADRecon/
