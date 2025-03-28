@@ -42,6 +42,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [OCCT] - :computer: [Windows 10/11]
 
 - Quadrilateral
+  - [hybrid-quad] - :no_entry_sign: [configuring...]
   - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Instant Meshes] - :apple: [macOS 15.3.1]
   - [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
@@ -60,6 +61,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
   - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - Other Projects
@@ -86,6 +88,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/
+[hybrid-quad]: hybrid-quad/
 [IGR]: IGR/
 [Instant Meshes]: Instant-Meshes/
 [lapack, blas, cblas, lapacke]: LAPACK/
@@ -100,6 +103,7 @@ An environment configuration record concerning academic papers, third-party libr
 [OpenEXR]: OpenEXR/
 [OpenFOAM]: OpenFOAM/
 [OpenMesh]: OpenMesh/
+[OpenMPI]: OpenMPI/
 [p7zip]: p7zip/
 [ParseNet & SED-Net]: ParseNet+SED_Net/
 [PCO]: PCO/
