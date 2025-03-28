@@ -19,7 +19,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Field
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [nPV] - :no_entry_sign: [configuring]
+  - [nPV] - :no_entry_sign: [configuring...]
 
 - Hexahedral
   - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -65,6 +65,7 @@ An environment configuration record concerning academic papers, third-party libr
 - Other Projects
   - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
+  - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
 - 远程服务器代理设置
@@ -99,6 +100,7 @@ An environment configuration record concerning academic papers, third-party libr
 [OpenEXR]: OpenEXR/
 [OpenFOAM]: OpenFOAM/
 [OpenMesh]: OpenMesh/
+[p7zip]: p7zip/
 [ParseNet & SED-Net]: ParseNet+SED_Net/
 [PCO]: PCO/
 [QGP3D]: QGP3D/

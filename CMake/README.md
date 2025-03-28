@@ -1,6 +1,6 @@
 # CMake 配置记录
 
-本文档为配置 CMake 库的记录
+本文档为配置 CMake 工具的记录
 
 ---
 Canjia Huang <<canjia7@gmail.com>> last update 27/3/2025

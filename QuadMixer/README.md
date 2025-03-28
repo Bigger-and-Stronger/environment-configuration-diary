@@ -130,7 +130,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 24/3/2025
 
     - 如果是在 macOS 上通过 SSH 连接服务器的话，需要安装 **XQuartz**，在 [xquartz.org](https://www.xquartz.org) 上下载并安装
 
-        安装完毕使用系统终端 SSH 连接到该服务器，然后再直接打开 “quadmixer” 可执行文件即可
+        安装完毕使用系统终端 SSH 连接到该服务器（注意此处连接的命令需要添加 `-Y -C` 选项（大写字母），如 `ssh -Y -C <user name>@<ip>`），然后再直接打开 “quadmixer” 可执行文件即可
 
 - :warning: 可能出现错误 `libGL error: No matching fbConfigs or visuals found`
 
