@@ -210,4 +210,4 @@ The CUDA compiler
 
   is not able to compile a simple test program.
 ```
-A8：可能是切换 cuda 版本之后找不到对应版本的 cuda 编译器。输入`which nvcc`查看当前 cuda 编译器路径，然后在 build.sh 中添加`-DCMAKE_CUDA_COMPILER=/usr/local/cuda-11.6/bin/nvcc`即可解决问题。
+A8：可能是切换 cuda 版本之后找不到对应版本的 cuda 编译器。输入`which nvcc`查看当前 cuda 编译器路径，然后在 build.sh 中添加`-DCMAKE_CUDA_COMPILER=/path/to/your/nvcc`即可解决问题。
