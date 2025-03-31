@@ -81,10 +81,11 @@ ResolvePackageNotFound:
 
         $ cd IsoSurfacing
 
-然后下载两个依赖库：
-- 直接下载就行：
+然后下载依赖库：
+- 作者的代码仓库中给出了 LibTorch 1.7.1+cu101 的下载路径：
 [LibTorch 1.7.1+cu101](https://download.pytorch.org/libtorch/cu110/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcu110.zip) 
-- 可能需要注册：
+:warning: 我们在配置环境的时候已经安装了 pytorch ，所以我们不需要额外下载。输入`python -c "import torch; print(torch.__file__)"`查看当前环境下 pytorch 的地址。以我的为例，输出为`/home/yuxiaoyang/.conda/envs/neurcad/lib/python3.7/site-packages/torch/__init__.py`，对应 CMakeList 路径为：`/home/yuxiaoyang/.conda/envs/neurcad/lib/python3.7/site-packages/torch/share/cmake/Torch`。
+- CuDNN：
 [CuDNN 8.0.5+cu101](https://developer.nvidia.com/rdp/cudnn-archive)
 下载cuDNN Library for Linux (x86)，可能出现下载压缩文件损坏的情况，建议网络条件较好的时候下载。
 
@@ -102,14 +103,14 @@ NH-Rep
 |--code
         |--IsoSurfacing
                 |--cuda
-                |--libtorch
+                |--libtorch (optional)
                 |--build.sh
                 |--CMakeList.txt
                 |--...
         |--...
 ```
 
-两个文件夹就绪后，把`IsoSurfacing/App/console_pytorch/CMakeLists.txt`和`IsoSurfacing/App/evaluation/CMakeLists.txt`中的绝对路径修改为自己的绝对路径`set(CMAKE_PREFIX_PATH /home/yuxiaoyang/NH-Rep/code/IsoSurfacing/libtorch/share/cmake/Torch)`，然后输入
+两个文件夹就绪后，把`IsoSurfacing/App/console_pytorch/CMakeLists.txt`和`IsoSurfacing/App/evaluation/CMakeLists.txt`中 pytorch 的绝对路径修改为自己的绝对路径`set(CMAKE_PREFIX_PATH /home/yuxiaoyang/.conda/envs/neurcad/lib/python3.7/site-packages/torch/share/cmake/Torch)`，然后输入
 
         $ mkdir build 
 
@@ -199,4 +200,14 @@ Aborted (core dumped)
 ```
 A7：可能是因为 pytorch 的版本不匹配。我的解决方法是下载匹配的版本：[LibTorch 1.13.1+cu116](https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.13.1%2Bcu116.zip)，下载完成后重新编译即可解决问题。
 
+---
 
+Q8：编译时遇到问题
+```
+The CUDA compiler
+
+    "/usr/bin/nvcc"
+
+  is not able to compile a simple test program.
+```
+A8：可能是切换 cuda 版本之后找不到对应版本的 cuda 编译器。输入`which nvcc`查看当前 cuda 编译器路径，然后在 build.sh 中添加`-DCMAKE_CUDA_COMPILER=/usr/local/cuda-11.6/bin/nvcc`即可解决问题。
