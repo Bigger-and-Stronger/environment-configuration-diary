@@ -101,4 +101,8 @@ Canjia Huang <<canjia7@gmail.com>> last update 28/3/2025
 
 
 
+
+
+
+
         cp -v /home/huangcanjia/openmpi-5.0.7/openmpi-installed/lib/*mpi*.so.* /home/huangcanjia/hybrid-quad/so/

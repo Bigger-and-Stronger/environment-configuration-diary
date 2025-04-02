@@ -51,6 +51,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Tetrahedral
+  - [fTetWild] - :penguin: [Ubuntu 20.04.6 LTS]
   - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Other Libraries
@@ -85,6 +86,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGNS]: CGNS/
 [CMake]: CMake/
 [Eigen]: Eigen/
+[fTetWild]: fTetWild/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/
