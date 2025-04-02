@@ -57,6 +57,7 @@ An environment configuration record concerning academic papers, third-party libr
 - Other Libraries
   - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -88,6 +89,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Eigen]: Eigen/
 [fTetWild]: fTetWild/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
+[Gmsh]: Gmsh/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/
 [hybrid-quad]: hybrid-quad/

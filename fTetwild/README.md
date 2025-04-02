@@ -68,7 +68,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 2/4/2025
 
     - :warning: 可能出现错误 `error: ‘assert’ was not declared in this scope`
 
-        解决方法是找到出错的文件，如我这里出错的文件为 “fTetWild/3rdparty/libigl/include/igl/vertex_components.cpp”
+        解决方法是通过输出的错误信息找到出错的文件，如我这里出错的文件为 “fTetWild/3rdparty/libigl/include/igl/vertex_components.cpp”
 
         在出错的文件的开头处添加头文件：
 
