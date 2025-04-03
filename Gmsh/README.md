@@ -79,4 +79,6 @@ Canjia Huang <<canjia7@gmail.com>> last update 2/4/2025
 
 7. 安装完毕后在先前指定的目录（我这里指定的为 “gmsh-4.13.1-source/Gmsh-installed/”）中会生成可执行文件 “bin/gmsh”，可以进行直接使用
 
-    如果在 C++ 中要使用 **Gmsh** 的话，需要将该目录下的 “include” 目录包含在头文件目录中，并链接 “lib” 目录下的链接库文件 `libgmsh.so`
+    如果在 C++ 中要使用 **Gmsh** 的话，需要将该目录下的 “include” 目录包含在头文件目录中，并链接 “lib” 目录下的链接库文件 `libgmsh.so`，具体 CMakeLists.txt 的编写可以参考 [ [1] ]
+
+[1]: https://gmsh.geuz.narkive.com/PFQx5b7j/link-c-code-to
