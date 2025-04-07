@@ -19,6 +19,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Field
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
   - [nPV] - :no_entry_sign: [configuring...]
 
 - Hexahedral
@@ -102,6 +103,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Libtorch]: Libtorch/
 [LpCVT]: LpCVT/
 [MCS]: MCS/
+[MetricDrivenFrame3D]: MetricDrivenFrame3D/
 [NeurCADRecon]: NeurCADRecon/
 [NH-Rep]: NH-Rep/
 [nPV]: nPV/

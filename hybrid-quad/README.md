@@ -1,6 +1,6 @@
 # hybrid-quad 项目配置记录
 
-本文档为配置文章 **"Quadrangulation through Morse-Parameterization Hybridization"** 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.1145/3197517.3201354) [[Jin Huang]](http://www.cad.zju.edu.cn/home/hj/index.xml) [[Bin]](http://www.cad.zju.edu.cn/home/hj/18/hybrid_quad_binary_Mint19_V20180731.7z)
+本文档为配置文章 **"Quadrangulation through Morse-Parameterization Hybridization"** 的代码的记录 [[Paper]](https://dl.acm.org/doi/abs/10.1145/3197517.3201354) [[Jin Huang]](http://www.cad.zju.edu.cn/home/hj/index.xml) [[exe]](http://www.cad.zju.edu.cn/home/hj/18/hybrid_quad_binary_Mint19_V20180731.7z)
 
 ```
 @article{10.1145/3197517.3201354,
