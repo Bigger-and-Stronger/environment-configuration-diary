@@ -22,6 +22,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [nPV] - :no_entry_sign: [configuring...]
 
 - Hexahedral
+  - [AlgoHex] - :no_entry_sign: [configuring...]
   - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - High-order Meshing
@@ -83,6 +84,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 [1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
 [4-Rosy-Complex-Poly]: 4-Rosy-Complex-Poly/
+[AlgoHex]: AlgoHex/
 [AntTweakBar]: AntTweakBar/
 [CGNS]: CGNS/
 [CMake]: CMake/
