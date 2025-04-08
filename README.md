@@ -70,6 +70,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Other Projects
   - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
   - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
@@ -90,6 +91,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGNS]: CGNS/
 [CMake]: CMake/
 [Eigen]: Eigen/
+[fpm]: fpm/
 [fTetWild]: fTetWild/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
 [Gmsh]: Gmsh/

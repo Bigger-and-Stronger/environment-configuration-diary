@@ -1,10 +1,10 @@
 # Minpack 库配置记录
 
-本文档为配置 Minpack 库的记录，[[Code]](https://github.com/fortran-lang/minpack)
+本文档为配置 Minpack 库的记录，[[Github]](https://github.com/fortran-lang/minpack)
 
 ---
 
-Canjia Huang <<canjia7@gmail.com>> last update 7/4/2025
+Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
 
 # :penguin: Ubuntu
 
@@ -18,4 +18,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 7/4/2025
 
     ```
     git clone https://github.com/fortran-lang/minpack
+    ```
+
+    并进入项目目录：
+
+    ```
+    cd minpack
     ```
