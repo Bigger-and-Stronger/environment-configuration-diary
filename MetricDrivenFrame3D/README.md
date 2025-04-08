@@ -26,7 +26,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 7/4/2025
 
 ## 预备步骤
 
-1. 安装 **minpack** 库
+1. 安装 **minpack** 库，具体参考 [Minpack 库配置记录](../Minpack/)，需要编译出链接库并将链接库目录添加到系统环境变量
 
 ## 配置步骤
 

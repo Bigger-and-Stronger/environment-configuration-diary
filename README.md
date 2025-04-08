@@ -63,6 +63,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [Minpack] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -106,6 +107,7 @@ An environment configuration record concerning academic papers, third-party libr
 [LpCVT]: LpCVT/
 [MCS]: MCS/
 [MetricDrivenFrame3D]: MetricDrivenFrame3D/
+[Minpack]: Minpack/
 [NeurCADRecon]: NeurCADRecon/
 [NH-Rep]: NH-Rep/
 [nPV]: nPV/
