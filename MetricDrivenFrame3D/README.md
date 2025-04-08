@@ -26,7 +26,23 @@ Canjia Huang <<canjia7@gmail.com>> last update 7/4/2025
 
 ## 预备步骤
 
-1. 安装 **minpack** 库，具体参考 [Minpack 库配置记录](../Minpack/)，需要编译出链接库并将链接库目录添加到系统环境变量
+如果有 root 权限的话，可以执行指令安装所有依赖库：
+
+```
+sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack-dev petsc-dev
+```
+
+如果没有 root 权限的话，安装过程如下：
+
+1. 安装 **minpack** 库，具体参考 [Minpack 库配置记录](../Minpack/)，需要编译出动态链接库，以及软链接 “libminpack.so.1” 并将链接库目录添加到系统环境变量
+
+    - :star: 软链接的生成方式如：
+
+        ```
+        ln -s libminpack.so libminpack.so.1
+        ```
+
+2. 安装 **alglib** 库，具体参考 [ALGLIB 库配置记录](../ALGLIB/) 需要编译出动态链接库，以及软链接 “libalglib.so.3.14” 并将链接库目录添加到系统环境变量
 
 ## 配置步骤
 

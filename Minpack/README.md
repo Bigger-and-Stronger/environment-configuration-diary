@@ -76,7 +76,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
 
     编译完成后会在目录下生成 `libminpack.so` 文件
 
-3. 生成所需要版本的软链接，如：
+3. 如果有需要，可以生成所需要版本的软链接，如：
 
     ```
     ln -s libminpack.so libminpack.so.1
