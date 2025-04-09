@@ -69,13 +69,13 @@ Shi Chen, 09/04/2025 12:47
 
     编辑 `PATH`，在末尾追加 *CMAKE_INSTALL_PREFIX* 中设置的值。
 
-    接下来，重启电脑！
+    设置完成后，重启电脑！
 
 ## 在你的项目中使用
     
-    编辑你的CMakeLists.txt:
+编辑你的CMakeLists.txt:
 
-    ```bash
+```bash
         cmake_minimum_required(VERSION 3.10)
         project(MyPCLProject)
 
@@ -89,5 +89,4 @@ Shi Chen, 09/04/2025 12:47
 
         add_executable(MyPCLProject main.cpp)
         target_link_libraries(MyPCLProject ${PCL_LIBRARIES})
-    ```
-
+```
