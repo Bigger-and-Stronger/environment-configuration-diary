@@ -69,6 +69,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [PCL] - :computer: [Windows 10/11]
   - [PETSc] - :no_entry_sign: [configuring...]
   - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
@@ -122,6 +123,7 @@ An environment configuration record concerning academic papers, third-party libr
 [OpenMPI]: OpenMPI/
 [p7zip]: p7zip/
 [ParseNet & SED-Net]: ParseNet+SED_Net/
+[PCL]: PCL/
 [PCO]: PCO/
 [PETSc]: PETSc/
 [Practical-3D-Frame-Field-Generation]: Practical-3D-Frame-Field-Generation/
