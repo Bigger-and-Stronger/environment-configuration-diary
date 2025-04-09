@@ -84,13 +84,7 @@ sudo apt install minpack-dev
 
     编译完成后会在目录下生成 `libminpack.so` 文件
 
-3. 如果有需要，可以生成所需要版本的软链接，如：
-
-    ```
-    ln -s libminpack.so libminpack.so.1
-    ```
-
-4. 将链接库所在目录添加到系统环境变量中：
+3. 将链接库所在目录添加到系统环境变量中：
 
     ```
     vim ~/.bashrc

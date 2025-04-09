@@ -68,6 +68,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [PETSc] - :no_entry_sign: [configuring...]
   - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - Other Projects
@@ -121,6 +122,7 @@ An environment configuration record concerning academic papers, third-party libr
 [p7zip]: p7zip/
 [ParseNet & SED-Net]: ParseNet+SED_Net/
 [PCO]: PCO/
+[PETSc]: PETSc/
 [QGP3D]: QGP3D/
 [QuadMixer]: QuadMixer/
 [QuadriFlow]: QuadriFlow/
