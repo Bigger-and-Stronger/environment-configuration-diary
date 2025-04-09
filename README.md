@@ -21,6 +21,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
   - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
   - [nPV] - :no_entry_sign: [configuring...]
+  - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - Hexahedral
   - [AlgoHex] - :no_entry_sign: [configuring...]
@@ -123,6 +124,7 @@ An environment configuration record concerning academic papers, third-party libr
 [ParseNet & SED-Net]: ParseNet+SED_Net/
 [PCO]: PCO/
 [PETSc]: PETSc/
+[Practical-3D-Frame-Field-Generation]: Practical-3D-Frame-Field-Generation/
 [QGP3D]: QGP3D/
 [QuadMixer]: QuadMixer/
 [QuadriFlow]: QuadriFlow/
