@@ -4,7 +4,9 @@ Shi Chen, 09/04/2025 12:47
 本文配置点云处理库PCL:
 - [[Website](https://pointclouds.org/)][[Code]](https://github.com/PointCloudLibrary/pcl)[[Document]](https://pointclouds.org/documentation/)
 
-这里我参考了[官方的Windows配置说明](https://pcl.readthedocs.io/projects/tutorials/en/latest/compiling_pcl_windows.html#compiling-pcl-windows) (PS:官网文档已经超级详细，其实可以直接食用)。
+这里我参考了[官方的Windows配置说明](https://pcl.readthedocs.io/projects/tutorials/en/latest/compiling_pcl_windows.html#compiling-pcl-windows) 
+
+PS:官网文档已经超级详细，其实可以直接食用。
 
 ## 其他安装方式说明
 可以采用[预编译的二进制包](https://github.com/PointCloudLibrary/pcl/releases)或是[vcpkg](https://github.com/microsoft/vcpkg)直接安装，对于大多数点云处理的需求是可以满足的且十分方便。
@@ -37,7 +39,7 @@ Shi Chen, 09/04/2025 12:47
 
     ![image](pic/fig0.png)
 
-    Configure后，在 *CMAKE_INSTALL_PREFIX* 中填写安装位置。
+    **Configure**后，在 *CMAKE_INSTALL_PREFIX* 中填写安装位置。
 
     ![image](pic/fig3.png)
     
