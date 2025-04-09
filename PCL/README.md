@@ -2,7 +2,7 @@
 Shi Chen, 09/04/2025 12:47
 
 本文配置点云处理库PCL:
-- [[Website](https://pointclouds.org/)][[Code]](https://github.com/PointCloudLibrary/pcl)[[Document]](https://pointclouds.org/documentation/)
+- [[Website]](https://pointclouds.org/)][[Code]](https://github.com/PointCloudLibrary/pcl)[[Document]](https://pointclouds.org/documentation/)
 
 这里我参考了[官方的Windows配置说明](https://pcl.readthedocs.io/projects/tutorials/en/latest/compiling_pcl_windows.html#compiling-pcl-windows) 
 
