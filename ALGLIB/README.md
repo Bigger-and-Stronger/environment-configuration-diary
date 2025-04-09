@@ -11,6 +11,14 @@ Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
 - 操作系统：Ubuntu 20.04.6 LTS
 - ALGLIB version：4.04.0 for C++（Free Edition）
 
+## 配置步骤（root）
+
+如果有 root 权限的话，可能可以直接执行安装指令：
+
+```
+sudo apt install libalglib-dev
+```
+
 ## 配置步骤（源码编译）
 
 1. 下载源码（具体链接参考 https://www.alglib.net/download.php 中给出）：

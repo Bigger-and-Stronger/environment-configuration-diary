@@ -10,6 +10,14 @@ Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
 
 - 操作系统：Ubuntu 20.04.6 LTS
 
+## 配置步骤（root）
+
+如果有 root 权限的话，可能可以直接执行安装指令：
+
+```
+sudo apt install minpack-dev
+```
+
 ## 配置步骤（fpm）
 
 参考 [minpack/README-build-with-fpm](https://github.com/fortran-lang/minpack?tab=readme-ov-file#building-with-fpm)
