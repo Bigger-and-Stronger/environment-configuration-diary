@@ -2,7 +2,7 @@
 Shi Chen, 09/04/2025 12:47
 
 本文配置点云处理库PCL:
-- [[Website]](https://pointclouds.org/)] | [[Code]](https://github.com/PointCloudLibrary/pcl) | [[Document]](https://pointclouds.org/documentation/)
+- [[Website]](https://pointclouds.org/) | [[Code]](https://github.com/PointCloudLibrary/pcl) | [[Document]](https://pointclouds.org/documentation/)
 
 这里我参考了[官方的Windows配置说明](https://pcl.readthedocs.io/projects/tutorials/en/latest/compiling_pcl_windows.html#compiling-pcl-windows) 
 
@@ -69,7 +69,7 @@ PS:官网文档已经超级详细，其实可以直接食用。
 
     新建 `PCL_DIR`，值为 *CMAKE_INSTALL_PREFIX* 中设置的值。
 
-    编辑 `PATH`，在末尾追加 *CMAKE_INSTALL_PREFIX* 中设置的值。
+    编辑 `PATH`，在末尾追加 *CMAKE_INSTALL_PREFIX* 中设置的值 + */bin*。
 
     设置完成后，重启电脑！
 
