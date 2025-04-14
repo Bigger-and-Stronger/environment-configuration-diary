@@ -63,6 +63,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
   - [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -104,6 +105,7 @@ An environment configuration record concerning academic papers, third-party libr
 [fpm]: fpm/
 [fTetWild]: fTetWild/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
+[gmp]: gmp/
 [Gmsh]: Gmsh/
 [Gurobi]: Gurobi/
 [HOMQMesh]: HOHQMesh/
