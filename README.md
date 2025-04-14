@@ -17,7 +17,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [CGNS] - :apple: [macOS 15.3]
   - [OpenFOAM] - :apple: [macOS 15.3]
 
-- Field
+- Direction Field
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
   - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
   - [nPV] - :no_entry_sign: [configuring...]
@@ -60,6 +60,8 @@ An environment configuration record concerning academic papers, third-party libr
 - Other Libraries
   - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
   - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -94,6 +96,8 @@ An environment configuration record concerning academic papers, third-party libr
 [ALGLIB]: ALGLIB/
 [AlgoHex]: AlgoHex/
 [AntTweakBar]: AntTweakBar/
+[Boost]: Boost/
+[CGAL]: CGAL/
 [CGNS]: CGNS/
 [CMake]: CMake/
 [Eigen]: Eigen/
