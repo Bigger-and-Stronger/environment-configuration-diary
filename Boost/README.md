@@ -4,7 +4,7 @@
 
 ---
 
-Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
+Canjia Huang <<canjia7@gmail.com>> last update 15/4/2025
 
 # :penguin: Ubuntu
 
@@ -14,7 +14,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
 
 参考 [ [1] ]
 
-1. 从 https://archives.boost.io/release/1.88.0/source/ 上下载需要的 **Boost** 版本，如（具体链接根据实际情况而定）：
+1. 从 https://www.boost.org/users/download/ 上下载需要的 **Boost** 版本，如（具体链接根据实际情况而定）：
 
     ```
     wget https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.gz

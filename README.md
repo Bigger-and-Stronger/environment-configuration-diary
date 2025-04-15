@@ -19,6 +19,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Direction Field
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [DirectionalFieldSynthesis] - :x: [Failed!]
   - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
   - [nPV] - :no_entry_sign: [configuring...]
   - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -69,6 +70,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
   - [Minpack] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [mpfr] - :penguin: [Ubuntu 20.04.5 LTS]
   - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
   - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
   - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -101,6 +103,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGAL]: CGAL/
 [CGNS]: CGNS/
 [CMake]: CMake/
+[DirectionalFieldSynthesis]: DirectionalFieldSynthesis/
 [Eigen]: Eigen/
 [fpm]: fpm/
 [fTetWild]: fTetWild/
@@ -119,6 +122,7 @@ An environment configuration record concerning academic papers, third-party libr
 [MCS]: MCS/
 [MetricDrivenFrame3D]: MetricDrivenFrame3D/
 [Minpack]: Minpack/
+[mpfr]: mpfr/
 [NeurCADRecon]: NeurCADRecon/
 [NH-Rep]: NH-Rep/
 [nPV]: nPV/

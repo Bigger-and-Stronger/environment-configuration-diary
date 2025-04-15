@@ -17,9 +17,17 @@
 
 ---
 
-Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
+Canjia Huang <<canjia7@gmail.com>> last update 15/4/2025
 
-# :penguin: Ubuntu
+:broken_heart: 该项目所依赖的两个关键的库 **libigl**、**Directional** 在后续版本中进行了较大修改，无法适配该项目
+
+故不推荐编译该项目，可以直接使用 **Directional** 库，可以参考 [Directional 库配置记录](../Directional/)
+
+如果仍然想要尝试配置该项目，可以查看该文档中已被注释的内容以解决部分问题
+
+---
+
+<!-- # :penguin: Ubuntu
 
 - 操作系统：Ubuntu 20.04.6 LTS
 
@@ -35,15 +43,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
 
     - :warning: 可能出现错误 `Fetched in submodule path 'demos/external/libdirectional', but it did not contain 35cad8f5171da5e781cc66afefceda987481822a. Direct fetching of that commit failed.`
 
-        解决方法可以是之重新手动下载该 submodule 项目，先跳过该 submodule：
+        解决方法可以是重新手动下载该 submodule 项目：
 
         ```
-        
-        ```
-        
-        执行：
-
-        ```
+        rm -rf DirectionalFieldSynthesis/demos/external/libdirectional/
         git clone https://github.com/avaxman/Directional.git DirectionalFieldSynthesis/demos/external/libdirectional/
         ```
 
@@ -53,13 +56,17 @@ Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
     cd DirectionalFieldSynthesis
     ```
 
-2. 进入想要编译的 example 的目录，如：
+该项目提供了 4 个 demos，编译过程如下
+
+### demos/2-sampling
+
+1. 进入想要编译的 demo 的目录，如：
 
     ```
     cd demos/2-sampling
     ```
 
-3. 新建存放编译过程文件的目录：
+2. 新建存放编译过程文件的目录：
 
     ```
     mkdir build
@@ -71,8 +78,30 @@ Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
     cd build
     ```
 
-4. 使用 CMake 进行 configure：
+3. 使用 CMake 进行 configure：
 
     ```
-    cmake -DCMAKE_BUILD_TYPE=Release ../
+    cmake -DCMAKE_BUILD_TYPE=Release ..
     ```
+
+    - :warning: 可能出现错误 `libigl not found`
+
+        在系统的某个目录下下载 **libigl** 库（如我是在用户根目录下）：
+
+        ```
+        git clone --recursive https://github.com/libigl/libigl.git
+        ```
+
+        并在上面的 CMake 指令中添加选项 `-DCMAKE_PREFIX_PATH=/home/huangcanjia/libigl/`，具体指定为下载的 **libigl** 目录
+
+    - :warning: 可能出现错误 `libdirectional not found`
+
+        该库下载到了 “DirectionalFieldSynthesis/demos/external/libdirectional/” 目录，同上添加相应的路径到 `-DCMAKE_PREFIX_PATH` 选项
+    
+    我实际执行的指令为：
+
+    ```
+    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/home/huangcanjia/libigl/:/home/huangcanjia/DirectionalFieldSynthesis/demos/external/libdirectional/ ..
+    ```
+
+:x: STILL FAILED... -->
