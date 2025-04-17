@@ -19,6 +19,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Direction Field
   - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
+  - [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
   - [DirectionalFieldSynthesis] - :x: [Failed!]
   - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
   - [nPV] - :no_entry_sign: [configuring...]
@@ -103,6 +104,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGAL]: CGAL/
 [CGNS]: CGNS/
 [CMake]: CMake/
+[Directional]: Directional/
 [DirectionalFieldSynthesis]: DirectionalFieldSynthesis/
 [Eigen]: Eigen/
 [fpm]: fpm/
