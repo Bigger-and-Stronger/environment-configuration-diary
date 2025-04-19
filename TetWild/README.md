@@ -68,6 +68,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 25/3/2025
     make -j8
     ```
 
+    - :warning: **libigl** 库可能出现错误 `error: there are no arguments to ‘assert’ that depend on a template parameter`
+
+        解决方法参考 [fTetWild 项目配置记录](../fTetWild/)
+
 5. 编译完成后会在 "TetWild/build" 目录下生成可执行文件 “TetWild”
 
 ## 测试

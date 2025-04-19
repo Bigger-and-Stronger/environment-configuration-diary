@@ -44,7 +44,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - Open CASCADE Technology
-  - [OCCT] - :computer: [Windows 10/11]
+  - [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
 
 - Quadrilateral
   - [hybrid-quad] - :no_entry_sign: [configuring...]
@@ -85,6 +85,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
   - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
   - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+  - [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - 远程服务器代理设置
   - [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -146,6 +147,7 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/
 [siren]: siren/
 [TBB]: TBB/
+[TCL, TK]: TCL-TK/
 [TetWild]: TetWild/
 [VMAS]: VMAS/
 [proxyForTheServer]: proxyForTheServer/

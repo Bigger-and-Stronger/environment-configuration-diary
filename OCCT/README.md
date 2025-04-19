@@ -1,5 +1,100 @@
 # Open CASCADE Technology 7.5.0 安装
 
+Canjia Huang <<canjia7@gmail.com>> last update 18/4/2025
+
+## :penguin: Ubuntu
+
+- 操作系统：Ubuntu 20.04.5 LTS
+
+### 预备步骤
+
+需要安装一些第三方依赖库：
+
+TCL 和 TK（可以参考 [TCL, TK 解释器配置记录](../TCL-TK/)）
+
+### 配置步骤
+
+参考 [ [1] ]
+
+1. 在官网 https://dev.opencascade.org/release 上下载源码（具体链接根据实际情况而定）：
+
+    ```
+    wget https://github.com/Open-Cascade-SAS/OCCT/archive/refs/tags/V7_9_0.tar.gz
+    ```
+
+    解压（具体文件名称根据实际情况而定）：
+
+    ```
+    tar -xvf OCCT-7_9_0.tar
+    ```
+
+    进入库目录：
+
+    ```
+    cd OCCT-7_9_0
+    ```
+
+2. 如果没有 root 权限，新建一个存放编译结果的目录：
+
+    ```
+    mkdir OCCT-installed
+    ```
+
+3. 新建存放编译过程文件的目录：
+
+    ```
+    mkdir build
+    ```
+
+    并进入：
+
+    ```
+    cd build
+    ```
+
+4. 使用 CMake 进行 configure：
+
+    - 需要设置 `3RDPARTY_TCL_INCLUDE_DIR` 选项为 **TCL** 库的安装路径（具体根据实际情况而定）：
+
+        ```
+        -D3RDPARTY_TCL_INCLUDE_DIR=/home/huangcanjia/tcl8.6.16/TCL-installed/include
+        ```
+    - 需要设置 `3RDPARTY_TK_INCLUDE_DIR` 选项为 **TCL** 库的安装路径（具体根据实际情况而定）：
+
+        ```
+        -D3RDPARTY_TK_INCLUDE_DIR=/home/huangcanjia/tk8.6.16/TK-installed/include
+        ```
+
+    完整的需要执行的指令为：
+
+    ```
+    cmake -DINSTALL_DIR=/home/huangcanjia/OCCT-7_9_0/OCCT-installed/ -D3RDPARTY_TCL_INCLUDE_DIR=/home/huangcanjia/tcl8.6.16/TCL-installed/include -D3RDPARTY_TK_INCLUDE_DIR=/home/huangcanjia/tk8.6.16/TK-installed/include ..
+    ```
+
+5. 编译：
+
+    ```
+    make -j
+    ```
+
+    - :warning: 如果遇到与 **TCL** 或 **TK** 库相关的错误
+
+        解决方法是什么都不做，重新执行 `make` 指令（不断重复执行，直到没有错误为止...）
+    
+    - :warning: 如果遇到错误 `internal compiler error: Segmentation fault`
+
+        可能是因为编译资源不足，不要用多线程编译，使用单线程编译 `make` 或 `make -j1`
+
+6. 安装：
+
+    ```
+    make install
+    ```
+
+[1]: https://www.cnblogs.com/ziangshen/articles/17633051.html
+
+---
+
 *Xiaoyang Yu, 2025-03-01.*
 
 ### 💻 Windows 10 / Windows 11

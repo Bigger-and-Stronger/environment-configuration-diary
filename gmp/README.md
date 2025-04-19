@@ -41,7 +41,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 14/4/2025
     进行 configure（`--prefix` 设置为刚新建的目录的绝对路径）：
 
     ```
-    ./configure --prefix=/home/huangcanjia/gmp-6.3.0/gmp-installed/ --enable-cxx
+    ./configure CFLAGS="-fPIC -O2" --prefix=/home/huangcanjia/gmp-6.3.0/gmp-installed/ --enable-cxx
     ```
 
 4. 编译：

@@ -20,6 +20,12 @@ Canjia Huang <<canjia7@gmail.com>> last update 15/4/2025
     wget https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.gz
     ```
 
+    - :star: 如果安装 **Boost** 库是为了 **CGAL** 库的使用，建议下载老版本的 **Boost**（如1.78.0）：
+
+        ```
+        wget https://archives.boost.io/release/1.78.0/source/boost_1_78_0.tar.gz
+        ```
+
 2. 解压（具体文件名称根据实际情况而定）：
 
     ```

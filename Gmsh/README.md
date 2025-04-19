@@ -50,19 +50,25 @@ Canjia Huang <<canjia7@gmail.com>> last update 2/4/2025
     - :star: 如果需要在外部调用 Gmsh API 的话，需要添加选项以编译动态链接库：
 
         ```
-        cmake -DENABLE_BUILD_DYNAMIC=1 ..
+        -DENABLE_BUILD_DYNAMIC=1
         ```
 
     - :star: 如果没有 root 权限，可以设置安装目录为以上新建的 “Gmsh-installed” 目录，并添加选项：
 
         ```
-        cmake -DCMAKE_INSTALL_PREFIX=../Gmsh-installed/ ..
+        -DCMAKE_INSTALL_PREFIX=../Gmsh-installed/
+        ```
+    
+    - :star: 如果想要编译带有 **OCCT** 的 **Gmsh**，参考 [ [2] ]，首先需要安装 **OCCT** 库（可以参考 [Open CASCADE Technology 7.5.0 安装](../OCCT/)），然后在 `CMAKE_PREFIX_PATH` 变量中添加 **OCCT** 的安装路径，即添加选项（具体路径根据实际情况而定）：
+
+        ```
+        -DCMAKE_PREFIX_PATH=/home/huangcanjia/OCCT-7_9_0/OCCT-installed/
         ```
     
     这里我输入的是：
 
     ```
-    cmake -DENABLE_BUILD_DYNAMIC=1 -DCMAKE_INSTALL_PREFIX=../Gmsh-installed/ ..
+    cmake -DENABLE_BUILD_DYNAMIC=1 -DCMAKE_INSTALL_PREFIX=../Gmsh-installed/ -DCMAKE_PREFIX_PATH=/home/huangcanjia/OCCT-7_9_0/OCCT-installed/ ..
     ```
 
 5. 编译：
@@ -82,3 +88,4 @@ Canjia Huang <<canjia7@gmail.com>> last update 2/4/2025
     如果在 C++ 中要使用 **Gmsh** 的话，需要将该目录下的 “include” 目录包含在头文件目录中，并链接 “lib” 目录下的链接库文件 `libgmsh.so`，具体 CMakeLists.txt 的编写可以参考 [ [1] ]
 
 [1]: https://gmsh.geuz.narkive.com/PFQx5b7j/link-c-code-to
+[2]: https://gitlab.onelab.info/gmsh/gmsh/-/wikis/Gmsh-compilation
