@@ -51,6 +51,7 @@ An environment configuration record concerning academic papers, third-party libr
   - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
   - [Instant Meshes] - :apple: [macOS 15.3.1]
   - [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
+  - [QuadQS] - :penguin: [Ubuntu 20.04.5 LTS]
   - [QuadriFlow] - :penguin: [Ubuntu 20.04.5 LTS]
   - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
   - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -142,6 +143,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Practical-3D-Frame-Field-Generation]: Practical-3D-Frame-Field-Generation/
 [QGP3D]: QGP3D/
 [QuadMixer]: QuadMixer/
+[QuadQS]: QuadQS/
 [QuadriFlow]: QuadriFlow/
 [QuadWild]: QuadWild/
 [QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/

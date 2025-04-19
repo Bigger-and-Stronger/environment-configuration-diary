@@ -16,8 +16,16 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/4/2025
 
 ### 测试
 
-进入存放有 **gmsh** 可执行文件的目录下：
+进入存放有 **gmsh** 可执行文件的目录下，执行指令为：
 
 ```
-./gmsh -algo quadqs -2 xxx
+./gmsh -algo quadqs -2 [file_path]
 ```
+
+- 如该文档目录下有 `stp` 模型文件 [HLPW-4_CRM-HL_far-field_v2.stp](HLPW-4_CRM-HL_far-field_v2.stp)（从 https://hiliftpw.larc.nasa.gov/Workshop4/geometries.html 下载），将该文件放置在该目录下，并执行：
+
+    ```
+    ./gmsh -algo quadqs -2 HLPW-4_CRM-HL_far-field_v2.stp
+    ```
+
+- 如果输入的模型是平凡的网格模型（不包含 boundary edges 信息），则会出现警告 `Warning : failed to expand dirichlet boundary conditions`，并且会生成空结果
