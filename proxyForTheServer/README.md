@@ -52,4 +52,10 @@ Canjia Huang <<canjia7@gmail.com>> last update 28/3/2025
 
     再重新打开该可执行文件
 
+---
+
+Xiaoyang Yu <<xiaoyangyu37@gmail.com>> last update 23/4/2025
+
+- :warning: Windows 端配置 display 输出，可以选择安装 [MobaXterm](https://mobaxterm.mobatek.net/)，选择 **MobaXterm Home Edition v25.1 (Portable edition)** 版本安装，解压缩后点击可执行文件即可启动终端。在 MobaXterm 终端上运行 Clash Verge，稍后会出现图形界面。
+
 [1]: https://cloud.tencent.com/developer/ask/sof/116441942
