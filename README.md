@@ -27,6 +27,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 - Hexahedral
   - [AlgoHex] - :no_entry_sign: [configuring...]
+  - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
   - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 - High-order Meshing
@@ -109,6 +110,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Directional]: Directional/
 [DirectionalFieldSynthesis]: DirectionalFieldSynthesis/
 [Eigen]: Eigen/
+[Feature-Preserving-Octree-Hex-Meshing]: Feature-Preserving-Octree-Hex-Meshing/
 [fpm]: fpm/
 [fTetWild]: fTetWild/
 [Geometric Tools Engine]: Geometric-Tools-Engine/
