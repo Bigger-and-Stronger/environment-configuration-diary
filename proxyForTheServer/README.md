@@ -61,7 +61,9 @@ Xiaoyang Yu <<xiaoyangyu37@gmail.com>> last update 23/4/2025
 
 Shi Chen <<shichen2001x@gmail.com>> last update 14/5/2025
 
-- :warning: Windows 端在 MobaXterm 终端上运行 Clash Verge，后未出现图形界面。参考[ [2] ]后成功显示：
+- :warning: Windows 端在 MobaXterm 终端上运行 Clash Verge，后未出现图形界面。
+
+   参考[ [2] ]后成功显示：
  
    MobaXterm -> Settings -> Configuration -> X11，Xorg version选择MobaX_21.1.12或更高，X11 remote access选择full。
 
