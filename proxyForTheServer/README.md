@@ -57,5 +57,17 @@ Canjia Huang <<canjia7@gmail.com>> last update 28/3/2025
 Xiaoyang Yu <<xiaoyangyu37@gmail.com>> last update 23/4/2025
 
 - :warning: Windows 端配置 display 输出，可以选择安装 [MobaXterm](https://mobaxterm.mobatek.net/)，选择 **MobaXterm Home Edition v25.1 (Portable edition)** 版本安装，解压缩后点击可执行文件即可启动终端。在 MobaXterm 终端上运行 Clash Verge，稍后会出现图形界面。
+---
+
+Shi Chen <<shichen2001x@gmail.com>> last update 14/5/2025
+
+- :warning: Windows 端在 MobaXterm 终端上运行 Clash Verge，后未出现图形界面。参考[ [2] ]后成功显示：
+ 
+   MobaXterm -> Settings -> Configuration -> X11，Xorg version选择MobaX_21.1.12或更高，X11 remote access选择full。
+
+   ![alt text](.pic/setting.png)
 
 [1]: https://cloud.tencent.com/developer/ask/sof/116441942
+[2]: https://blog.csdn.net/u014552102/article/details/129998921
+
+
