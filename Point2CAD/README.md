@@ -65,3 +65,33 @@ Pymesh by Qingnan Zhou，这篇文章用到的版本。下载并安装：
 
 
     $ conda env create -f environment.yml
+
+---
+
+Shi Chen <<shichen2001x@gmail.com>> last update 15/5/2025
+
+- :warning: 直接使用环境文件可能出现以下报错：
+  
+  `ERROR: No matching distribution found for pymesh2==0.3`
+
+  `ERROR: No matching distribution found for torch==1.12.1+cu116`
+
+  在`environment.yml`中注释掉以下行：
+
+    ```
+        #  - pymesh2==0.3
+        #  - torch==1.12.1+cu116
+        #  - torchaudio==0.12.1+cu116
+        #  - torchvision==0.13.1+cu116
+    ```
+  之后进入环境中：
+
+        $  conda activate point2cad
+
+   手动安装：
+
+        $  pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+        $  wget https://github.com/PyMesh/PyMesh/releases/download/v0.3/pymesh2-0.3-cp37-cp37m-linux_x86_64.whl
+
+        $  pip install pymesh2-0.3-cp37-cp37m-linux_x86_64.whl
