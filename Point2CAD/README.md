@@ -5,6 +5,7 @@
 ### 🐧 Linux
 
 平台：Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-125-generic x86_64)
+
 Cuda 版本：11.6
 
 ---
@@ -45,6 +46,7 @@ Cuda 版本：11.6
 由于有两个不同版本的 Pymesh ([Reference](https://www.jianshu.com/p/c776aaca8570))：
 
 Pymesh by Takuro Wada，如果我们直接使用pip install pymesh来进行安装，装上的就是这个版本。
+
 Pymesh by Qingnan Zhou，这篇文章用到的版本。下载并安装：
 
 
