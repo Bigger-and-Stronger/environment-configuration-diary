@@ -88,10 +88,29 @@ Shi Chen <<shichen2001x@gmail.com>> last update 15/5/2025
 
         $  conda activate point2cad
 
-   手动安装：
+  手动安装：
 
         $  pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
 
         $  wget https://github.com/PyMesh/PyMesh/releases/download/v0.3/pymesh2-0.3-cp37-cp37m-linux_x86_64.whl
 
         $  pip install pymesh2-0.3-cp37-cp37m-linux_x86_64.whl
+
+- :warning: 运行 `python main.py` 出现如下报错：
+
+    ```
+    Traceback (most recent call last):
+    File "/home/chenshi/miniconda3/envs/point2cad/lib/python3.7/concurrent/futures/process.py", line 239, in _process_worker
+            r = call_item.fn(*call_item.args, **call_item.kwargs)
+    File "/home/chenshi/point2cad/point2cad/fitting_one_surface.py", line 186, in process_one_surface
+        return out
+        UnboundLocalError: local variable 'out' referenced before assignment
+    ```
+  这是由于某些版本并不允许返回未初始化的局部变量。在 `fitting_one_surface.py` 文件中，找到函数 `process_one_surface` ，第一行加上 `out = None` 即可。
+
+    ```
+    def process_one_surface(label, points, labels, cfg, device):
+        out = None
+        ... ...
+    ```
+
