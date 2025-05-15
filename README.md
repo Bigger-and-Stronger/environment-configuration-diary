@@ -12,6 +12,7 @@ An environment configuration record concerning academic papers, third-party libr
 - BRep Reconstruction
   - [Geometric Tools Engine] - :computer: [Windows 10/11]
   - [ParseNet & SED-Net] - :computer: [Windows 10/11]
+  - [Point2CAD] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - Computational Fluid Dynamics (CFD)
   - [CGNS] - :apple: [macOS 15.3]
@@ -142,6 +143,7 @@ An environment configuration record concerning academic papers, third-party libr
 [PCL]: PCL/
 [PCO]: PCO/
 [PETSc]: PETSc/
+[Point2CAD]: Point2CAD/
 [Practical-3D-Frame-Field-Generation]: Practical-3D-Frame-Field-Generation/
 [QGP3D]: QGP3D/
 [QuadMixer]: QuadMixer/
