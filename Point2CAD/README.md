@@ -61,7 +61,7 @@ Pymesh by Qingnan Zhou，这篇文章用到的版本。下载并安装：
 
     $ python main.py
 
-我导出了环境文件，可以直接使用环境文件来复现安装环境：
+我导出了环境文件，~可以直接使用环境文件来复现安装环境~，考虑到 Pymesh 是手动安装的依赖库，不建议直接使用环境文件来复现环境：
 
 
     $ conda env create -f environment.yml
