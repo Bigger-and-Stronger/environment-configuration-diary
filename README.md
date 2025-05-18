@@ -91,6 +91,8 @@ An environment configuration record concerning academic papers, third-party libr
   - [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
 
 - 远程服务器代理设置
+  - [clash-for-linux] - :penguin: [Ubuntu 20.04.6 LTS]
+  - [proxychains-ng] - :penguin: [Ubuntu 20.04.6 LTS]
   - [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
 
  # Contributors
@@ -107,6 +109,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Boost]: Boost/
 [CGAL]: CGAL/
 [CGNS]: CGNS/
+[clash-for-linux]: clash-for-linux/
 [CMake]: CMake/
 [Directional]: Directional/
 [DirectionalFieldSynthesis]: DirectionalFieldSynthesis/
@@ -156,4 +159,5 @@ An environment configuration record concerning academic papers, third-party libr
 [TCL, TK]: TCL-TK/
 [TetWild]: TetWild/
 [VMAS]: VMAS/
+[proxychains-ng]: proxychains-ng/
 [proxyForTheServer]: proxyForTheServer/
