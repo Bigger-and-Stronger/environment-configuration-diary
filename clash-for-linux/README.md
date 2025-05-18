@@ -103,3 +103,19 @@
     ```
 
     此时已开启代理
+
+# CLion 中使用代理
+
+- CLion 版本：CLion 2024.3.4
+
+## 配置步骤
+
+1. 打开 “CLion - 设置”，选择 “外观与行为 - 系统设置 - HTTP 代理”（我这里是通过 CLion SSH 连接到 Linux 主机，即 clash-for-linux 的代理是在主机上配置的）
+
+2. 在选项卡中设置 “手动配置代理”，“HTTP”，并设置主机号和端口，如下图：
+
+    ![image](.pic/image.png)
+
+3. 点击 “检查连接”，并输入 `https://google.com`，点击 “确定”，成功后会出现下图：
+
+    ![image](.pic/image1.png)
