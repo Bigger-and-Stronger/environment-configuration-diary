@@ -38,7 +38,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [MCS] - :computer: [Windows 10/11]
 - [VMAS] - :computer: [Windows 10/11]
 
-## NeurField
+## Neural Field
 - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
 - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
 - [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
