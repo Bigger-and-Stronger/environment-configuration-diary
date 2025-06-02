@@ -101,63 +101,63 @@ An environment configuration record concerning academic papers, third-party libr
   <img src="https://contributors-img.web.app/image?repo=Bigger-and-Stronger/environment-configuration-diary"/>
 </a>
 
-[1-Lipschitz Neural Distance Fields]: 1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
-[4-Rosy-Complex-Poly]: 4-Rosy-Complex-Poly/
-[ALGLIB]: ALGLIB/
-[AlgoHex]: AlgoHex/
-[AntTweakBar]: AntTweakBar/
-[Boost]: Boost/
-[CGAL]: CGAL/
-[CGNS]: CGNS/
-[clash-for-linux]: clash-for-linux/
-[CMake]: CMake/
-[Directional]: Directional/
-[DirectionalFieldSynthesis]: DirectionalFieldSynthesis/
-[Eigen]: Eigen/
-[Feature-Preserving-Octree-Hex-Meshing]: Feature-Preserving-Octree-Hex-Meshing/
-[fpm]: fpm/
-[fTetWild]: fTetWild/
-[Geometric Tools Engine]: Geometric-Tools-Engine/
-[gmp]: gmp/
-[Gmsh]: Gmsh/
-[Gurobi]: Gurobi/
-[HOMQMesh]: HOHQMesh/
-[hybrid-quad]: hybrid-quad/
-[IGR]: IGR/
-[Instant Meshes]: Instant-Meshes/
-[lapack, blas, cblas, lapacke]: LAPACK/
-[libQEx]: libQEx/
-[Libtorch]: Libtorch/
-[LpCVT]: LpCVT/
-[MCS]: MCS/
-[MetricDrivenFrame3D]: MetricDrivenFrame3D/
-[Minpack]: Minpack/
-[mpfr]: mpfr/
-[NeurCADRecon]: NeurCADRecon/
-[NH-Rep]: NH-Rep/
-[nPV]: nPV/
-[OCCT]: OCCT/
-[OpenEXR]: OpenEXR/
-[OpenFOAM]: OpenFOAM/
-[OpenMesh]: OpenMesh/
-[OpenMPI]: OpenMPI/
-[p7zip]: p7zip/
-[ParseNet & SED-Net]: ParseNet+SED_Net/
-[PCL]: PCL/
-[PCO]: PCO/
-[PETSc]: PETSc/
-[Point2CAD]: Point2CAD/
-[Practical-3D-Frame-Field-Generation]: Practical-3D-Frame-Field-Generation/
-[QGP3D]: QGP3D/
-[QuadMixer]: QuadMixer/
-[QuadQS]: QuadQS/
-[QuadriFlow]: QuadriFlow/
-[QuadWild]: QuadWild/
-[QuadWild with Bi-MDF solver]: QuadWild-Bi-MDF-solver/
-[siren]: siren/
-[TBB]: TBB/
-[TCL, TK]: TCL-TK/
-[TetWild]: TetWild/
-[VMAS]: VMAS/
-[proxychains-ng]: proxychains-ng/
-[proxyForTheServer]: proxyForTheServer/
+[1-Lipschitz Neural Distance Fields]: src/1-Lipschitz-Neural-Distance-Fields-Ubuntu20.04.6/
+[4-Rosy-Complex-Poly]: src/4-Rosy-Complex-Poly/
+[ALGLIB]: src/ALGLIB/
+[AlgoHex]: src/AlgoHex/
+[AntTweakBar]: src/AntTweakBar/
+[Boost]: src/Boost/
+[CGAL]: src/CGAL/
+[CGNS]: src/CGNS/
+[clash-for-linux]: src/clash-for-linux/
+[CMake]: src/CMake/
+[Directional]: src/Directional/
+[DirectionalFieldSynthesis]: src/DirectionalFieldSynthesis/
+[Eigen]: src/Eigen/
+[Feature-Preserving-Octree-Hex-Meshing]: src/Feature-Preserving-Octree-Hex-Meshing/
+[fpm]: src/fpm/
+[fTetWild]: src/fTetWild/
+[Geometric Tools Engine]: src/Geometric-Tools-Engine/
+[gmp]: src/gmp/
+[Gmsh]: src/Gmsh/
+[Gurobi]: src/Gurobi/
+[HOMQMesh]: src/HOHQMesh/
+[hybrid-quad]: src/hybrid-quad/
+[IGR]: src/IGR/
+[Instant Meshes]: src/Instant-Meshes/
+[lapack, blas, cblas, lapacke]: src/LAPACK/
+[libQEx]: src/libQEx/
+[Libtorch]: src/Libtorch/
+[LpCVT]: src/LpCVT/
+[MCS]: src/MCS/
+[MetricDrivenFrame3D]: src/MetricDrivenFrame3D/
+[Minpack]: src/Minpack/
+[mpfr]: src/mpfr/
+[NeurCADRecon]: src/NeurCADRecon/
+[NH-Rep]: src/NH-Rep/
+[nPV]: src/nPV/
+[OCCT]: src/OCCT/
+[OpenEXR]: src/OpenEXR/
+[OpenFOAM]: src/OpenFOAM/
+[OpenMesh]: src/OpenMesh/
+[OpenMPI]: src/OpenMPI/
+[p7zip]: src/p7zip/
+[ParseNet & SED-Net]: src/ParseNet+SED_Net/
+[PCL]: src/PCL/
+[PCO]: src/PCO/
+[PETSc]: src/PETSc/
+[Point2CAD]: src/Point2CAD/
+[Practical-3D-Frame-Field-Generation]: src/Practical-3D-Frame-Field-Generation/
+[QGP3D]: src/QGP3D/
+[QuadMixer]: src/QuadMixer/
+[QuadQS]: src/QuadQS/
+[QuadriFlow]: src/QuadriFlow/
+[QuadWild]: src/QuadWild/
+[QuadWild with Bi-MDF solver]: src/QuadWild-Bi-MDF-solver/
+[siren]: src/siren/
+[TBB]: src/TBB/
+[TCL, TK]: src/TCL-TK/
+[TetWild]: src/TetWild/
+[VMAS]: src/VMAS/
+[proxychains-ng]: src/proxychains-ng/
+[proxyForTheServer]: src/proxyForTheServer/
