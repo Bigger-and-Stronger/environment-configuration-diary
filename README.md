@@ -83,11 +83,13 @@ An environment configuration record concerning academic papers, third-party libr
 - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Projects
+- [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+
+## Other Tools
 - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
 - [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
-- [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
-- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## 远程服务器代理设置
