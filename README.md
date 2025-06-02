@@ -9,91 +9,91 @@ An environment configuration record concerning academic papers, third-party libr
 @做大做强小组
 
 # Content
-- BRep Reconstruction
-  - [Geometric Tools Engine] - :computer: [Windows 10/11]
-  - [ParseNet & SED-Net] - :computer: [Windows 10/11]
-  - [Point2CAD] - :penguin: [Ubuntu 20.04.5 LTS]
+## BRep Reconstruction
+- [Geometric Tools Engine] - :computer: [Windows 10/11]
+- [ParseNet & SED-Net] - :computer: [Windows 10/11]
+- [Point2CAD] - :penguin: [Ubuntu 20.04.5 LTS]
 
-- Computational Fluid Dynamics (CFD)
-  - [CGNS] - :apple: [macOS 15.3]
-  - [OpenFOAM] - :apple: [macOS 15.3]
+## Computational Fluid Dynamics (CFD)
+- [CGNS] - :apple: [macOS 15.3]
+- [OpenFOAM] - :apple: [macOS 15.3]
 
-- Direction Field
-  - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [DirectionalFieldSynthesis] - :x: [Failed!]
-  - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
-  - [nPV] - :no_entry_sign: [configuring...]
-  - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
+## Direction Field
+- [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
+- [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
+- [DirectionalFieldSynthesis] - :x: [Failed!]
+- [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
+- [nPV] - :no_entry_sign: [configuring...]
+- [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
 
-- Hexahedral
-  - [AlgoHex] - :no_entry_sign: [configuring...]
-  - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
+## Hexahedral
+- [AlgoHex] - :no_entry_sign: [configuring...]
+- [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
+- [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
-- High-order Meshing
-  - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
+## High-order Meshing
+- [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
 
-- Medial Axis
-  - [MCS] - :computer: [Windows 10/11]
-  - [VMAS] - :computer: [Windows 10/11]
+## Medial Axis
+- [MCS] - :computer: [Windows 10/11]
+- [VMAS] - :computer: [Windows 10/11]
 
-- NeurField
-  - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [NH-Rep] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
+## NeurField
+- [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
+- [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
+- [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
+- [NH-Rep] - :penguin: [Ubuntu 20.04.6 LTS]
+- [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 
-- Open CASCADE Technology
-  - [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
+## Open CASCADE Technology
+- [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
 
-- Quadrilateral
-  - [hybrid-quad] - :no_entry_sign: [configuring...]
-  - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [Instant Meshes] - :apple: [macOS 15.3.1]
-  - [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
-  - [QuadQS] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [QuadriFlow] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
+## Quadrilateral
+- [hybrid-quad] - :no_entry_sign: [configuring...]
+- [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
+- [Instant Meshes] - :apple: [macOS 15.3.1]
+- [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
+- [QuadQS] - :penguin: [Ubuntu 20.04.5 LTS]
+- [QuadriFlow] - :penguin: [Ubuntu 20.04.5 LTS]
+- [QuadWild] - :penguin: [Ubuntu 20.04.6 LTS]
+- [QuadWild with Bi-MDF solver] - :penguin: [Ubuntu 20.04.5 LTS]
 
-- Tetrahedral
-  - [fTetWild] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
+## Tetrahedral
+- [fTetWild] - :penguin: [Ubuntu 20.04.6 LTS]
+- [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
-- Other Libraries
-  - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [Minpack] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [mpfr] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [PCL] - :computer: [Windows 10/11]
-  - [PETSc] - :no_entry_sign: [configuring...]
-  - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
+## Other Libraries
+- [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
+- [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
+- [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
+- [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
+- [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
+- [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
+- [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Minpack] - :penguin: [Ubuntu 20.04.6 LTS]
+- [mpfr] - :penguin: [Ubuntu 20.04.5 LTS]
+- [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
+- [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
+- [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
+- [PCL] - :computer: [Windows 10/11]
+- [PETSc] - :no_entry_sign: [configuring...]
+- [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
-- Other Projects
-  - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu latest] :computer: [Windows 10]
-  - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
-  - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
-  - [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
+## Other Projects
+- [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
+- [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
+- [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
+- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
 
-- 远程服务器代理设置
-  - [clash-for-linux] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [proxychains-ng] - :penguin: [Ubuntu 20.04.6 LTS]
-  - [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
+## 远程服务器代理设置
+- [clash-for-linux] - :penguin: [Ubuntu 20.04.6 LTS]
+- [proxychains-ng] - :penguin: [Ubuntu 20.04.6 LTS]
+- [proxyForTheServer] - :penguin: [Ubuntu 20.04.6 LTS]
 
  # Contributors
 
