@@ -27,3 +27,5 @@ pythonocc 提供了预编译的 conda 软件包。参考项目仓库给出的配
 ### 测试
 
 我这里给出了一个测试文件，运行 `python create_cube.py` 测试程序，如果安装成功，会导出一个 `cube.step` 文件，并且出现一个可视化窗口。如果是在服务器上运行程序且不支持可视化，请注释 `display_shape(cube)`。
+
+![](.img/cube.png)

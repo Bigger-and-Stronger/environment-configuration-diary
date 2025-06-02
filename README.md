@@ -47,6 +47,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Open CASCADE Technology
 - [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
+- [pythonocc] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## Quadrilateral
 - [hybrid-quad] - :no_entry_sign: [configuring...]
@@ -150,6 +151,7 @@ An environment configuration record concerning academic papers, third-party libr
 [PETSc]: src/PETSc/
 [Point2CAD]: src/Point2CAD/
 [Practical-3D-Frame-Field-Generation]: src/Practical-3D-Frame-Field-Generation/
+[pythonocc]: src/pythonocc/
 [QGP3D]: src/QGP3D/
 [QuadMixer]: src/QuadMixer/
 [QuadQS]: src/QuadQS/
