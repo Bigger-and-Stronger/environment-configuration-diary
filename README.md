@@ -64,7 +64,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## Triangular
-- [[TriWild]] - :penguin: [Ubuntu 20.04.6 LTS]
+- [TriWild] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Libraries
 - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
