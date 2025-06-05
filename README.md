@@ -63,6 +63,9 @@ An environment configuration record concerning academic papers, third-party libr
 - [fTetWild] - :penguin: [Ubuntu 20.04.6 LTS]
 - [TetWild] - :penguin: [Ubuntu 20.04.5 LTS]
 
+## Triangular
+- [[TriWild]] - :penguin: [Ubuntu 20.04.6 LTS]
+
 ## Other Libraries
 - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
 - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -162,6 +165,7 @@ An environment configuration record concerning academic papers, third-party libr
 [TBB]: src/TBB/
 [TCL, TK]: src/TCL-TK/
 [TetWild]: src/TetWild/
+[TriWild]: src/TriWild/
 [VMAS]: src/VMAS/
 [proxychains-ng]: src/proxychains-ng/
 [proxyForTheServer]: src/proxyForTheServer/
