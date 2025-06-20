@@ -91,8 +91,10 @@ An environment configuration record concerning academic papers, third-party libr
 - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 
 ## Other Tools
+- [binutils] - :penguin: [Ubuntu 20.04.6 LTS]
 - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
 - [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
+- [gcc] - :penguin: [Ubuntu 20.04.6 LTS]
 - [p7zip] - :penguin: [Ubuntu 20.04.5 LTS]
 - [TCL, TK] - :penguin: [Ubuntu 20.04.5 LTS]
 
@@ -112,6 +114,7 @@ An environment configuration record concerning academic papers, third-party libr
 [ALGLIB]: src/ALGLIB/
 [AlgoHex]: src/AlgoHex/
 [AntTweakBar]: src/AntTweakBar/
+[binutils]: src/binutils/
 [Boost]: src/Boost/
 [CGAL]: src/CGAL/
 [CGNS]: src/CGNS/
@@ -123,6 +126,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Feature-Preserving-Octree-Hex-Meshing]: src/Feature-Preserving-Octree-Hex-Meshing/
 [fpm]: src/fpm/
 [fTetWild]: src/fTetWild/
+[gcc]: src/gcc/
 [Geometric Tools Engine]: src/Geometric-Tools-Engine/
 [gmp]: src/gmp/
 [Gmsh]: src/Gmsh/
