@@ -114,6 +114,40 @@ Canjia Huang <<canjia7@gmail.com>> update 20/6/2025
 
     可以看到现在使用的是安装得到的 gcc
 
+## 其他问题
+
+- :warning: 如果在使用该 gcc 进行程序编译后，运行程序时出现错误 `/lib/x86_64-linux-gnu/libstdc++.so.6: version GLIBCXX_3.4.32 not found`
+
+    解决方法参考 [ [4] ]
+
+    首先查找编译结果中的 “libstdc++” 文件（具体查找路径根据实际情况而定）：
+
+    ```
+    find /home/huangcanjia/gcc-15.1.0/gcc-installed/ -name "libstdc++.so.6*"
+    ```
+
+    在查找结果中找到一个版本比较高的
+    
+    ![alt text](.pic/image.png)
+
+    使用以下指令查看其是否包含所需的 GLIBCXX 版本：
+
+    ```
+    strings /home/huangcanjia/gcc-15.1.0/gcc-installed/lib64/libstdc++.so.6.0.34 | grep GLIBCXX
+    ```
+
+    应该会有需要的版本
+
+    - 如果有 root 权限的话，接下来建立新的链接到该文件上，具体细节参考 [ [4] ]
+
+    - 如果是在 IDE 中使用 SSH 连接而出现该错误的话
+      - 一种解决方法是通过终端来执行编译好的可执行文件，而不是直接在 IDE 中运行
+      - 另一种解决方法是在 IDE 中添加相应的系统环境变量，如在 CLion 中，在 ”运行/调试配置“ 中添加环境变量为上述定义的 `LD_LIBRARY_PATH` 路径
+
+        ![alt text](.pic/image1.png)
+
+
 [1]: https://blog.csdn.net/Fhujinwu/article/details/113786909
 [2]: https://blog.csdn.net/nianjiuhuiyi/article/details/126499209
 [3]: https://superuser.com/questions/1161220/how-to-build-gcc-6-x-0-on-x64-without-unknown-spec-complain
+[4]: https://blog.csdn.net/weixin_39379635/article/details/129159713
