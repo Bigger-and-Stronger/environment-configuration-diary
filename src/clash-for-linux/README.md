@@ -2,6 +2,10 @@
 
 本文档为配置 clash-for-linux-install 的记录 [ [github] ](https://github.com/nelvko/clash-for-linux-install)
 
+---
+
+Canjia Huang <<canjia7@gmail.com>> last update 25/6/2025
+
 # :penguin: Ubuntu
 
 - 操作系统：Ubuntu 20.04.6 LTS
