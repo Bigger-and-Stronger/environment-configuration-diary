@@ -29,6 +29,7 @@ An environment configuration record concerning academic papers, third-party libr
 ## Hexahedral
 - [AlgoHex] - :no_entry_sign: [configuring...]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
+- [libHexEx] - :penguin: [Ubuntu 20.04.6 LTS]
 - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## High-order Meshing
@@ -82,6 +83,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [OpenEXR] - :penguin: [Ubuntu 20.04.6 LTS]
 - [OpenMesh] - :penguin: [Ubuntu 20.04.5 LTS]
 - [OpenMPI] - :penguin: [Ubuntu 20.04.5 LTS]
+- [OpenVolumeMesh] - :penguin: [Ubuntu 20.04.6 LTS]
 - [PCL] - :computer: [Windows 10/11]
 - [PETSc] - :no_entry_sign: [configuring...]
 - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -137,6 +139,7 @@ An environment configuration record concerning academic papers, third-party libr
 [IGR]: src/IGR/
 [Instant Meshes]: src/Instant-Meshes/
 [lapack, blas, cblas, lapacke]: src/LAPACK/
+[libHexEx]: src/libHexEx/
 [libQEx]: src/libQEx/
 [Libtorch]: src/Libtorch/
 [LpCVT]: src/LpCVT/
@@ -152,6 +155,7 @@ An environment configuration record concerning academic papers, third-party libr
 [OpenFOAM]: src/OpenFOAM/
 [OpenMesh]: src/OpenMesh/
 [OpenMPI]: src/OpenMPI/
+[OpenVolumeMesh]: src/OpenVolumeMesh/
 [p7zip]: src/p7zip/
 [ParseNet & SED-Net]: src/ParseNet+SED_Net/
 [PCL]: src/PCL/
