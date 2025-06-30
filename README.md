@@ -28,6 +28,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Hexahedral
 - [AlgoHex] - :no_entry_sign: [configuring...]
+- [CubeCover] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
 - [libHexEx] - :penguin: [Ubuntu 20.04.6 LTS]
 - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -86,6 +87,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [OpenVolumeMesh] - :penguin: [Ubuntu 20.04.6 LTS]
 - [PCL] - :computer: [Windows 10/11]
 - [PETSc] - :no_entry_sign: [configuring...]
+- [polyscope] - :penguin: [Ubuntu 20.04.6 LTS]
 - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Projects
@@ -123,6 +125,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGNS]: src/CGNS/
 [clash-for-linux]: src/clash-for-linux/
 [CMake]: src/CMake/
+[CubeCover]: src/CubeCover/
 [Directional]: src/Directional/
 [DirectionalFieldSynthesis]: src/DirectionalFieldSynthesis/
 [Eigen]: src/Eigen/
@@ -162,6 +165,7 @@ An environment configuration record concerning academic papers, third-party libr
 [PCO]: src/PCO/
 [PETSc]: src/PETSc/
 [Point2CAD]: src/Point2CAD/
+[polyscope]: src/polyscope/
 [Practical-3D-Frame-Field-Generation]: src/Practical-3D-Frame-Field-Generation/
 [pythonocc]: src/pythonocc/
 [QGP3D]: src/QGP3D/
