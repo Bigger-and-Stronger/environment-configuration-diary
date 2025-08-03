@@ -22,9 +22,16 @@ Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
     cd OpenVolumeMesh
     ```
 
-2. 使用 CMake 进行 configure：
+2. 新建存放编译结果的目录，并进入：
+   
+   ```
+   mkdir build
+   cd build
+   ```
+
+3. 使用 CMake 进行 configure：
     ```
-    cmake .
+    cmake ..
     ```
 
     - 默认生成的是静态链接库（\*.a, \*.lib），如果希望生成动态链接库（\*.dll, \*.so, \*.dylib），需要设置 CMake 选项 `BUILD_SHARED_LIBS` 为 true，即：
@@ -35,7 +42,23 @@ Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
 
         编译的链接库在该目录下的 “Build/lib” 目录下
 
-3. 编译：
+4. 编译：
     ```
     make -j
+    ```
+
+# :apple: macOS
+
+- 操作系统：macOS Tahoe (26.0, Beta 25A5316i)
+
+## 配置步骤
+
+同上
+
+- :warning: 在编译过程中可能出现错误 `error: <cstddef> tried including <stddef.h> but didn't find libc++'s <stddef.h> header.`
+    解决方法是更新一个 cmake 和 llvm，即在终端中输入：
+    
+    ```
+    brew update
+    brew upgrade cmake llvm
     ```
