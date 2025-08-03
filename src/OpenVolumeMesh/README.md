@@ -22,18 +22,12 @@ Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
     cd OpenVolumeMesh
     ```
 
-2. 新建存放编译结果的目录，并进入：
-   
-   ```
-   mkdir build
-   cd build
-   ```
-
-3. 使用 CMake 进行 configure：
+2. 使用 CMake 进行 configure：
     ```
-    cmake ..
+    cmake .
     ```
 
+    - :exploding_head: 注意，这里最好不要在新建的目录下进行配置（而是直接在根目录下进行 configure），因为可能会导致生成的文件缺失
     - 默认生成的是静态链接库（\*.a, \*.lib），如果希望生成动态链接库（\*.dll, \*.so, \*.dylib），需要设置 CMake 选项 `BUILD_SHARED_LIBS` 为 true，即：
 
         ```
@@ -42,7 +36,7 @@ Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
 
         编译的链接库在该目录下的 “Build/lib” 目录下
 
-4. 编译：
+3. 编译：
     ```
     make -j
     ```
