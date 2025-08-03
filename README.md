@@ -88,6 +88,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [PCL] - :computer: [Windows 10/11]
 - [PETSc] - :no_entry_sign: [configuring...]
 - [polyscope] - :penguin: [Ubuntu 20.04.6 LTS]
+- [SuiteSparse] - :computer: [Windows 10/11]
 - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Projects
@@ -175,6 +176,7 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadWild]: src/QuadWild/
 [QuadWild with Bi-MDF solver]: src/QuadWild-Bi-MDF-solver/
 [siren]: src/siren/
+[SuiteSparse]: src/SuiteSparse/
 [TBB]: src/TBB/
 [TCL, TK]: src/TCL-TK/
 [TetWild]: src/TetWild/
