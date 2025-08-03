@@ -50,7 +50,7 @@ Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
 同上
 
 - :warning: 在编译过程中可能出现错误 `error: <cstddef> tried including <stddef.h> but didn't find libc++'s <stddef.h> header.`
-    解决方法是更新一个 cmake 和 llvm，即在终端中输入：
+    解决方法是更新一下 cmake 和 llvm，即在终端中输入：
     
     ```
     brew update
