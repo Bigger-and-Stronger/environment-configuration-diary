@@ -23,6 +23,57 @@
 }
 ```
 
+<!-- ---
+
+Canjia Huang <<canjia7@gmail.com>> update 3/8/2025
+
+libHex 提供了编译好的 Windows 和 Linux 下的可执行命令行控制程序，对于 Linux 下的命令行工具，配置如下
+
+# :penguin: Ubuntu
+
+- 操作系统：Ubuntu 20.04.6 LTS
+
+## 配置步骤
+
+1. 将该命令行工具（https://www.graphics.rwth-aachen.de/media/resource_files/HexEx_Linux_1_01.zip） 下载到本地
+
+2. 解压，并运行其中的可执行文件 “hexex”，可能会出现错误：
+
+    - :warning: error while loading shared libraries: libOpenVolumeMesh.so.2.0: cannot open shared object file: No such file or directory
+        需要配置 **OpenVolumeMesh** 库，具体可以参考 [OpenVolumeMesh 配置记录](../OpenVolumeMesh)，且需要编译出动态链接库
+
+        需要注意的是，所需的库的版本为 2.0（小于最新版）
+
+        ```
+        tar zxvf OpenVolumeMesh-v2.0.0.tar.gz
+        ```
+
+        如果编译出的动态链接库版本与所需的不符（如我编译出的是 **libOpenVolumeMesh.so.3.4**，而所需的是 **libOpenVolumeMesh.so.2.0**），需要创建版本兼容符号链接
+
+        即进入动态链接库所在目录，执行：
+
+        ```
+        ln -s libOpenVolumeMesh.so.3.4 libOpenVolumeMesh.so.2.0
+        ```
+
+        同时将编译出的动态链接库所在目录添加到系统环境变量 `LD_LIBRARY_PATH` 中：
+
+        ```
+        vim ~/.bashrc
+        ```
+
+        并将以下内容添加到该文件最下方（具体路径根据实际情况而定）：
+
+        ```
+        export LD_LIBRARY_PATH=/home/huangcanjia/OpenVolumeMesh/Build/lib/:$LD_LIBRARY_PATH
+        ```
+
+        并重新载入环境变量：
+
+        ```
+        source ~/.bashrc
+        ``` -->
+
 ---
 
 Canjia Huang <<canjia7@gmail.com>> update 27/6/2025
