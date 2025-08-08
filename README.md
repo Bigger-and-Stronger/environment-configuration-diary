@@ -44,6 +44,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
 - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
 - [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Neural-Singular-Hessian] - :penguin: [Ubuntu 20.04.6 LTS]
 - [NH-Rep] - :penguin: [Ubuntu 20.04.6 LTS]
 - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 
@@ -152,6 +153,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Minpack]: src/Minpack/
 [mpfr]: src/mpfr/
 [NeurCADRecon]: src/NeurCADRecon/
+[Neural-Singular-Hessian]: src/Neural-Singular-Hessian/
 [NH-Rep]: src/NH-Rep/
 [nPV]: src/nPV/
 [OCCT]: src/OCCT/
