@@ -57,7 +57,7 @@ UnicodeEncodeError: 'ascii' codec can't encode character '\xb1' in position 1269
 
 解决方法：把 `./utils/visualizations.py` 104 行 `fig.write_html(save_path)`，替换为
 
-```
+```python
 html_str = fig.to_html()
 with open(save_path, 'w', encoding='utf-8') as f:
     f.write(html_str)
