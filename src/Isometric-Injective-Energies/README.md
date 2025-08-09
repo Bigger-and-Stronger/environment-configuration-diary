@@ -1,10 +1,10 @@
-Isometric Injective Energies | Windows11配置
+# Isometric Injective Energies | Windows11配置
 
 
-By Shi Chen 09/08/2025
+By Shi Chen, 09/08/2025
 
 
-#### 论文：
+## 论文
 
 Du X, Kaufman D M, Zhou Q, et al. Isometric energies for recovering injectivity in constrained mapping[C]//SIGGRAPH Asia 2022 Conference Papers. 2022: 1-9.
 
@@ -20,7 +20,7 @@ Du X, Aigerman N, Zhou Q, et al. Lifting simplices to find injectivity[J]. ACM T
 [Paper](https://duxingyi-charles.github.io/publication/lifting-simplices-to-find-injectivity/Lifting-Simplices-to-Find-Injectivity.pdf) | [Code](https://github.com/duxingyi-charles/lifting_simplices_to_find_injectivity)
 
 
-#### 依赖库
+## 依赖库
 
 - Eigen3
 - CLI11
@@ -30,10 +30,10 @@ Du X, Aigerman N, Zhou Q, et al. Lifting simplices to find injectivity[J]. ACM T
 - suitesparse
 
 
-#### 可能的问题
+## 可能的问题
 
 
-##### 网络问题
+### 网络问题
 
 FetchContent下载时因为**网络问题**报错，可以自行配置依赖库(作者设置的FetchContent下载的库在Windows中`vcpkg`都可以配)，然后改一下`cmake`文件夹下的`.cmake`文件，例如`cli11.cmake`:
 
@@ -59,7 +59,7 @@ FetchContent_MakeAvailable(cli11)
 其他的几个`.cmake`文件也是这样改。
 
 
-##### SuiteSparse没找到
+### SuiteSparse没找到
 
 报错信息：
 
@@ -100,7 +100,7 @@ target_link_libraries(distortion_3D PRIVATE SuiteSparse::cholmod)
 ```
 
 
-##### The target was not found
+### The target was not found
 
 ```
 
@@ -199,7 +199,7 @@ set (NLOPT_LIBRARIES "NLopt::nlopt")
 其他的库也可能报这种问题，按类似的步骤搜索一下自己对应的`.cmake`文件对齐一下名字即可。
 
 
-#### 测试案例以及文件格式
+## 测试案例以及文件格式
 
 生成完成后，在`...\build\Release`路径下， 使用作者提供的案例做个测试：
 
