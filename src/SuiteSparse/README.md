@@ -26,6 +26,7 @@ By Shi Chen 03/08/2025
 5. 点击”Generate“。
 6. Visual Studio打开项目，点击`INSTALL`项目**分别在Debug和Release模式下执行“生成”**。
 7. 确认一下你的`insatll`目录下是否有`suitesparse-config.cmake`或`SuiteSparseConfig.cmake`文件，例如我的位置是在`.../build/install/lib/cmake/suitesparse-7.5.1`， 这是后续项目中`SuiteSparse_DIR `需要设置的地方。
+8. 把`E:\Library\SR_ROOT\suitesparse-metis-for-windows\build\lib\Debug`和`E:\Library\SR_ROOT\suitesparse-metis-for-windows\build\lib\Release`,添加到`PATH`。
 
 ### 在你的项目中用上
 

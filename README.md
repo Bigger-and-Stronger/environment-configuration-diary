@@ -93,6 +93,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [TBB] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Projects
+- [Isometric-Injective-Energies] - :computer: [Windows 10/11]
 - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [VolumeMesher] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -143,6 +144,7 @@ An environment configuration record concerning academic papers, third-party libr
 [hybrid-quad]: src/hybrid-quad/
 [IGR]: src/IGR/
 [Instant Meshes]: src/Instant-Meshes/
+[Isometric-Injective-Energies]: src/Isometric-Injective-Energies/
 [lapack, blas, cblas, lapacke]: src/LAPACK/
 [libHexEx]: src/libHexEx/
 [libQEx]: src/libQEx/
