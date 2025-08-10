@@ -43,6 +43,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Neural Field
 - [1-Lipschitz Neural Distance Fields] - :penguin: [Ubuntu 20.04.6 LTS]
+- [DiGS] - :penguin: [Ubuntu 20.04.6 LTS]
 - [IGR] - :penguin: [Ubuntu 20.04.6 LTS]
 - [NeurCADRecon] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Neural-Singular-Hessian] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -130,6 +131,7 @@ An environment configuration record concerning academic papers, third-party libr
 [clash-for-linux]: src/clash-for-linux/
 [CMake]: src/CMake/
 [CubeCover]: src/CubeCover/
+[DiGS]: src/DiGS/
 [Directional]: src/Directional/
 [DirectionalFieldSynthesis]: src/DirectionalFieldSynthesis/
 [Eigen]: src/Eigen/
