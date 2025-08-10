@@ -22,6 +22,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
 - [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
 - [DirectionalFieldSynthesis] - :x: [Failed!]
+- [libSCOF] - :penguin: [Ubuntu 20.04.6 LTS]
 - [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
 - [nPV] - :no_entry_sign: [configuring...]
 - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -148,6 +149,7 @@ An environment configuration record concerning academic papers, third-party libr
 [lapack, blas, cblas, lapacke]: src/LAPACK/
 [libHexEx]: src/libHexEx/
 [libQEx]: src/libQEx/
+[libSCOF]: src/libSCOF/
 [Libtorch]: src/Libtorch/
 [LpCVT]: src/LpCVT/
 [MCS]: src/MCS/
