@@ -32,13 +32,9 @@
 
 ### 测试
 
-作者提供了一个二维形状测试脚本，无需外部数据
+作者提供了测试数据
 
 
-    $ cd sanitychecks
-
-    $ chmod +x ./scripts/run_train_test_basic_shape.sh
-
-    $ ./scripts/run_train_test_basic_shape.sh
+    $ python run.py --gpu 0 --conf confs/npull.conf --dataname gargoyle --dir gargoyle
 
 
