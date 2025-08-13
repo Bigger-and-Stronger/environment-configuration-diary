@@ -95,6 +95,20 @@ Canjia Huang <<canjia7@gmail.com>> last update 27/3/2025
         - 提高 **nvcc** 版本
         - 一种解决方法是调低 C++ 标准版本，此处我是因为在 “CMakeLists.txt” 中设置了使用 C++20，调低即可（此处我调整为 C++14）
 
+
+    针对以上定义，可以在 CMakeLists 中添加：
+
+    ```
+    set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda-12.2/)
+    set(CMAKE_CUDA_COMPILER "/usr/local/cuda-12.2/bin/nvcc")
+    set(CUDNN_ROOT "/home/huangcanjia/.conda/envs/igr")
+    set(Torch_DIR "/home/huangcanjia/.conda/envs/igr/lib/python3.7/site-packages/torch/share/cmake/Torch")
+    include_directories("/home/huangcanjia/.conda/envs/igr/lib/python3.7/site-packages/torch/include")
+    include_directories("/home/huangcanjia/.conda/envs/igr/lib/python3.7/site-packages/torch/include/torch/csrc/api/include")
+    ```
+
+    其中 `torch/torch.h` 文件可能不在一般路径下，需要通过 `find . -name "torch.h"` 找到具体位置，并添加到 `include_directories` 中
+
 ## 测试
 
 在 C++ 程序中添加头文件 `#include "torch/torch.h"` 使用
