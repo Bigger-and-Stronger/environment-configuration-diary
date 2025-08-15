@@ -32,6 +32,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [CubeCover] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
 - [libHexEx] - :penguin: [Ubuntu 20.04.6 LTS]
+- [libHexHex] - :penguin: [Ubuntu 20.04.6 LTS]
 - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## High-order Meshing
@@ -151,6 +152,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Isometric-Injective-Energies]: src/Isometric-Injective-Energies/
 [lapack, blas, cblas, lapacke]: src/LAPACK/
 [libHexEx]: src/libHexEx/
+[libHexHex]: src/libHexHex/
 [libQEx]: src/libQEx/
 [libSCOF]: src/libSCOF/
 [Libtorch]: src/Libtorch/
