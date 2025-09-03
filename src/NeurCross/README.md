@@ -108,7 +108,7 @@ See also "/home/yuxiaoyang/NeurCross/quad_mesh/libigl-2.5.0/build/CMakeFiles/CMa
 
     $ make -j
 
-案例 505 中没有导入交叉场与导出 obj，我添加一些功能，详见 [main.cpp](/main.cpp)
+案例 505 中没有导入交叉场与导出 obj，我添加一些功能，详见 [main.cpp](./main.cpp)
 
 ---
 
