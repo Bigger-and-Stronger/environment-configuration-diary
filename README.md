@@ -60,6 +60,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [hybrid-quad] - :no_entry_sign: [configuring...]
 - [libQEx] - :penguin: [Ubuntu 20.04.5 LTS]
 - [Instant Meshes] - :apple: [macOS 15.3.1]
+- [NeurCross] - :penguin: [Ubuntu 20.04.6 LTS]
 - [QuadMixer] - :penguin: [Ubuntu 20.04.6 LTS] :sos: [cannot use]
 - [QuadQS] - :penguin: [Ubuntu 20.04.5 LTS]
 - [QuadriFlow] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -162,6 +163,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Minpack]: src/Minpack/
 [mpfr]: src/mpfr/
 [NeurCADRecon]: src/NeurCADRecon/
+[NeurCross]: src/NeurCross/
 [Neural-Pull]: src/Neural-Pull/
 [Neural-Singular-Hessian]: src/Neural-Singular-Hessian/
 [NH-Rep]: src/NH-Rep/
