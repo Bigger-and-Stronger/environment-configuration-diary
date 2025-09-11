@@ -105,6 +105,8 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Other Tools
 - [binutils] - :penguin: [Ubuntu 20.04.6 LTS]
+- [bison] - :penguin: [Ubuntu 20.04.6 LTS]
+- [CFortranTranslator] - :penguin: [Ubuntu 20.04.6 LTS]
 - [CMake] - :penguin: [Ubuntu 20.04.6 LTS]
 - [fpm] - :penguin: [Ubuntu 20.04.6 LTS]
 - [gcc] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -128,7 +130,9 @@ An environment configuration record concerning academic papers, third-party libr
 [AlgoHex]: src/AlgoHex/
 [AntTweakBar]: src/AntTweakBar/
 [binutils]: src/binutils/
+[bison]: src/bison/
 [Boost]: src/Boost/
+[CFortranTranslator]: src/CFortranTranslator/
 [CGAL]: src/CGAL/
 [CGNS]: src/CGNS/
 [clash-for-linux]: src/clash-for-linux/
