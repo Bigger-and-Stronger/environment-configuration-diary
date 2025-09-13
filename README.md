@@ -82,6 +82,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
 - [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
 - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
+- [gsl] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
 - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -149,6 +150,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Geometric Tools Engine]: src/Geometric-Tools-Engine/
 [gmp]: src/gmp/
 [Gmsh]: src/Gmsh/
+[gsl]: src/gsl/
 [Gurobi]: src/Gurobi/
 [HOMQMesh]: src/HOHQMesh/
 [hybrid-quad]: src/hybrid-quad/
