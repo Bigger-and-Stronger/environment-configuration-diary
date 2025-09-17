@@ -1,5 +1,8 @@
 # Winding Number Normal Consistency (WNNC)
 
+*Shi Chen 17/09/2025*
+
+
 ## 论文
 
 Siyou Lin, Zuoqiang Shi, Yebin Liu, *"Fast and Globally Consistent Normal Orientation based on the Winding Number Normal Consistency".* 
