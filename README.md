@@ -103,6 +103,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [VolumeMesher] - :penguin: [Ubuntu 20.04.6 LTS]
+- [WNNC] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## Other Tools
 - [binutils] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -203,5 +204,6 @@ An environment configuration record concerning academic papers, third-party libr
 [TriWild]: src/TriWild/
 [VMAS]: src/VMAS/
 [VolumeMesher]: src/VolumeMesher/
+[WNNC]: src/WNNC/
 [proxychains-ng]: src/proxychains-ng/
 [proxyForTheServer]: src/proxyForTheServer/
