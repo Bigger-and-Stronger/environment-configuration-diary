@@ -80,6 +80,17 @@ Canjia Huang <<canjia7@gmail.com>> update 20/6/2025
   
         <!-- 可能是因为编译该版本 gcc 所需的宿主 gcc 版本太低导致的（我这里的宿主 gcc 版本为 10.5.0），可以通过该文档前述步骤先配置一个稍微高一点版本的 gcc（我这里重新配置了版本为 12.1.0 的 gcc）作为宿主 gcc，再配置更高版本的 gcc -->
 
+    - :warning: 可能出现错误 `#error "Where has __float128 gone?"`
+
+        参考 [ [5] ]，取消设定变量 `C_INCLUDE_PATH` 和 `CPATH`：
+
+        ```
+        unset C_INCLUDE_PATH
+        unset CPATH
+        ```
+
+        再重新进行编译
+
 7. 安装 gcc，执行：
 
     ```
@@ -151,3 +162,4 @@ Canjia Huang <<canjia7@gmail.com>> update 20/6/2025
 [2]: https://blog.csdn.net/nianjiuhuiyi/article/details/126499209
 [3]: https://superuser.com/questions/1161220/how-to-build-gcc-6-x-0-on-x64-without-unknown-spec-complain
 [4]: https://blog.csdn.net/weixin_39379635/article/details/129159713
+[5]: https://stackoverflow.com/questions/17581278/how-to-resolve-gcc-bootstrap-error-where-has-float-128-gone
