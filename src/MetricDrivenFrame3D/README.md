@@ -34,7 +34,7 @@ sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack
 
 如果没有 root 权限的话，安装过程如下：
 
-1. 安装 **minpack** 库，具体参考 [Minpack 库配置记录](../Minpack/)，需要编译出动态链接库，以及软链接 “libminpack.so.1” 并将链接库目录添加到系统环境变量
+1. 安装 **minpack** 库，具体参考 [Minpack 库配置记录](../Minpack/) 和 [CMinpack 库配置记录](../CMinpack/)，需要编译出动态链接库，以及软链接 “libminpack.so.1” 并将链接库目录添加到系统环境变量
 
     - :star: 软链接的生成方式如：
 
@@ -42,7 +42,11 @@ sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack
         ln -s libminpack.so libminpack.so.1
         ```
 
+    我这里选择的是配置 **CMinpack**，并选择生成动态链接库（默认是静态链接库），然后将 libcminpack.so 软链接到 libminpack.so.1
+
 2. 安装 **alglib** 库，具体参考 [ALGLIB 库配置记录](../ALGLIB/) 需要编译出动态链接库，以及软链接 “libalglib.so.3.14” 并将链接库目录添加到系统环境变量
+
+    我这里选择的是直接通过 deb 安装 alglib3.14，可以直接得到链接库文件 “libalglib.so.3.14”（无需进行软链接）
 
 ## 配置步骤
 
@@ -67,3 +71,11 @@ sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack
 ```
 bash run.sh
 ```
+
+- :warning: 可能出现错误 `symbol lookup error: /home/huangcanjia/MetricDrivenFrame3D/bin/MetricDrivenFrame3D: undefined symbol: lmder1_`
+
+    该问题是由于 **minpack** 安装得到的链接库有误导致的
+
+- :warning: 可能出现错误 `symbol lookup error: /home/huangcanjia/MetricDrivenFrame3D/bin/MetricDrivenFrame3D: undefined symbol: _ZN6alglib15minlbfgssetcondERKNS_13minlbfgsstateEdddlNS_7xparamsE`
+
+    该问题是由于 **alglib** 安装得到的链接库有误导致的

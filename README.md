@@ -23,7 +23,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
 - [DirectionalFieldSynthesis] - :x: [Failed!]
 - [libSCOF] - :penguin: [Ubuntu 20.04.6 LTS]
-- [MetricDrivenFrame3D] - :no_entry_sign: [configuring...]
+- [MetricDrivenFrame3D] - :penguin: [Ubuntu 20.04.6 LTS]
 - [nPV] - :no_entry_sign: [configuring...]
 - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
 
@@ -79,6 +79,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
 - [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
+- [CMinpack] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
 - [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
 - [Gmsh] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -139,6 +140,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGNS]: src/CGNS/
 [clash-for-linux]: src/clash-for-linux/
 [CMake]: src/CMake/
+[CMinpack]: src/CMinpack/
 [CubeCover]: src/CubeCover/
 [DiGS]: src/DiGS/
 [Directional]: src/Directional/

@@ -2,6 +2,8 @@
 
 本文档为配置 Minpack 库的记录，[[Github]](https://github.com/fortran-lang/minpack)
 
+基于 C/C++ 的版本 **CMinpack** 的配置可以参考 [CMinpack 库配置记录](../CMinpack/)
+
 ---
 
 Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
@@ -17,6 +19,41 @@ Canjia Huang <<canjia7@gmail.com>> last update 8/4/2025
 ```
 sudo apt install minpack-dev
 ```
+
+## 配置步骤（deb）
+
+1. 直接下载 deb 安装包：
+
+    ```
+    apt download minpack-dev
+    ```
+
+2. 创建目录并解压：
+
+    ```
+    mkdir minpack-deb
+    dpkg -x minpack-dev_*.deb minpack-deb/
+    ```
+
+3. 其中链接库文件位于目录 “/home/huangcanjia/minpack-deb/usr/lib/x86_64-linux-gnu” 下（具体目录根据实际情况而定）
+
+    可以将该目录添加到系统变量 `LD_LIBRARY_PATH` 中：
+
+    ```
+    vim ~/.bashrc
+    ```
+
+    在文件的最后添加：
+
+    ```
+    export LD_LIBRARY_PATH=/home/huangcanjia/minpack-deb/usr/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH
+    ```
+
+    保存并退出后，重新加载环境变量：
+
+    ```
+    source ~/.bashrc
+    ```
 
 ## 配置步骤（fpm）
 
@@ -49,6 +86,9 @@ sudo apt install minpack-dev
     ```
 
 ## 编译链接库
+
+> [!CAUTION]
+> 以下方法可能有误，可能会导致生成的链接库中没有所需的符号！！！
 
 如果有的项目需要使用 **minpack** 的链接库 `libminpack`，需要进行编译生成
 

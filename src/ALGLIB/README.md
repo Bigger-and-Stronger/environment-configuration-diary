@@ -41,16 +41,38 @@ sudo apt install libalglib-dev
 
 :star: 如果只是希望在自己的项目中使用，将 “alglib-cpp/src” 中的文件添加到项目中即可
 
+## 配置步骤（链接库）
+
+如果希望得到编译的动态链接库来使用，可以使用基于 deb 的安装方法
+
+1. 下载 deb 安装包（此处版本下载的 alglib 版本为 3.14）
+
+    ```
+    apt download libalglib3.14
+    ```
+
+2. 新建目录，并解压：
+
+    ```
+    mkdir alglib-3.14-deb
+    dpkg -x libalglib3.14_3.16.0-1build1_amd64.deb alglib-3.14-deb/
+    ```
+
+3. 完成后，动态链接库位于目录 "/home/huangcanjia/alglib-3.14-deb/usr/lib/x86_64-linux-gnu" 下（具体路径根据实际情况而定），可以将其添加至系统环境变量 `LD_LIBRARY_PATH` 中
+
+<!-- > [!CAUTION]
+> 以下方法可能有误，可能会导致生成的链接库中没有所需的符号！！！
+
 :star: 如果需要编译生成链接库来使用，则继续进行以下配置步骤
 
-2. 新建存放编译文件和动态库的目录：
+1. 新建存放编译文件和动态库的目录：
 
     ```
     mkdir obj
     mkdir lib
     ```
 
-3. 编译所有文件，在终端中输入：
+2. 编译所有文件，在终端中输入：
 
     ```
     for cpp_file in src/*.cpp; do
@@ -58,7 +80,7 @@ sudo apt install libalglib-dev
     done
     ```
 
-4. 打包生成动态链接库文件：
+3. 打包生成动态链接库文件：
 
     ```
     g++ -shared -o lib/libalglib.so obj/*.o
@@ -66,7 +88,7 @@ sudo apt install libalglib-dev
 
     此时在 “alglib-cpp/lib” 目录下会生成动态链接库文件 `libalglib.so`
 
-5. 将动态链接库文件所在目录添加到系统环境变量中：
+4. 将动态链接库文件所在目录添加到系统环境变量中：
     ```
     vim ~/.bashrc
     ```
@@ -81,4 +103,4 @@ sudo apt install libalglib-dev
 
     ```
     source ~/.bashrc
-    ```
+    ``` -->
