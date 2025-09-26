@@ -18,7 +18,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [CGNS] - :apple: [macOS 15.3]
 - [OpenFOAM] - :apple: [macOS 15.3]
 
-## Direction Field
+## Directional Field
 - [4-Rosy-Complex-Poly] - :penguin: [Ubuntu 20.04.5 LTS]
 - [Directional] - :penguin: [Ubuntu 20.04.5 LTS]
 - [DirectionalFieldSynthesis] - :x: [Failed!]
@@ -26,9 +26,11 @@ An environment configuration record concerning academic papers, third-party libr
 - [MetricDrivenFrame3D] - :penguin: [Ubuntu 20.04.6 LTS]
 - [nPV] - :no_entry_sign: [configuring...]
 - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
+- [SH-cross-frame] - :no_entry_sign: [configuring...]
 
 ## Hexahedral
 - [AlgoHex] - :no_entry_sign: [configuring...]
+- [closed-form-polycube] - :no_entry_sign: [configuring...]
 - [CubeCover] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
 - [libHexEx] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -139,6 +141,7 @@ An environment configuration record concerning academic papers, third-party libr
 [CGAL]: src/CGAL/
 [CGNS]: src/CGNS/
 [clash-for-linux]: src/clash-for-linux/
+[closed-form-polycube]: src/closed-form-polycube/
 [CMake]: src/CMake/
 [CMinpack]: src/CMinpack/
 [CubeCover]: src/CubeCover/
@@ -198,6 +201,7 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadriFlow]: src/QuadriFlow/
 [QuadWild]: src/QuadWild/
 [QuadWild with Bi-MDF solver]: src/QuadWild-Bi-MDF-solver/
+[SH-cross-frame]: src/SH-cross-frame/
 [siren]: src/siren/
 [SuiteSparse]: src/SuiteSparse/
 [TBB]: src/TBB/
