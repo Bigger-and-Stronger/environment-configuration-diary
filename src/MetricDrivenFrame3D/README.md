@@ -74,8 +74,8 @@ bash run.sh
 
 - :warning: 可能出现错误 `symbol lookup error: /home/huangcanjia/MetricDrivenFrame3D/bin/MetricDrivenFrame3D: undefined symbol: lmder1_`
 
-    该问题是由于 **minpack** 安装得到的链接库有误导致的
+    该问题是由于 **minpack** 安装得到的链接库有误导致的，请检查安装过程
 
 - :warning: 可能出现错误 `symbol lookup error: /home/huangcanjia/MetricDrivenFrame3D/bin/MetricDrivenFrame3D: undefined symbol: _ZN6alglib15minlbfgssetcondERKNS_13minlbfgsstateEdddlNS_7xparamsE`
 
-    该问题是由于 **alglib** 安装得到的链接库有误导致的
+    该问题是由于 **alglib** 安装得到的链接库有误导致的，请检查安装过程
