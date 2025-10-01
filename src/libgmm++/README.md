@@ -1,5 +1,7 @@
 # libgmm++ 库配置记录
 
+[官网](http://getfem.org/gmm.html)
+
 ---
 
 Canjia Huang <<canjia7@gmail.com>> last update 1/10/2025
