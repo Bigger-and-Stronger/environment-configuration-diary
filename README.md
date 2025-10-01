@@ -88,6 +88,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [gsl] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Gurobi] - :penguin: [Ubuntu 20.04.6 LTS]
 - [lapack, blas, cblas, lapacke] - :penguin: [Ubuntu 20.04.6 LTS]
+- [libgmm++] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Libtorch] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Minpack] - :penguin: [Ubuntu 20.04.6 LTS]
 - [mpfr] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -164,6 +165,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Instant Meshes]: src/Instant-Meshes/
 [Isometric-Injective-Energies]: src/Isometric-Injective-Energies/
 [lapack, blas, cblas, lapacke]: src/LAPACK/
+[libgmm++]: src/libgmm++/
 [libHexEx]: src/libHexEx/
 [libHexHex]: src/libHexHex/
 [libQEx]: src/libQEx/
