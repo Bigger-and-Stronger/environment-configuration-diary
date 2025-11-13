@@ -41,6 +41,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [HOMQMesh] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## Medial Axis
+- [MATTopo] - :penguin: [Ubuntu 20.04.5 LTS]
 - [MCS] - :computer: [Windows 10/11]
 - [VMAS] - :computer: [Windows 10/11]
 
@@ -172,6 +173,7 @@ An environment configuration record concerning academic papers, third-party libr
 [libSCOF]: src/libSCOF/
 [Libtorch]: src/Libtorch/
 [LpCVT]: src/LpCVT/
+[MATTopo]: src/MATTopo/
 [MCS]: src/MCS/
 [MetricDrivenFrame3D]: src/MetricDrivenFrame3D/
 [Minpack]: src/Minpack/
