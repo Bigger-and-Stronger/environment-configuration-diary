@@ -133,11 +133,26 @@ TCL 和 TK（可以参考 [TCL, TK 解释器配置记录](../TCL-TK/)）
 这些是编译OCC依赖库的路径：
 ![occ-env2](assets/occ-env2.png)
 
-配置好环境变量后，建议**重启电脑**，保证环境变量生成有效。打开`E:\Library\OpenCASCADE-7.5.0-vc14-64`文件夹，双击打开批处理文件`msvc.bat`。
+配置好环境变量后，建议**重启电脑**，保证环境变量生成有效。打开`E:\Library\OpenCASCADE-7.5.0-vc14-64\opencascade-7.5.0`文件夹，双击打开批处理文件`msvc.bat`。
 
 ![msvc-bat](assets/msvc-bat.png)
 
 此时会打开一个 Visual Studio 解决方案，依次右键→生成即可。
+
+如果没有打开解决方案，尝试使用 cmd 打开，查看报错：
+
+```bash
+D:\Library\OpenCASCADE-7.5.0-vc14-64\opencascade-7.5.0>.\msvc.bat
+Error: Could not find MS Visual Studio (vc141)
+For VS 2010-2015, check relevant environment variable (e.g. VS100COMNTOOLS)
+```
+
+在控制面板-程序中右键 Visual Studio，修改程序，安装 MSVC vc141，安装后在 cmd 中输入：
+```bash
+set "VCVER=vc14-1"
+set "DevEnvDir=D:\Software\VS\community\Common7\IDE"
+.\msvc.bat
+```
 
 ![vs-sln](assets/vs-sln.png)
 
