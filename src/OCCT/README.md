@@ -54,6 +54,8 @@ TCL 和 TK（可以参考 [TCL, TK 解释器配置记录](../TCL-TK/)）
 
 4. 使用 CMake 进行 configure：
 
+    需要额外设置一些路径：
+
     - 需要设置 `3RDPARTY_TCL_INCLUDE_DIR` 选项为 **TCL** 库的安装路径（具体根据实际情况而定）：
 
         ```
@@ -65,7 +67,7 @@ TCL 和 TK（可以参考 [TCL, TK 解释器配置记录](../TCL-TK/)）
         -D3RDPARTY_TK_INCLUDE_DIR=/home/huangcanjia/tk8.6.16/TK-installed/include
         ```
 
-    完整的需要执行的指令为：
+    因此完整的需要执行的指令为：
 
     ```
     cmake -DINSTALL_DIR=/home/huangcanjia/OCCT-7_9_0/OCCT-installed/ -D3RDPARTY_TCL_INCLUDE_DIR=/home/huangcanjia/tcl8.6.16/TCL-installed/include -D3RDPARTY_TK_INCLUDE_DIR=/home/huangcanjia/tk8.6.16/TK-installed/include ..
@@ -77,9 +79,13 @@ TCL 和 TK（可以参考 [TCL, TK 解释器配置记录](../TCL-TK/)）
     make -j
     ```
 
+    - :warning: 可能出现错误 `../../lin64/gcc/lib/libTKDraw.so.7.9.2: undefined reference to Tcl_StaticLibrary`
+
+        该问题可能是由于 TCL 库的版本过高导致的，可以通过在 CMake configure 指令的最后添加选项 `-DBUILD_MODULE_Draw=OFF` 来临时禁用该模块
+
     - :warning: 如果遇到与 **TCL** 或 **TK** 库相关的错误
 
-        解决方法是什么都不做，重新执行 `make` 指令（不断重复执行，直到没有错误为止...）
+        解决方法是重新执行 `make` 指令（不断重复执行，直到没有错误为止...）
     
     - :warning: 如果遇到错误 `internal compiler error: Segmentation fault`
 

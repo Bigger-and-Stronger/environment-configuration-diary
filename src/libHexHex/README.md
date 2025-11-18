@@ -72,7 +72,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 15/8/2025
 进入 “libHexHex/build/Build/bin” 目录下，输入：
 
 ```
-./HexHex -i ../../../tests/testdata/s06u.hexex -o ../../../tests/testdata/s06u.mesh
+./HexHex -i ../../../tests/testdata/s06u.hexex -o ../../../tests/testdata/s06u_result.mesh
 ```
 
 运行成功后，会在 “libHexHex/tests/testdata/” 目录下生成 “s06u.mesh“ 结果六面体网格文件（使用 **Gmsh** 打开可能会出错，可以使用 **Geogram** 的可视化工具 **vorparview** 查看）

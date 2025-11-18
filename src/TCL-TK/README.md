@@ -1,6 +1,6 @@
 # TCL, TK 解释器配置记录
 
-本文档为配置 TCL, TK 解释器的记录，[[官网]](https://www.tcl-lang.org)
+本文档为配置 TCL, TK 解释器的记录 [[官网]](https://www.tcl-lang.org)
 
 ---
 
@@ -80,7 +80,7 @@ sudo apt install tcllib tcl tcl-dev tklib tk tk-dev
 
  - :warning: 需要注意 **TK** 的版本需要和 **TCL** 相匹配，如果之前安装过其他版本的 **TCL**，在进行 configure 的过程中可能会出现错误 `configure: error: tk 8.6 requires Tcl 8.6+`
 
-    此时将之前安装 **TCL** 的目录名称展示更改，再重新进行 configure 即可。如我这里将 “tcl9.0.1” 目录名称暂时改为 “tmp-tcl9.0.1”
+    此时将之前安装 **TCL** 的目录名称暂时更改，再重新进行 configure 即可。如我这里将 “tcl9.0.1” 目录名称暂时改为 “tmp-tcl9.0.1”
 
 [1]: https://zhuanlan.zhihu.com/p/423324052
 [2]: https://blog.csdn.net/RadiantJeral/article/details/108021607
