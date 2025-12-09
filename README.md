@@ -27,6 +27,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [nPV] - :no_entry_sign: [configuring...]
 - [Practical-3D-Frame-Field-Generation] - :penguin: [Ubuntu 20.04.6 LTS]
 - [SH-cross-frame] - :no_entry_sign: [configuring...]
+- [SH-cross-frame-Kenshi-Takayama] - :no_entry_sign: [configuring...]
 
 ## Hexahedral
 - [AlgoHex] - :no_entry_sign: [configuring...]
@@ -77,6 +78,11 @@ An environment configuration record concerning academic papers, third-party libr
 ## Triangular
 - [TriWild] - :penguin: [Ubuntu 20.04.6 LTS]
 
+## Offsets
+- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- [PFPOffset] - :no_entry_sign: [configuring...]
+- [Topological-Offsets] - :penguin: [Ubuntu 20.04.6 LTS]
+
 ## Other Libraries
 - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
 - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -106,7 +112,6 @@ An environment configuration record concerning academic papers, third-party libr
 ## Other Projects
 - [Isometric-Injective-Energies] - :computer: [Windows 10/11]
 - [LpCVT] - :apple: [macOS 15.3.1] :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
-- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [VolumeMesher] - :penguin: [Ubuntu 20.04.6 LTS]
 - [WNNC] - :penguin: [Ubuntu 20.04.5 LTS]
 
@@ -195,6 +200,7 @@ An environment configuration record concerning academic papers, third-party libr
 [PCL]: src/PCL/
 [PCO]: src/PCO/
 [PETSc]: src/PETSc/
+[PFPOffset]: src/PFPOffset/
 [Point2CAD]: src/Point2CAD/
 [polyscope]: src/polyscope/
 [Practical-3D-Frame-Field-Generation]: src/Practical-3D-Frame-Field-Generation/
@@ -206,11 +212,13 @@ An environment configuration record concerning academic papers, third-party libr
 [QuadWild]: src/QuadWild/
 [QuadWild with Bi-MDF solver]: src/QuadWild-Bi-MDF-solver/
 [SH-cross-frame]: src/SH-cross-frame/
+[SH-cross-frame-Kenshi-Takayama]: src/SH-cross-frame-Kenshi-Takayama/
 [siren]: src/siren/
 [SuiteSparse]: src/SuiteSparse/
 [TBB]: src/TBB/
 [TCL, TK]: src/TCL-TK/
 [TetWild]: src/TetWild/
+[Topological-Offsets]: src/Topological-Offsets/
 [TriWild]: src/TriWild/
 [VMAS]: src/VMAS/
 [VolumeMesher]: src/VolumeMesher/
