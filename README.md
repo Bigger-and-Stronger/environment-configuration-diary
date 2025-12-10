@@ -56,6 +56,11 @@ An environment configuration record concerning academic papers, third-party libr
 - [NH-Rep] - :penguin: [Ubuntu 20.04.6 LTS]
 - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 
+## Offsets
+- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
+- [PFPOffset] - :penguin: [Ubuntu 20.04.6 LTS]
+- [Topological-Offsets] - :penguin: [Ubuntu 20.04.6 LTS]
+
 ## Open CASCADE Technology
 - [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
 - [pythonocc] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -77,11 +82,6 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Triangular
 - [TriWild] - :penguin: [Ubuntu 20.04.6 LTS]
-
-## Offsets
-- [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
-- [PFPOffset] - :no_entry_sign: [configuring...]
-- [Topological-Offsets] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Other Libraries
 - [ALGLIB] - :penguin: [Ubuntu 20.04.6 LTS]
