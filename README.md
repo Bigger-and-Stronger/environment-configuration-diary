@@ -57,6 +57,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [siren] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Offsets
+- [OffsetCrust] - :penguin: [Ubuntu 20.04.6 LTS]
 - [PCO] - :penguin: [Ubuntu 20.04.6 LTS] :computer: [Windows 10]
 - [PFPOffset] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Topological-Offsets] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -190,6 +191,7 @@ An environment configuration record concerning academic papers, third-party libr
 [NH-Rep]: src/NH-Rep/
 [nPV]: src/nPV/
 [OCCT]: src/OCCT/
+[OffsetCrust]: src/OffsetCrust/
 [OpenEXR]: src/OpenEXR/
 [OpenFOAM]: src/OpenFOAM/
 [OpenMesh]: src/OpenMesh/
