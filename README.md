@@ -63,7 +63,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [Topological-Offsets] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## Open CASCADE Technology
-- [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11]
+- [OCCT] - :penguin: [Ubuntu 20.04.5 LTS] :computer: [Windows 10/11] :apple: [macOS 26.2]
 - [pythonocc] - :penguin: [Ubuntu 20.04.5 LTS]
 
 ## Quadrilateral
