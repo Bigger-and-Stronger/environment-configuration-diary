@@ -83,6 +83,14 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
         set(MC3D_USE_GUROBI ON)
         ```
 
+    - :warning: 可能出现错误 `Cannot specify compile options for target "HexHex" which is not built by this project.`
+
+        可能是该团队将此处使用的提取六面体化方法 **HexEx** 与它们自己的工作 **HexHex** 弄混了，将文件 “external/libHexEx/CMakeLists.txt” 的 Line 137 中的 `HexHex` 改为 `HexEx`，即：
+
+        ```
+        target_compile_options(HexEx PUBLIC -msse -mfpmath=sse)
+        ```
+
 4. 编译：
 
     ```
