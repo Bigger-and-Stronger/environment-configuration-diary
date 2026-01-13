@@ -30,7 +30,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [SH-cross-frame-Kenshi-Takayama] - :no_entry_sign: [configuring...]
 
 ## Hexahedral
-- [AlgoHex] - :no_entry_sign: [configuring...]
+- [AlgoHex] - :penguin: [Ubuntu 20.04.6 LTS]
 - [closed-form-polycube] - :no_entry_sign: [configuring...]
 - [CubeCover] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]

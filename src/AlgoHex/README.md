@@ -107,13 +107,13 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
 
 ## 测试
 
-进入 “AlgoHex/build” 目录，输入：
+进入 “AlgoHex/build/Build/bin” 目录，输入：
 
 ```
-./Build/bin/HexMeshing -i ../demo/HexMeshing/cylinder.ovm -o cylinder_hex.ovm
+./HexMeshing -i ../../../demo/HexMeshing/cylinder.ovm
 ```
 
-- :warning: 可能出现错误 `Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!`
+<!-- - :warning: 可能出现错误 `Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!`
 
     在 “AlgoHex/build” 目录中输入：
 
@@ -129,4 +129,6 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
     cmake --build
     ```
 
-    其他解决方法可以参考 [issue #2](https://github.com/cgg-bern/AlgoHex/issues/2), [issue #3](https://github.com/cgg-bern/AlgoHex/issues/3), [issue #9](https://github.com/cgg-bern/AlgoHex/issues/9)
+    其他解决方法可以参考 [issue #2](https://github.com/cgg-bern/AlgoHex/issues/2), [issue #3](https://github.com/cgg-bern/AlgoHex/issues/3), [issue #9](https://github.com/cgg-bern/AlgoHex/issues/9) -->
+
+成功运行后，会在 "demo/HexMeshing" 目录下生成六面体网格文件 "cylinder_hex.ovm"
