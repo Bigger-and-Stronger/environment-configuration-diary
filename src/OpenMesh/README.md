@@ -56,7 +56,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 18/3/2025
 
             ![image](.pic/image.png)
 
-        2. 修改该项目中的 “FindOpenMesh.cmake” 文件，在其中寻找 `OPENMESH_CORE_LIBRARY` 和 `OPENMESH_TOOLS_LIBRARY` 的目录中添加 "xxx/OpenMesh/build/Build/lib/" 的目录（这里的 XXX 需要替换为实际目录），示例如下（绿框处为需要添加的部分）：
+        2. 修改该项目中的 “FindOpenMesh.cmake” 文件，在其中寻找 `OPENMESH_CORE_LIBRARY` 和 `OPENMESH_TOOLS_LIBRARY` 的目录中添加 "xxx/OpenMesh/build/Build/lib/OpenMesh" 的目录（这里的 XXX 需要替换为实际目录），示例如下（绿框处为需要添加的部分）：
 
             ![image](.pic/image1.png)
 
