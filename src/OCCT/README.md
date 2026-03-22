@@ -235,6 +235,7 @@ make install
 	```
 	保存后继续 `make`即可
 2. 如果编译过程中遇到了 `Undefined symbols for architecture arm64: "std::__1::__hash_memory(void const*, unsigned long)"` 错误
+   
    	可能是由于系统变量 `$PATH` 中Homebrew 路径在 “/usr/bin” 之前，导致混用了Homebrew 的编译器和系统自带的编译器
 
    可以在 cmake 配置过程中添加以下参数：
