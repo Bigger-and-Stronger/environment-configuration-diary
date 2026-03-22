@@ -202,7 +202,7 @@ mkdir build
 cd build
 ```
 5.构建
-（这里我采用了 macOS 的 tcl-tk 库，不需要指定路径，不用另外安装）
+（这里我采用了 macOS 的 tcl-tk 库，不需要指定路径，不用另外安装; tck-tk 库可以使用 **brew** 进行安装 `brew install tcl-tk`）
 ```
 cmake .. \
  -DCMAKE_BUILD_TYPE=Release \
