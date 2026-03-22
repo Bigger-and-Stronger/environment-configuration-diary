@@ -202,7 +202,7 @@ mkdir build
 cd build
 ```
 5.构建
-（这里我采用了 macOS 的 tcl-tk 库，不需要指定路径，不用另外安装; tck-tk 库可以使用 **brew** 进行安装 `brew install tcl-tk`）
+（这里我采用了 macOS 的 tcl-tk 库，不需要指定路径，不用另外安装; tck-tk 库可以使用 **homebrew** 进行安装 `brew install tcl-tk`）
 ```
 cmake .. \
  -DCMAKE_BUILD_TYPE=Release \
@@ -220,20 +220,29 @@ make install
 ```
 
 #### 💡常见问题
-如果编译过程中遇到了 `.../OCCT-7_5_0/src/StdPrs/StdPrs_BRepFont.cxx:456:17: error:cannot initialize a variable of type 'const char *' with an rvalue of type 'unsigned char *'` 
-打开文件
-```
-.../OCCT-7_5_0/src/StdPrs/StdPrs_BRepFont.cxx
-```
-搜索以下代码：
-```
-const char* aTags      = &anOutline->tags[aStartIndex];
-```
-将其改为：
-```
-const unsigned char* aTags = &anOutline->tags[aStartIndex];
-```
-保存后继续 `make`即可
+1. 如果编译过程中遇到了 `.../OCCT-7_5_0/src/StdPrs/StdPrs_BRepFont.cxx:456:17: error:cannot initialize a variable of type 'const char *' with an rvalue of type 'unsigned char *'` 
+	打开文件
+	```
+	.../OCCT-7_5_0/src/StdPrs/StdPrs_BRepFont.cxx
+	```
+	搜索以下代码：
+	```
+	const char* aTags      = &anOutline->tags[aStartIndex];
+	```
+	将其改为：
+	```
+	const unsigned char* aTags = &anOutline->tags[aStartIndex];
+	```
+	保存后继续 `make`即可
+2. 如果编译过程中遇到了 `Undefined symbols for architecture arm64: "std::__1::__hash_memory(void const*, unsigned long)"` 错误
+   	可能是由于系统变量 `$PATH` 中Homebrew 路径在 “/usr/bin” 之前，导致混用了Homebrew 的编译器和系统自带的编译器
+
+   可以在 cmake 配置过程中添加以下参数：
+   ```
+   -DCMAKE_C_COMPILER=/usr/bin/clang \
+	-DCMAKE_CXX_COMPILER=/usr/bin/clang++
+   ```
+   并重新进行配置和编译
 
 #### 🙋🏻其他问题 参考[Ubuntu](#ubuntu)
  -  ⚠️ 可能出现错误 `../../lin64/gcc/lib/libTKDraw.so.7.9.2: undefined reference to Tcl_StaticLibrary`
