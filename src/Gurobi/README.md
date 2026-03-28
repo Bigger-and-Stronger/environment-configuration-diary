@@ -41,7 +41,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 20/3/2025
     进行激活，在终端中输入(此处的 “xxx“ 需要替换为收到的邮件中给的激活码)：
 
     ```
-    grbgetkey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    ./grbgetkey xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
     ```
 
     激活过程中会提示 `In which directory would you like to store the Gurobi license file?` 以选择要把激活得到的配置文件存放在什么地方，这里我选择存放在 “/home/huangcanjia/gurobi1201/”（具体路径根据实际情况而定）
