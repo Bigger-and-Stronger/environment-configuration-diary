@@ -36,6 +36,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
 - [libHexEx] - :penguin: [Ubuntu 20.04.6 LTS]
 - [libHexHex] - :penguin: [Ubuntu 20.04.6 LTS]
+- [MC3D] - :penguin: [Ubuntu 20.04.6 LTS]
 - [QGP3D] - :penguin: [Ubuntu 20.04.6 LTS]
 
 ## High-order Meshing
@@ -180,6 +181,7 @@ An environment configuration record concerning academic papers, third-party libr
 [Libtorch]: src/Libtorch/
 [LpCVT]: src/LpCVT/
 [MATTopo]: src/MATTopo/
+[MC3D]: src/MC3D/
 [MCS]: src/MCS/
 [MetricDrivenFrame3D]: src/MetricDrivenFrame3D/
 [Minpack]: src/Minpack/
