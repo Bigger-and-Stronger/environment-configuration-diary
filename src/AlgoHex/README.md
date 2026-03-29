@@ -35,7 +35,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
 1. 将项目下载到本地：
 
     ```
-    https://github.com/cgg-bern/AlgoHex.git
+    git clone https://github.com/cgg-bern/AlgoHex.git
     ```
 
     进入项目目录：
