@@ -77,7 +77,7 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
 
         这是因为 **QGP3D** 项目配置过程中找不到 **Gurobi** 库导致的
 
-        在文件 “AlgoHex/external/QGP3D/src/CMakeLists.txt” 的 Line 15 添加：
+        在文件 “AlgoHex/external/QGP3D/src/CMakeLists.txt” 的 Line 15（即 `if (MC3D_USE_GUROBI AND NOT TARGET Gurobi::GurobiCXX)` 前）添加：
         
         ```
         set(MC3D_USE_GUROBI ON)
@@ -99,11 +99,21 @@ Canjia Huang <<canjia7@gmail.com>> last update 5/4/2025
 
     - :warning: 可能出现错误 `undefined reference to typeinfo for testing::Test`
 
-        在文件 "AlgoHex/CMakeLists.txt" 的 Line 303-304 之间添加：
+        在文件 "AlgoHex/CMakeLists.txt" 的 Line 314-315 之间（即 `if (ALGOHEX_BUILD_DEMO)` 前）添加：
 
         ```
         set(ALGOHEX_BUILD_TESTS OFF)
         ```
+
+    - :warning: 可能出现错误 `error: ‘IPOPTSolver’ is not a member of ‘COMISO’`
+
+        **COMISO** 库的该求解器需要安装 **ipopt** 库，执行：
+        
+        ```
+        sudo apt-get install coinor-libipopt-dev
+        ```
+
+        重新配置并编译即可
 
 ## 测试
 
