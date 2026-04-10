@@ -87,11 +87,9 @@ Canjia Huang <<canjia7@gmail.com>> last update 25/3/2025
 
         - 另一种情况是，在上述指定 `<path/to/gurobi/>` 的正确路径后仍然出现该错误
 
-            定位出现错误信息的位置为 “QGP3D/src/CMakeLists.txt” 文件的 Line 26，是由于该文件的 Line 14 `option(MC3D_USE_GUROBI ON "Use Gurobi as solver if available.")` 定义了 `MC3D_USE_GUROBI` 为 `ON`，但在后续 Line 16 判断 `MC3D_USE_GUROBI` 时该变量值缺变为 `OFF`
+            定位出现错误信息的位置为 “QGP3D/src/CMakeLists.txt” 文件的 Line 26，是由于该文件的 Line 14 `option(QGP3D_USE_GUROBI ON "Use Gurobi as solver if available.")` 定义了 `QGP3D_USE_GUROBI` 为 `ON`，但在后续 Line 16 判断 `QGP3D_USE_GUROBI` 时该变量值缺变为 `OFF`
 
-            一种简单的解决方法是在 Line 14-16 之间直接添加语句 `set(MC3D_USE_GUROBI ON)`，如下图绿框处：
-
-            ![image](.pic/image.png)
+            一种简单的解决方法是在 Line 14-16 之间直接添加语句 `set(QGP3D_USE_GUROBI ON)`
 
 4. 编译：
 
