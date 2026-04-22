@@ -10,6 +10,18 @@ Canjia Huang <<canjia7@gmail.com>> last update 25/6/2025
 
 - 操作系统：Ubuntu 20.04.6 LTS
 
+## 配置步骤（新）
+
+参考 [README](https://github.com/nelvko/clash-for-linux-install)，有更加直接方便的安装操作：
+
+1. 直接在终端中执行：
+
+    ```
+    git clone --branch master --depth 1 https://gh-proxy.org/https://github.com/nelvko/clash-for-linux-install.git \
+        && cd clash-for-linux-install \
+        && bash install.sh
+    ```
+
 ## 配置步骤
 
 1. 将项目下载到本地：
