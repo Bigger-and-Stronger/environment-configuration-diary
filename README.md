@@ -31,6 +31,7 @@ An environment configuration record concerning academic papers, third-party libr
 
 ## Hexahedral
 - [AlgoHex] - :penguin: [Ubuntu 20.04.6 LTS]
+- [C4HexMeshing] - :penguin: [Ubuntu 20.04.6 LTS]
 - [closed-form-polycube] - :no_entry_sign: [configuring...]
 - [CubeCover] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Feature-Preserving-Octree-Hex-Meshing] - :penguin: [Ubuntu 20.04.6 LTS]
@@ -90,6 +91,7 @@ An environment configuration record concerning academic papers, third-party libr
 - [AntTweakBar] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Boost] - :penguin: [Ubuntu 20.04.5 LTS]
 - [CGAL] - :penguin: [Ubuntu 20.04.5 LTS]
+- [Clp] - :penguin: [Ubuntu 20.04.6 LTS]
 - [CMinpack] - :penguin: [Ubuntu 20.04.6 LTS]
 - [Eigen] - :penguin: [Ubuntu 20.04.6 LTS]
 - [gmp] - :penguin: [Ubuntu 20.04.5 LTS]
@@ -146,11 +148,13 @@ An environment configuration record concerning academic papers, third-party libr
 [binutils]: src/binutils/
 [bison]: src/bison/
 [Boost]: src/Boost/
+[C4HexMeshing]: src/C4HexMeshing/
 [CFortranTranslator]: src/CFortranTranslator/
 [CGAL]: src/CGAL/
 [CGNS]: src/CGNS/
 [clash-for-linux]: src/clash-for-linux/
 [closed-form-polycube]: src/closed-form-polycube/
+[Clp]: src/Clp/
 [CMake]: src/CMake/
 [CMinpack]: src/CMinpack/
 [CubeCover]: src/CubeCover/
